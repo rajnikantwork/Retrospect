@@ -16,13 +16,17 @@
         color: $white-color;
         @include fpos(center, center);
 
-        @media (max-width: 767px) {
-            padding-right: size(40);
+        @media (max-width: 1024px) {
+            font-size: size(14);
+        }
+
+        @media (max-width: 768px) {
+            font-size: size(13);
         }
 
         @media (max-width: 576px) {
-            font-size: 1.4rem;
-            line-height: 2rem;
+            font-size: size(11);
+            padding-right: size(20);
         }
 
         a {
@@ -133,6 +137,10 @@
                                 @include transition(0.3s ease-in);
                                 position: relative;
 
+                                @media (max-width: 1024px) {
+                                    font-size: size(14);
+                                }
+
                                 @media (max-width: 991px) {
                                     width: 100%;
                                     padding: size(16) 0;
@@ -223,7 +231,7 @@
                                     }
 
                                     @media (max-width: 1024px) {
-                                        width: 424px;
+                                        width: 504px;
                                         @include radius(15px);
                                     }
 
@@ -233,7 +241,7 @@
                                     }
 
                                     .sub-menu-left-item {
-                                        width: calc(100% - 280px);
+                                        width: calc(100% - 290px);
                                         padding: 32px;
                                         border-top-left-radius: 24px;
                                         border-bottom-left-radius: 24px;
@@ -284,20 +292,13 @@
                                                     align-items: center;
                                                     position: relative;
 
-                                                    @media (max-width: 1200px) {
-                                                        font-size: 1.5rem;
-                                                        line-height: 2.2rem;
-                                                    }
 
                                                     @media (max-width: 1024px) {
-                                                        font-size: 1.4rem;
-                                                        line-height: 2rem;
+                                                        font-size: size(14);
+                                                        line-height: size(24);
                                                     }
 
-                                                    @media (max-width: 991px) {
-                                                        font-size: 1.6rem;
-                                                        line-height: 2.4rem;
-                                                    }
+                                                  
 
                                                     img {
                                                         margin-right: 16px;
@@ -339,7 +340,7 @@
                                     }
 
                                     .sub-menu-right-item {
-                                        width: 280px;
+                                        width: 290px;
                                         height: inherit;
                                         padding: 32px 32px 44px 32px;
                                         background: #F7F8FA;
@@ -391,38 +392,32 @@
                                             h3 {
                                                 margin-bottom: 16px;
                                                 color: #0B1621;
-                                                font-size: 1.8rem;
+                                                font-size: size(18);
                                                 font-weight: 500;
-                                                line-height: 2.8rem;
+                                                line-height: size(28);
 
                                                 @media (max-width: 1200px) {
                                                     margin-bottom: 12px;
-                                                    font-size: 1.6rem;
-                                                    line-height: 2.4rem;
+                                                    font-size: size(16);
+                                                    line-height: size(26);
                                                 }
 
                                                 @media (max-width: 1024px) {
                                                     margin-bottom: 10px;
-                                                    font-size: 1.4rem;
-                                                    line-height: 2rem;
                                                 }
                                             }
 
                                             p {
                                                 margin-bottom: 0;
                                                 color: #55585C;
-                                                font-size: size(20);
-                                                line-height: size(36);
+                                                font-size: size(16);
+                                                line-height: size(24);
 
                                                 @media (max-width: 1200px) {
-                                                    font-size: 1.5rem;
-                                                    line-height: 2.2rem;
+                                                    font-size: size(14);
+                                                    line-height: size(24);
                                                 }
 
-                                                @media (max-width: 1024px) {
-                                                    font-size: 1.4rem;
-                                                    line-height: 2rem;
-                                                }
                                             }
                                         }
                                     }
@@ -457,7 +452,7 @@
                                             background: url("../images/red-arrow-up.svg") no-repeat;
 
                                             @media (max-width: 991px) {
-                                                right: -10px;
+                                                right: 0;
                                                 top: 50%;
                                                 transform: translateY(-50%);
                                             }

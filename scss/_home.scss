@@ -154,9 +154,9 @@
   .banner-text {
     margin-bottom: 20px;
     color: $white-color;
-    font-size: 1.6rem;
+    font-size: size(16);
     font-weight: 400;
-    line-height: 2.4rem;
+    line-height: size(24);
 
     @media (max-width: 767px) {
       margin-bottom: 15px;
@@ -164,8 +164,8 @@
 
     @media (max-width: 576px) {
       margin-bottom: 10px;
-      font-size: 1.4rem;
-      line-height: 2rem;
+      font-size: size(14);
+      line-height:size(24);
     }
   }
 
@@ -178,23 +178,23 @@
     margin-bottom: 20px;
     color: $white-color;
     text-align: center;
-    font-size: 4.8rem;
+    font-size: size(48);
     font-weight: 500;
-    line-height: 5.6rem;
+    line-height: size(56);
 
     @media (max-width: 991px) {
-      font-size: 4rem;
-      line-height: 4.4rem;
+      font-size: size(40);
+      line-height: size(44);
     }
 
     @media (max-width: 767px) {
-      font-size: 3.6rem;
-      line-height: 4rem;
+      font-size: size(36);
+      line-height: size(40);
     }
 
     @media (max-width: 576px) {
-      font-size: 3rem;
-      line-height: 3.4rem;
+      font-size: size(30);
+      line-height: size(34);
     }
   }
 
@@ -215,9 +215,9 @@
 
   .banner-devices {
     color: $white-color;
-    font-size: 1.6rem;
+    font-size: size(16);
     font-weight: 400;
-    line-height: 2.4rem;
+    line-height: size(24);
     @include fpos(center, flex-start);
 
     @media (max-width: 767px) {
@@ -237,9 +237,9 @@
     .title {
       width: 100px;
       margin: 0 15px;
-      font-size: 1.6rem;
+      font-size: size(16);
       font-weight: 400;
-      line-height: 2.4rem;
+      line-height: size(24);
 
       @media (max-width: 767px) {
         width: 100%;
@@ -249,8 +249,8 @@
       }
 
       @media (max-width: 576px) {
-        font-size: 1.4rem;
-        line-height: 2rem;
+        font-size: size(14);
+        line-height: size(24);
       }
     }
   }
@@ -258,34 +258,34 @@
   .sub-title {
     margin-bottom: 0;
     color: $white-color;
-    font-size: 1.6rem;
+    font-size: size(16);
     font-weight: 400;
     text-align: center;
-    line-height: 2.4rem;
+    line-height: size(24);
   }
 
   .restrospect-work-count {
     margin-bottom: 0;
-    font-size: 4rem;
+    font-size: size(40);
     font-weight: 600;
-    line-height: 4.8rem;
+    line-height: size(48);
     margin-bottom: 8px;
     color: $white-color;
     text-align: center;
 
     @media (max-width: 991px) {
-      font-size: 3.6rem;
-      line-height: 4rem;
+      font-size: size(36);
+      line-height: size(40);
     }
 
     @media (max-width: 767px) {
-      font-size: 3.2rem;
-      line-height: 3.8rem;
+      font-size: size(32);
+      line-height: size(38);
     }
 
     @media (max-width: 576px) {
-      font-size: 2.4rem;
-      line-height: 3rem;
+      font-size: size(24);
+      line-height: size(30);
     }
   }
 }
@@ -334,9 +334,9 @@
     .head-blue {
       margin-bottom: 17px;
       color: #376EA6;
-      font-size: 1.6rem;
+      font-size: size(16);
       font-weight: 600;
-      line-height: 2.4rem;
+      line-height: size(24);
 
       @media (max-width: 767px) {
         margin-bottom: 14px;
@@ -346,18 +346,18 @@
     .head-dark {
       margin-bottom: 0;
       color: $secondary;
-      font-size: 4rem;
+      font-size: size(40);
       font-weight: 500;
-      line-height: 4.8rem;
+      line-height: size(48);
 
       @media (max-width: 767px) {
-        font-size: 3.2rem;
-        line-height: 4rem;
+        font-size: size(32);
+        line-height: size(40);
       }
 
       @media (max-width: 576px) {
-        font-size: 2.4rem;
-        line-height: 3rem;
+        font-size: size(24);
+        line-height: size(30);
       }
     }
 
@@ -413,13 +413,13 @@
     .title {
       margin-bottom: 17px;
       color: $secondary;
-      font-size: 1.8rem;
+      font-size: size(18);
       font-weight: 500;
-      line-height: 2.8rem;
+      line-height: size(28);
 
       @media (max-width: 767px) {
-        font-size: 1.6rem;
-        line-height: 1.5rem;
+        font-size: size(16);
+        line-height: size(26);
       }
     }
 
@@ -463,18 +463,18 @@
 
   .head-dark {
     color: $secondary;
-    font-size: 4rem;
+    font-size: size(40);
     font-weight: 500;
-    line-height: 4.8rem;
+    line-height: size(48);
 
     @media (max-width: 767px) {
-      font-size: 3.2rem;
-      line-height: 4rem;
+      font-size: size(32);
+      line-height: size(40);
     }
 
     @media (max-width: 576px) {
-      font-size: 2.4rem;
-      line-height: 3rem;
+      font-size: size(24);
+      line-height: size(30);
     }
   }
 
@@ -489,12 +489,14 @@
       }
     }
   }
+
   .data-subhead {
     color: #55585C;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: size(16);
+    line-height: size(24);
     margin-top: 18px;
     margin-bottom: 80px;
+
     @media (max-width: 767px) {
       margin-top: 10px;
       margin-bottom: 30px;
@@ -541,24 +543,24 @@
 
     .head-white {
       color: #FEFEFE;
-      font-size: 4rem;
+      font-size: size(40);
       font-weight: 500;
-      line-height: 4.8rem;
+      line-height: size(48);
 
       @media (max-width: 767px) {
-        font-size: 3.2rem;
-        line-height: 4rem;
+        font-size: size(32);
+        line-height: size(40);
       }
 
       @media (max-width: 576px) {
-        font-size: 2.4rem;
-        line-height: 3rem;
+        font-size: size(24);
+        line-height: size(30);
       }
     }
 
     .sub-head-white {
       color: #D5DBE7;
-      font-size: 16px;
+      font-size: size(16);
       font-weight: 400;
       line-height: 24px;
       margin-top: 28px;
@@ -571,25 +573,27 @@
 
     .title {
       color: $white-color;
-      font-size: 2.4rem;
+      font-size: size(24);
       font-weight: 500;
-      line-height: 3.2rem;
+      line-height: size(32);
       margin-bottom: 16px;
 
       @media (max-width: 767px) {
-        font-size: 1.6rem;
-        line-height: 2.4rem;
+        font-size: size(18);
+        line-height: size(24);
       }
     }
 
     .description {
       color: #D5DBE7;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
+      font-size: size(16);
+      line-height: size(24);
       margin-bottom: 36px;
 
       @media (max-width: 767px) {
         margin-bottom: 16px;
+        font-size: size(14);
+      line-height: size(24);
       }
     }
 
@@ -602,7 +606,7 @@
       padding: 8px 15px;
       color: $white-color;
       text-align: center;
-      font-size: 16px;
+      font-size: size(16);
       font-weight: 600;
       line-height: 24px;
       text-decoration: none;
@@ -647,7 +651,7 @@
     .btn.btn-white {
       padding: 12px 24px;
       color: $primary;
-      font-size: 16px;
+      font-size: size(16);
       font-weight: 600;
       line-height: 24px;
       border-radius: 12px;
@@ -729,20 +733,28 @@
           margin-bottom: 29px;
           color: #FEFEFE;
           text-align: center;
-          font-size: 4rem;
+          font-size: size(40);
           font-weight: 500;
-          line-height: 4.8rem;
+          line-height: size(48);
+
+          @media (max-width: 768px) {
+            font-size: size(30);
+            line-height: size(42);
+            padding: 0 50px;
+          }
 
           @media (max-width: 767px) {
             margin-bottom: 25px;
-            font-size: 2.4rem;
-            line-height: 3.2rem;
+            font-size: size(24);
+            line-height: size(32);
+            padding: 0 20px;
           }
 
           @media (max-width: 576px) {
             margin-bottom: 20px;
-            font-size: 2rem;
-            line-height: 3rem;
+            font-size: size(15);
+            line-height: size(26);
+            padding: 0 10px;
           }
         }
 
@@ -767,20 +779,20 @@
 
   .head-dark {
     margin-bottom: 80px;
-    font-size: 4rem;
+    font-size: size(40);
     font-weight: 500;
-    line-height: 4.8rem;
+    line-height: size(48);
     color: $secondary;
 
     @media (max-width: 767px) {
       margin-bottom: 36px;
-      font-size: 3.2rem;
-      line-height: 4rem;
+      font-size: size(32);
+      line-height: size(40);
     }
 
     @media (max-width: 576px) {
-      font-size: 2.4rem;
-      line-height: 3rem;
+      font-size: size(24);
+      line-height: size(30);
     }
   }
 
@@ -803,9 +815,9 @@
   .saved-text {
     color: $secondary;
     text-align: center;
-    font-size: 16px;
+    font-size: size(16);
     font-weight: 400;
-    line-height: 26px;
+    line-height: size(26);
     max-width: 469px;
     margin: 0 auto;
     margin-top: 16px;
@@ -814,16 +826,16 @@
 
   .saved-name {
     color: $secondary;
-    font-size: 1.6rem;
+    font-size: size(16);
     font-weight: 700;
-    line-height: 2.4rem;
+    line-height: size(24);
   }
 
   .saved-profile {
     color: $secondary;
-    font-size: 1.6rem;
+    font-size: size(16);
     font-weight: 400;
-    line-height: 2.4rem;
+    line-height: size(24);
   }
 
   .checked {
@@ -833,9 +845,9 @@
   .client-review {
     color: $secondary;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: size(16);
     font-weight: 600;
-    line-height: 2.4rem;
+    line-height: size(24);
   }
 
   .slick-slider {
@@ -1032,13 +1044,13 @@
   .saved-head {
     color: $secondary;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: size(24);
     font-weight: 500;
-    line-height: 3.2rem;
+    line-height: size(26);
 
     @media (max-width: 767px) {
-      font-size: 1.8rem;
-      line-height: 2.8rem;
+      font-size: size(18);
+      line-height: size(28);
       text-align: center;
     }
   }
@@ -1046,8 +1058,8 @@
   .saved-text {
     color: $secondary;
     text-align: center;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
+    font-size: size(16);
+    line-height: size(26);
     max-width: 469px;
     margin: 0 auto;
     margin-top: 16px;
@@ -1055,8 +1067,8 @@
 
     @media (max-width: 767px) {
       margin-bottom: 30px;
-      font-size: 1.4rem;
-      line-height: 2rem;
+      font-size: size(14);
+      line-height: size(24);
       text-align: center;
       color: #55585C;
     }
@@ -1072,13 +1084,13 @@
 
   .saved-name {
     color: $secondary;
-    font-size: 1.6rem;
+    font-size: size(16);
     font-weight: 700;
-    line-height: 2.4rem;
+    line-height: size(24);
 
     @media (max-width: 767px) {
-      font-size: 1.4rem;
-      line-height: 2rem;
+      font-size: size(14);
+      line-height: size(24);
       margin-top: 8px;
       margin-bottom: 0;
       text-align: center;
@@ -1087,12 +1099,12 @@
 
   .saved-profile {
     color: $secondary;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: size(16);
+    line-height: size(24);
 
     @media (max-width: 767px) {
-      font-size: 1.4rem;
-      line-height: 2rem;
+      font-size: size(14);
+      line-height: size(24);
       margin-bottom: 0;
       color: #55585C;
       text-align: center;
@@ -1106,9 +1118,9 @@
   .client-review {
     color: $secondary;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: size(16);
     font-weight: 600;
-    line-height: 2.4rem;
+    line-height: size(24);
   }
 }
 
@@ -1124,12 +1136,15 @@
       }
     }
   }
+
   @media (max-width: 767px) {
     padding: 20px 0 58px;
   }
+
   ul {
     margin-bottom: 0;
   }
+
   &:before {
     width: 25%;
     height: 62px;
@@ -1144,6 +1159,7 @@
       width: 15%;
     }
   }
+
   &:after {
     width: 25%;
     height: 62px;
@@ -1153,12 +1169,15 @@
     right: 0;
     top: 28px;
     z-index: 9;
+
     @media (max-width: 767px) {
       width: 15%;
     }
   }
+
   .bottom-carousel {
     position: relative;
+
     &:before {
       width: 1px;
       height: 100%;
@@ -1180,10 +1199,12 @@
     height: 60px;
     border-radius: 50%;
     margin-bottom: 0;
+
     @media (max-width: 767px) {
       width: 48px;
       height: 48px;
     }
+
     img {
       width: 100%;
       height: 100%;
@@ -1191,20 +1212,23 @@
       border-radius: 50%;
     }
   }
+
   .client-review {
     padding-left: 15px;
     margin-bottom: 0;
     color: $secondary;
-    font-size: 1.6rem;
+    font-size: size(16);
     font-weight: 600;
-    line-height: 2.4rem;
+    line-height: size(24);
+
     @media (max-width: 767px) {
       width: calc(100% - 48px);
       padding-left: 10px;
-      font-size: 1.4rem;
-      line-height: 2rem;
+      font-size: size(14);
+      line-height: size(24);
     }
   }
+
   .slick-slider {
     .slick-prev {
       &.slick-arrow {
@@ -1212,6 +1236,7 @@
       }
     }
   }
+
   .slick-slider {
     .slick-next {
       &.slick-arrow {
@@ -1219,6 +1244,7 @@
       }
     }
   }
+
   .slick-slide {
     &.slick-current {
       &.slick-active {
@@ -1229,6 +1255,7 @@
         }
       }
     }
+
     &.slick-active {
       .d-flex {
         &.align-items-center {

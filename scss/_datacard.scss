@@ -34,7 +34,7 @@
     gap: size(16);
     color: $secondary;
     font-weight: 500;
-    line-height: 2.8rem;
+    line-height: size(28);
 
     @media (max-width: 767px) {
       margin-bottom: 15px;
@@ -50,11 +50,11 @@
       margin-bottom: 0;
       font-size: size(20);
       font-weight: 500;
-      line-height: 2.8rem;
+      line-height: size(28);
 
       @media (max-width: 767px) {
-        font-size: 1.6rem;
-        line-height: 2.4rem;
+        font-size: size(16);
+        line-height: size(24);
       }
     }
   }
@@ -62,8 +62,8 @@
   .data-description {
     margin-bottom: 0;
     color: #55585C;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: size(16);
+    line-height: size(24);
     @include text-truncate(4, 100px);
 
     @media (max-width: 767px) {
@@ -74,16 +74,16 @@
   .data-link-wrap {
     .data-link {
       color: $primary;
-      font-size: 1.6rem;
+      font-size: size(16);
       font-weight: 600;
-      line-height: 2.6rem;
+      line-height: size(26);
       @include fpos(center, space-between);
       text-decoration: none;
       @include transition(0.3s ease-in);
 
       @media (max-width: 767px) {
-        font-size: 1.4rem;
-        line-height: 2.4rem;
+        font-size: size(14);
+        line-height: size(24);
       }
 
       &:hover {
