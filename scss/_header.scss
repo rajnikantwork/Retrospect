@@ -1,280 +1,335 @@
 @import "./commonmixin.scss";
-.whats-new{
-    background:$secondary;
-    box-shadow: 4px 4px 80px 0px rgba(0, 0, 0, 0.04);
+
+.whats-new {
+    background: $secondary;
+    box-shadow: size(4) size(4) size(80) 0 rgba(0, 0, 0, 0.04);
     @include fpos(center, space-between);
     position: relative;
-    padding:12px 15px;
-    p{
-        margin-bottom:0;
-        font-size: 1.6rem;
+    padding: 12px 15px;
+
+    p {
+        margin-bottom: 0;
+        font-size: size(16);
         font-weight: 400;
-        line-height: 2.4rem;
+        line-height: 1.67;
         text-align: center;
-        color:$white-color;
+        color: $white-color;
         @include fpos(center, center);
+
         @media (max-width: 767px) {
-            padding-right:40px;
+            padding-right: size(40);
         }
+
         @media (max-width: 576px) {
-            font-size:1.4rem;
-            line-height:2rem;
+            font-size: 1.4rem;
+            line-height: 2rem;
         }
-        a{
-            width:32px;
-            height:32px;
-            margin-left:5px;
+
+        a {
+            width: 32px;
+            height: 32px;
+            margin-left: 5px;
             @include fpos(center, center);
             @include transition(0.3s ease-in);
             @include radius(2px);
+
             @media (max-width: 767px) {
                 position: absolute;
-                right:15px;
-                top:15px;
+                right: 15px;
+                top: 15px;
             }
-            &:hover{
-                border:solid 1px $white-color;
+
+            &:hover {
+                border: solid 1px $white-color;
             }
         }
     }
 }
-.main-header{
-    padding:16px 0;
+
+.main-header {
+    padding: 16px 0;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index:99;
-    background:$white-color;
+    z-index: 99;
+    background: $white-color;
     @include transition(0.3s ease-in);
-    .inner-container{
+
+    .inner-container {
         @include fpos(center, space-between);
-        .left-section{
-            .left-inner{
-                @include fpos(center,center);
-                .logo-wrap{
-                    margin-right:25px;
+
+        .left-section {
+            .left-inner {
+                @include fpos(center, center);
+
+                .logo-wrap {
+                    margin-right: 25px;
+
                     @media (max-width: 1200px) {
-                        margin-right:20px;
+                        margin-right: 20px;
                     }
                 }
-                .menu{
+
+                .menu {
                     @media (max-width: 991px) {
-                        width:100%;
+                        width: 100%;
                         position: absolute;
-                        left:0;
-                        top:80px;
-                        padding:16px 15px;
-                        display:none;
-                        background:$white-color;
+                        left: 0;
+                        top: 80px;
+                        padding: 16px 15px;
+                        display: none;
+                        background: $white-color;
                         border-radius: 0px 0px 24px 24px;
-                        border-top:solid 1px #e6e9f1;
+                        border-top: solid 1px #e6e9f1;
                     }
+
                     @media (max-width: 767px) {
                         border-radius: 0px 0px 20px 20px;
                     }
+
                     @media (max-width: 576px) {
                         border-radius: 0px 0px 15px 15px;
                     }
-                    .menu-main{
+
+                    .menu-main {
                         @include fpos(center, center);
-                        padding:0;
-                        margin:0;
+                        padding: 0;
+                        margin: 0;
+
                         @media (max-width: 991px) {
                             display: block;
                         }
-                        li{
-                            list-style:none;
-                            margin-right:40px;
+
+                        li {
+                            list-style: none;
+                            margin-right: 40px;
                             position: relative;
+
                             @media (max-width: 1200px) {
-                                margin-right:25px;
+                                margin-right: 25px;
                             }
-                            &.menu-item-has-children{
-                                &.hide-menu{
+
+                            &.menu-item-has-children {
+                                &.hide-menu {
                                     @media (max-width: 991px) {
-                                        display:none;
+                                        display: none;
                                     }
                                 }
                             }
+
                             @media (max-width: 991px) {
-                                margin-right:0px;
+                                margin-right: 0px;
                             }
-                            &:last-child{
-                                margin-right:0;
+
+                            &:last-child {
+                                margin-right: 0;
                             }
-                            a{
-                                font-size:1.6rem;
-                                line-height:2.4rem;
-                                color:$secondary;
-                                text-decoration:none;
+
+                            a {
+                                font-size: size(16);
+                                line-height: size(24);
+                                color: $secondary;
+                                text-decoration: none;
                                 @include transition(0.3s ease-in);
                                 position: relative;
+
                                 @media (max-width: 991px) {
-                                    width:100%;
-                                    padding:16px 0;
+                                    width: 100%;
+                                    padding: size(16) 0;
                                     @include fpos(center, flex-start);
                                 }
+
                                 @media (max-width: 991px) {
-                                    padding:12px 0;
+                                    padding: 12px 0;
                                 }
+
                                 @media (max-width: 576px) {
-                                    padding:8px 0;
+                                    padding: 8px 0;
                                 }
-                                &.parent-menu{
-                                    &:before{
-                                        width:16px;
-                                        height:16px;
-                                        position:absolute;
-                                        content:"";
-                                        right:-20px;
-                                        top:5px;
-                                        background:url("../images/dark-arrow-down.svg") no-repeat;
+
+                                &.parent-menu {
+                                    &:before {
+                                        width: 16px;
+                                        height: 16px;
+                                        position: absolute;
+                                        content: "";
+                                        right: -20px;
+                                        top: 5px;
+                                        background: url("../images/dark-arrow-down.svg") no-repeat;
                                         @include transition(0.3s ease-in);
+
                                         @media (max-width: 991px) {
-                                            right:0;
-                                            top:50%;
+                                            right: 0;
+                                            top: 50%;
                                             transform: translateY(-50%);
                                         }
                                     }
-                                    &.active{
+
+                                    &.active {
                                         @media (max-width: 991px) {
-                                            font-weight:700;
-                                            padding-left:20px;
-                                            color:$secondary;
+                                            font-weight: 700;
+                                            padding-left: 20px;
+                                            color: $secondary;
                                         }
-                                        &:before{
+
+                                        &:before {
                                             @media (max-width: 991px) {
-                                                right:auto;
-                                                left:0;
-                                                background:url("../images/dark-left-arrow.svg") no-repeat;
+                                                right: auto;
+                                                left: 0;
+                                                background: url("../images/dark-left-arrow.svg") no-repeat;
                                             }
+
                                             @media (max-width: 991px) {
-                                                right:0;
-                                                top:50%;
+                                                right: 0;
+                                                top: 50%;
                                                 transform: translateY(-50%);
                                             }
                                         }
                                     }
                                 }
                             }
-                            
-                            .sub-menu{
-                                padding-left:25px;
-                                padding-top:60px;
+
+                            .sub-menu {
+                                padding-left: 25px;
+                                padding-top: 60px;
                                 position: absolute;
                                 z-index: 500;
                                 @include transition(0.5s ease-in);
-                                opacity:0;
-                                visibility:hidden;
+                                opacity: 0;
+                                visibility: hidden;
+
                                 @media (max-width: 991px) {
-                                    opacity:1;
+                                    opacity: 1;
                                     visibility: visible;
-                                    display:none;
+                                    display: none;
                                     position: static;
-                                    padding-top:0;
-                                    padding-left:0;
-                                    transition: none!important;
+                                    padding-top: 0;
+                                    padding-left: 0;
+                                    transition: none !important;
                                 }
-                                .mega-menu-inner{
+
+                                .mega-menu-inner {
                                     width: 624px;
                                     height: auto;
                                     @include radius(24px);
                                     display: flex;
                                     flex-wrap: wrap;
-                                    background-color:$white-color;
-                                    box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3);
+                                    background-color: $white-color;
+                                    box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+
                                     @media (max-width: 1200px) {
                                         width: 524px;
                                         @include radius(20px);
                                     }
-                                    @media (max-width: 1024px) { 
-                                        width:424px;
+
+                                    @media (max-width: 1024px) {
+                                        width: 424px;
                                         @include radius(15px);
                                     }
+
                                     @media (max-width: 991px) {
-                                        width:100%;
-                                        box-shadow:none;
+                                        width: 100%;
+                                        box-shadow: none;
                                     }
-                                    .sub-menu-left-item{
-                                        width:calc(100% - 280px);
+
+                                    .sub-menu-left-item {
+                                        width: calc(100% - 280px);
                                         padding: 32px;
-                                        border-top-left-radius:24px;
-                                        border-bottom-left-radius:24px;
+                                        border-top-left-radius: 24px;
+                                        border-bottom-left-radius: 24px;
+
                                         @media (max-width: 1200px) {
-                                            width:calc(100% - 240px);
-                                            padding:20px;
-                                            border-top-right-radius:20px;
-                                            border-bottom-right-radius:20px;
+                                            width: calc(100% - 240px);
+                                            padding: 20px;
+                                            border-top-right-radius: 20px;
+                                            border-bottom-right-radius: 20px;
                                         }
+
                                         @media (max-width: 1024px) {
-                                            width:calc(100% - 200px);
-                                            padding:15px;
-                                            border-top-right-radius:15px;
-                                            border-bottom-right-radius:15px;
+                                            width: calc(100% - 200px);
+                                            padding: 15px;
+                                            border-top-right-radius: 15px;
+                                            border-bottom-right-radius: 15px;
                                         }
+
                                         @media (max-width: 991px) {
-                                            width:100%;
-                                            padding:0;
-                                            border-top-left-radius:0;
-                                            border-bottom-left-radius:0;
+                                            width: 100%;
+                                            padding: 0;
+                                            border-top-left-radius: 0;
+                                            border-bottom-left-radius: 0;
                                         }
-                                        ul{
-                                            padding:0;
-                                            margin:0;
-                                            li{
-                                                margin-right:0;
-                                                margin-bottom:24px;
+
+                                        ul {
+                                            padding: 0;
+                                            margin: 0;
+
+                                            li {
+                                                margin-right: 0;
+                                                margin-bottom: 24px;
+
                                                 @media (max-width: 1200px) {
-                                                    margin-bottom:20px;
+                                                    margin-bottom: 20px;
                                                 }
+
                                                 @media (max-width: 1024px) {
-                                                    margin-bottom:15px;
+                                                    margin-bottom: 15px;
                                                 }
+
                                                 @media (max-width: 991px) {
-                                                    margin-bottom:0;
+                                                    margin-bottom: 0;
                                                 }
-                                                a{
+
+                                                a {
                                                     display: flex;
                                                     align-items: center;
                                                     position: relative;
+
                                                     @media (max-width: 1200px) {
-                                                        font-size:1.5rem;
-                                                        line-height:2.2rem;
+                                                        font-size: 1.5rem;
+                                                        line-height: 2.2rem;
                                                     }
+
                                                     @media (max-width: 1024px) {
-                                                        font-size:1.4rem;
-                                                        line-height:2rem;
+                                                        font-size: 1.4rem;
+                                                        line-height: 2rem;
                                                     }
+
                                                     @media (max-width: 991px) {
-                                                        font-size:1.6rem;
-                                                        line-height:2.4rem;
+                                                        font-size: 1.6rem;
+                                                        line-height: 2.4rem;
                                                     }
-                                                    img{
-                                                        margin-right:16px;
+
+                                                    img {
+                                                        margin-right: 16px;
+
                                                         @media (max-width: 1200px) {
-                                                            margin-right:12px;
+                                                            margin-right: 12px;
                                                         }
+
                                                         @media (max-width: 1024px) {
-                                                            margin-right:10px;
+                                                            margin-right: 10px;
                                                         }
                                                     }
-                                                    &:after{
-                                                        width:17px;
-                                                        height:16px;
-                                                        background:url("../images/arrow-right.svg") no-repeat;
-                                                        background-size:100%;
-                                                        position:absolute;
-                                                        content:"";
-                                                        right:0;
-                                                        top:50%;
+
+                                                    &:after {
+                                                        width: 17px;
+                                                        height: 16px;
+                                                        background: url("../images/arrow-right.svg") no-repeat;
+                                                        background-size: 100%;
+                                                        position: absolute;
+                                                        content: "";
+                                                        right: 0;
+                                                        top: 50%;
                                                         transform: translateY(-50%);
                                                         @include transition(0.3s ease-in);
                                                     }
-                                                    &:hover{
-                                                        &:after{
+
+                                                    &:hover {
+                                                        &:after {
                                                             right: -10px;
+
                                                             @media (max-width: 991px) {
-                                                                right:0;
+                                                                right: 0;
                                                             }
                                                         }
                                                     }
@@ -282,76 +337,89 @@
                                             }
                                         }
                                     }
-                                    .sub-menu-right-item{
+
+                                    .sub-menu-right-item {
                                         width: 280px;
-                                        height:inherit;
+                                        height: inherit;
                                         padding: 32px 32px 44px 32px;
-                                        background:#F7F8FA;
-                                        border-top-right-radius:24px;
-                                        border-bottom-right-radius:24px;
+                                        background: #F7F8FA;
+                                        border-top-right-radius: 24px;
+                                        border-bottom-right-radius: 24px;
+
                                         @media (max-width: 1200px) {
-                                            width:240px;
-                                            padding:20px;
-                                            border-top-right-radius:20px;
-                                            border-bottom-right-radius:20px;
+                                            width: 240px;
+                                            padding: 20px;
+                                            border-top-right-radius: 20px;
+                                            border-bottom-right-radius: 20px;
                                         }
+
                                         @media (max-width: 1024px) {
-                                            width:200px;
-                                            padding:15px;
-                                            border-top-right-radius:15px;
-                                            border-bottom-right-radius:15px;
+                                            width: 200px;
+                                            padding: 15px;
+                                            border-top-right-radius: 15px;
+                                            border-bottom-right-radius: 15px;
                                         }
+
                                         @media (max-width: 991px) {
-                                            display:none;
+                                            display: none;
                                         }
-                                        .sub-menu-right-inner{
-                                            height:100%;
+
+                                        .sub-menu-right-inner {
+                                            height: 100%;
                                             display: flex;
                                             flex-direction: column;
                                             justify-content: space-between;
-                                            .img-wrap{
-                                                width:216px;
-                                                height:216px;
+
+                                            .img-wrap {
+                                                width: 216px;
+                                                height: 216px;
                                                 display: flex;
                                                 align-items: center;
                                                 justify-content: center;
+
                                                 @media (max-width: 1200px) {
-                                                    width:160px;
-                                                    height:160px;
+                                                    width: 160px;
+                                                    height: 160px;
                                                 }
-                                                @media (max-width: 1024px) { 
-                                                    width:140px;
-                                                    height:140px;
+
+                                                @media (max-width: 1024px) {
+                                                    width: 140px;
+                                                    height: 140px;
                                                 }
                                             }
-                                            h3{
-                                                margin-bottom:16px;
-                                                color:#0B1621;
+
+                                            h3 {
+                                                margin-bottom: 16px;
+                                                color: #0B1621;
                                                 font-size: 1.8rem;
                                                 font-weight: 500;
                                                 line-height: 2.8rem;
+
                                                 @media (max-width: 1200px) {
-                                                    margin-bottom:12px;
+                                                    margin-bottom: 12px;
                                                     font-size: 1.6rem;
                                                     line-height: 2.4rem;
                                                 }
-                                                @media (max-width: 1024px) { 
-                                                    margin-bottom:10px;
+
+                                                @media (max-width: 1024px) {
+                                                    margin-bottom: 10px;
                                                     font-size: 1.4rem;
                                                     line-height: 2rem;
                                                 }
                                             }
 
-                                            p{
-                                                margin-bottom:0;
+                                            p {
+                                                margin-bottom: 0;
                                                 color: #55585C;
-                                                font-size: 1.6rem;
-                                                line-height: 2.4rem; /* 150% */
+                                                font-size: size(20);
+                                                line-height: size(36);
+
                                                 @media (max-width: 1200px) {
                                                     font-size: 1.5rem;
                                                     line-height: 2.2rem;
                                                 }
-                                                @media (max-width: 1024px) { 
+
+                                                @media (max-width: 1024px) {
                                                     font-size: 1.4rem;
                                                     line-height: 2rem;
                                                 }
@@ -359,71 +427,84 @@
                                         }
                                     }
                                 }
+
                                 // &.active{
                                 //     margin-top: 45px;
                                 //     visibility: visible;
                                 //     opacity: 1;
                                 // }
-                                
+
                             }
-                            &:hover{
-                                >a{
-                                   color:$primary;
-                                   &.parent-menu{
-                                        &.active{
-                                            &:before{
-                                                background:url("../images/dark-arrow-left.svg") no-repeat;
+
+                            &:hover {
+                                >a {
+                                    color: $primary;
+
+                                    &.parent-menu {
+                                        &.active {
+                                            &:before {
+                                                background: url("../images/dark-arrow-left.svg") no-repeat;
                                             }
                                         }
-                                        &:before{
-                                            width:16px;
-                                            height:16px;
-                                            position:absolute;
-                                            content:"";
-                                            right:-20px;
-                                            top:5px;
-                                            background:url("../images/red-arrow-up.svg") no-repeat;
+
+                                        &:before {
+                                            width: 16px;
+                                            height: 16px;
+                                            position: absolute;
+                                            content: "";
+                                            right: -20px;
+                                            top: 5px;
+                                            background: url("../images/red-arrow-up.svg") no-repeat;
+
                                             @media (max-width: 991px) {
-                                                right:-10px;
-                                                top:50%;
+                                                right: -10px;
+                                                top: 50%;
                                                 transform: translateY(-50%);
                                             }
                                         }
                                     }
                                 }
-                                .sub-menu{
-                                    padding-top:45px;
-                                    opacity:1;
-                                    visibility:visible;
+
+                                .sub-menu {
+                                    padding-top: 45px;
+                                    opacity: 1;
+                                    visibility: visible;
+
                                     @media (max-width: 991px) {
-                                        padding-top:0;
+                                        padding-top: 0;
                                     }
                                 }
                             }
                         }
                     }
-                    .sign-in-btn-wrap{
+
+                    .sign-in-btn-wrap {
                         display: none;
+
                         @media (max-width: 991px) {
-                            button{
-                                width:100%;
+                            button {
+                                width: 100%;
                             }
+
                             display: block;
                         }
                     }
                 }
             }
         }
-        .right-section{
-            .right-inner{
+
+        .right-section {
+            .right-inner {
                 @include fpos(center, center);
-                .search-wrap{
-                    width:48px;
-                    height:48px;
-                    @include radius(12px);   
+
+                .search-wrap {
+                    width: 48px;
+                    height: 48px;
+                    @include radius(12px);
                     @include fpos(center, center);
                     overflow: hidden;
-                    &:before{
+
+                    &:before {
                         border-radius: 50%;
                         background-color: rgba(255, 255, 255, 0.4);
                         position: absolute;
@@ -437,50 +518,57 @@
                         transform-origin: 0% 0%;
                         -webkit-transform-origin: 0% 0%;
                     }
-                    &:hover{
+
+                    &:hover {
                         -webkit-animation: btnscale .5s linear 1;
                         animation: btnscale .5s linear 1;
                         -webkit-animation-delay: .1s;
                         animation-delay: .1s;
-                        &:before{
+
+                        &:before {
                             animation-name: ripple;
                             animation-timing-function: linear;
                             animation-duration: 0.5s;
                         }
                     }
-                    a{
-                        width:100%;
-                        height:100%;
-                        background:#EEF1F5;
-                        @include radius(12px);   
+
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        background: #EEF1F5;
+                        @include radius(12px);
                         @include fpos(center, center);
                     }
                 }
-                .contact-wrap{
-                    width:98px;
-                    height:48px;
-                    margin-left:15px;
-                    background:#EEF1F5;
-                    @include radius(12px);   
+
+                .contact-wrap {
+                    width: 98px;
+                    height: 48px;
+                    margin-left: 15px;
+                    background: #EEF1F5;
+                    @include radius(12px);
                     @include fpos(center, center);
                     position: relative;
-                    &:before{
-                        width:1.5px;
-                        height:100%;
-                        background:#DDE2EC;
+
+                    &:before {
+                        width: 1.5px;
+                        height: 100%;
+                        background: #DDE2EC;
                         position: absolute;
-                        content:"";
-                        left:50%;
-                        top:0;
+                        content: "";
+                        left: 50%;
+                        top: 0;
                         transform: translateX(-50%);
                     }
-                    a{
-                        width:50%;
-                        height:100%;
+
+                    a {
+                        width: 50%;
+                        height: 100%;
                         @include fpos(center, center);
                         position: relative;
                         overflow: hidden;
-                        &:before{
+
+                        &:before {
                             border-radius: 50%;
                             background-color: rgba(255, 255, 255, 0.4);
                             position: absolute;
@@ -494,12 +582,14 @@
                             transform-origin: 0% 0%;
                             -webkit-transform-origin: 0% 0%;
                         }
-                        &:hover{
+
+                        &:hover {
                             -webkit-animation: btnscale .5s linear 1;
                             animation: btnscale .5s linear 1;
                             -webkit-animation-delay: .1s;
                             animation-delay: .1s;
-                            &:before{
+
+                            &:before {
                                 animation-name: ripple;
                                 animation-timing-function: linear;
                                 animation-duration: 0.5s;
@@ -507,45 +597,55 @@
                         }
                     }
                 }
-                .action-btn-wrap{
+
+                .action-btn-wrap {
                     @include fpos(center, center);
-                    .primary-btn,.outline-btn{
-                        height:48px;
-                        margin-left:15px;
+
+                    .primary-btn,
+                    .outline-btn {
+                        height: 48px;
+                        margin-left: 15px;
                     }
+
                     @media (max-width: 1200px) {
-                        button{
-                            &.outline-btn{
-                                padding:12px 15px;
+                        button {
+                            &.outline-btn {
+                                padding: 12px 15px;
                             }
-                            &.primary-btn{
-                                padding:12px 15px;
+
+                            &.primary-btn {
+                                padding: 12px 15px;
                             }
                         }
                     }
+
                     @media (max-width: 991px) {
-                        display:none;
+                        display: none;
                     }
-                    
+
                 }
-                .hamburger-menu-wrap{
-                    margin-left:20px;
-                    display:none;
+
+                .hamburger-menu-wrap {
+                    margin-left: 20px;
+                    display: none;
+
                     @media (max-width: 991px) {
                         display: block;
                     }
-                    .hamburger-ic{
-                        width:48px;
-                        height:48px;
+
+                    .hamburger-ic {
+                        width: 48px;
+                        height: 48px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        background:url("../images/humberger-menu.svg") no-repeat;
-                        background-size:100% 100%;
-                        font-size:0;
+                        background: url("../images/humberger-menu.svg") no-repeat;
+                        background-size: 100% 100%;
+                        font-size: 0;
                         @include transition(0.3s ease-in);
-                        &.active{
-                            background:url("../images/humberger-close.svg") no-repeat;
+
+                        &.active {
+                            background: url("../images/humberger-close.svg") no-repeat;
                         }
                     }
                 }

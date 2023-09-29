@@ -103,14 +103,13 @@ section {
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
   line-height: 1;
   font-weight: 400;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 
 ol,
@@ -176,7 +175,7 @@ button {
     opacity: 0;
   }
 }
-.primary-btn {
+.bbtn {
   padding: 12px 24px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -185,15 +184,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px #CC2127;
-  background-color: #CC2127;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #fff;
   position: relative;
   overflow: hidden;
 }
-.primary-btn:before {
+.bbtn:before {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.376);
   position: absolute;
@@ -207,51 +203,30 @@ button {
   transform-origin: 0% 0%;
   -webkit-transform-origin: 0% 0%;
 }
-.primary-btn:hover {
+.bbtn.primary-btn {
+  border: solid 1px #CC2127;
+  background-color: #CC2127;
+  color: #fff;
+}
+.bbtn.primary-btn:hover {
   animation: btnscale 0.5s linear 1;
   animation-delay: 0.1s;
 }
-.primary-btn:hover:before {
+.bbtn.primary-btn:hover:before {
   animation-name: ripple;
   animation-timing-function: linear;
   animation-duration: 0.5s;
 }
-
-.outline-btn {
-  padding: 12px 24px;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.bbtn.outline-btn {
   background-color: #EEF1F5;
   border: solid 1px #CC2127;
-  font-size: 1.6rem;
-  font-weight: 600;
   color: #CC2127;
-  overflow: hidden;
 }
-.outline-btn:before {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  content: "";
-  width: 300px;
-  height: 300px;
-  left: 50%;
-  top: 50%;
-  transform: scale(0) translate(-50%, -50%);
-  -webkit-transform: scale(0) translate(-50%, -50%);
-  transform-origin: 0% 0%;
-  -webkit-transform-origin: 0% 0%;
-}
-.outline-btn:hover {
+.bbtn.outline-btn:hover {
   animation: btnscale 0.5s linear 1;
   animation-delay: 0.1s;
 }
-.outline-btn:hover:before {
+.bbtn.outline-btn:hover:before {
   animation-name: ripple;
   animation-timing-function: linear;
   animation-duration: 0.5s;
@@ -265,7 +240,7 @@ img {
 
 .whats-new {
   background: #0B1621;
-  box-shadow: 4px 4px 80px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0.25rem 0.25rem 5rem 0 rgba(0, 0, 0, 0.04);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -274,9 +249,9 @@ img {
 }
 .whats-new p {
   margin-bottom: 0;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 2.4rem;
+  line-height: 1.67;
   text-align: center;
   color: #fff;
   display: flex;
@@ -285,7 +260,7 @@ img {
 }
 @media (max-width: 767px) {
   .whats-new p {
-    padding-right: 40px;
+    padding-right: 2.5rem;
   }
 }
 @media (max-width: 576px) {
@@ -403,8 +378,8 @@ img {
   margin-right: 0;
 }
 .main-header .inner-container .left-section .left-inner .menu .menu-main li a {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #0B1621;
   text-decoration: none;
   transition: 0.3s ease-in;
@@ -413,7 +388,7 @@ img {
 @media (max-width: 991px) {
   .main-header .inner-container .left-section .left-inner .menu .menu-main li a {
     width: 100%;
-    padding: 16px 0;
+    padding: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -710,8 +685,8 @@ img {
 .main-header .inner-container .left-section .left-inner .menu .menu-main li .sub-menu .mega-menu-inner .sub-menu-right-item .sub-menu-right-inner p {
   margin-bottom: 0;
   color: #55585C;
-  font-size: 1.6rem;
-  line-height: 2.4rem; /* 150% */
+  font-size: 1.25rem;
+  line-height: 2.25rem;
 }
 @media (max-width: 1200px) {
   .main-header .inner-container .left-section .left-inner .menu .menu-main li .sub-menu .mega-menu-inner .sub-menu-right-item .sub-menu-right-inner p {
@@ -881,7 +856,8 @@ img {
   align-items: center;
   justify-content: center;
 }
-.main-header .inner-container .right-section .right-inner .action-btn-wrap .primary-btn, .main-header .inner-container .right-section .right-inner .action-btn-wrap .outline-btn {
+.main-header .inner-container .right-section .right-inner .action-btn-wrap .primary-btn,
+.main-header .inner-container .right-section .right-inner .action-btn-wrap .outline-btn {
   height: 48px;
   margin-left: 15px;
 }
@@ -2546,11 +2522,11 @@ img {
 }
 
 .data-card {
-  height: 282px;
-  border-radius: 12px;
+  height: 100%;
+  border-radius: 0.75rem;
   background: #fff;
-  box-shadow: 4px 4px 80px 0px rgba(0, 0, 0, 0.04);
-  padding: 32px;
+  box-shadow: 0.25rem 0.25rem 5rem 0 rgba(0, 0, 0, 0.04);
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2559,8 +2535,7 @@ img {
 }
 @media (max-width: 767px) {
   .data-card {
-    height: 256px;
-    padding: 16px;
+    padding: 1rem;
   }
 }
 .data-card:hover {
@@ -2570,12 +2545,11 @@ img {
   transform: scale(1.03);
 }
 .data-card .data-service {
-  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
   color: #0B1621;
-  font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.8rem;
 }
@@ -2591,28 +2565,9 @@ img {
 }
 .data-card .data-service .title {
   margin-bottom: 0;
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 2.8rem;
-  height: auto !important;
-  max-height: 56px !important;
-  min-height: initial !important;
-  display: block !important;
-  display: -webkit-box !important;
-  -webkit-line-clamp: 2;
-  -moz-line-clamp: 2;
-  -ms-line-clamp: 2;
-  -o-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  -ms-box-orient: vertical;
-  -o-box-orient: vertical;
-  box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  height: 56px;
-  min-height: 56px;
 }
 @media (max-width: 767px) {
   .data-card .data-service .title {

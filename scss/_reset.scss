@@ -106,14 +106,13 @@ section {
 }
 
 html {
-	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
 
 body {
 	line-height: 1;
 	font-weight: 400;
-	font-family: $font-family;
+	font-family: $font-family !important;
 }
 
 ol,
@@ -200,17 +199,15 @@ button {
 	}
 }
 
-.primary-btn {
+.bbtn {
 	padding: 12px 24px;
 	@include radius(12px);
 	@include fpos(center, center);
-	border: solid 1px $primary;
-	background-color: $primary;
-	font-size: 1.6rem;
+	font-size: size(16);
 	font-weight: 600;
-	color: $white-color;
 	position: relative;
 	overflow: hidden;
+
 
 	&:before {
 		border-radius: 50%;
@@ -227,59 +224,47 @@ button {
 		-webkit-transform-origin: 0% 0%;
 	}
 
-	&:hover {
-		-webkit-animation: btnscale .5s linear 1;
-		animation: btnscale .5s linear 1;
-		-webkit-animation-delay: .1s;
-		animation-delay: .1s;
+	&.primary-btn {
+		border: solid 1px $primary;
+		background-color: $primary;
+		color: $white-color;
 
-		&:before {
-			animation-name: ripple;
-			animation-timing-function: linear;
-			animation-duration: 0.5s;
+		&:hover {
+			-webkit-animation: btnscale .5s linear 1;
+			animation: btnscale .5s linear 1;
+			-webkit-animation-delay: .1s;
+			animation-delay: .1s;
+
+			&:before {
+				animation-name: ripple;
+				animation-timing-function: linear;
+				animation-duration: 0.5s;
+			}
 		}
 	}
-}
 
-.outline-btn {
-	padding: 12px 24px;
-	@include radius(12px);
-	@include fpos(center, center);
-	background-color: #EEF1F5;
-	border: solid 1px $primary;
-	font-size: 1.6rem;
-	font-weight: 600;
-	color: $primary;
-	overflow: hidden;
+	&.outline-btn {
+		background-color: #EEF1F5;
+		border: solid 1px $primary;
+		color: $primary;
 
-	&:before {
-		border-radius: 50%;
-		background-color: rgba(255, 255, 255, 0.4);
-		position: absolute;
-		content: '';
-		width: 300px;
-		height: 300px;
-		left: 50%;
-		top: 50%;
-		transform: scale(0) translate(-50%, -50%);
-		-webkit-transform: scale(0) translate(-50%, -50%);
-		transform-origin: 0% 0%;
-		-webkit-transform-origin: 0% 0%;
-	}
+		&:hover {
+			-webkit-animation: btnscale .5s linear 1;
+			animation: btnscale .5s linear 1;
+			-webkit-animation-delay: .1s;
+			animation-delay: .1s;
 
-	&:hover {
-		-webkit-animation: btnscale .5s linear 1;
-		animation: btnscale .5s linear 1;
-		-webkit-animation-delay: .1s;
-		animation-delay: .1s;
-
-		&:before {
-			animation-name: ripple;
-			animation-timing-function: linear;
-			animation-duration: 0.5s;
+			&:before {
+				animation-name: ripple;
+				animation-timing-function: linear;
+				animation-duration: 0.5s;
+			}
 		}
 	}
+
 }
+
+
 
 img {
 	max-width: 100%;
