@@ -17,12 +17,14 @@
     align-items: $a-item;
     justify-content: $j-align;
 }
+
 @mixin radius($radius) {
     border-radius: $radius;
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
 }
+
 @mixin transition($x...) {
     -webkit-transition: $x;
     -moz-transition: $x;
@@ -30,6 +32,7 @@
     -o-transition: $x;
     transition: $x;
 }
+
 @mixin text-truncate($line, $height: "") {
     display: block !important;
     display: -webkit-box !important;
@@ -41,6 +44,7 @@
     height: $height;
     min-height: $height;
 }
+
 @mixin line-clamp($line) {
     -webkit-line-clamp: $line;
     -moz-line-clamp: $line;
@@ -48,6 +52,7 @@
     -o-line-clamp: $line;
     line-clamp: $line;
 }
+
 @mixin box-orient($value: vertical) {
     -webkit-box-orient: $value;
     -moz-box-orient: $value;

@@ -1,18 +1,87 @@
 @import "./commonmixin.scss";
 @import "../scss/var";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -20,102 +89,130 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
-html{
-	font-size:62.5%;
+
+html {
+	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
+
 body {
 	line-height: 1;
 	font-weight: 400;
-	font-family:$font-family;
+	font-family: $font-family;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-*{
+
+* {
 	box-sizing: border-box;
 }
-a,button{
+
+a,
+button {
 	cursor: pointer;
 }
+
 @keyframes ripple {
-    from {
-        transform: scale(0) translate(-50%, -50%);
-        opacity: 1;
-    }
+	from {
+		transform: scale(0) translate(-50%, -50%);
+		opacity: 1;
+	}
 
-    to {
-        transform: scale(1) translate(-50%, -50%);
-        opacity: 0;
-    }
+	to {
+		transform: scale(1) translate(-50%, -50%);
+		opacity: 0;
+	}
 }
+
 @-webkit-keyframes btnscale {
-    0% {
-        transform: scale(1)
-    }
+	0% {
+		transform: scale(1)
+	}
 
-    15% {
-        transform: scale(1.05)
-    }
+	15% {
+		transform: scale(1.05)
+	}
 
-    to {
-        transform: scale(1)
-    }
+	to {
+		transform: scale(1)
+	}
 }
 
 @keyframes btnscale {
-    0% {
-        transform: scale(1)
-    }
+	0% {
+		transform: scale(1)
+	}
 
-    15% {
-        transform: scale(1.05)
-    }
+	15% {
+		transform: scale(1.05)
+	}
 
-    to {
-        transform: scale(1)
-    }
+	to {
+		transform: scale(1)
+	}
 }
+
 @keyframes ripple {
-    from {
-        transform: scale(0) translate(-50%, -50%);
-        opacity: 1;
-    }
+	from {
+		transform: scale(0) translate(-50%, -50%);
+		opacity: 1;
+	}
 
-    to {
-        transform: scale(1) translate(-50%, -50%);
-        opacity: 0;
-    }
+	to {
+		transform: scale(1) translate(-50%, -50%);
+		opacity: 0;
+	}
 }
-.primary-btn{
+
+.primary-btn {
 	padding: 12px 24px;
 	@include radius(12px);
 	@include fpos(center, center);
-	border:solid 1px $primary;
-	background-color:$primary;
-	font-size:1.6rem;
-	font-weight:600;
-	color:$white-color;
+	border: solid 1px $primary;
+	background-color: $primary;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: $white-color;
 	position: relative;
 	overflow: hidden;
-	&:before{
+
+	&:before {
 		border-radius: 50%;
 		background-color: rgba(255, 255, 255, 0.376);
 		position: absolute;
@@ -129,29 +226,33 @@ a,button{
 		transform-origin: 0% 0%;
 		-webkit-transform-origin: 0% 0%;
 	}
-	&:hover{
+
+	&:hover {
 		-webkit-animation: btnscale .5s linear 1;
 		animation: btnscale .5s linear 1;
 		-webkit-animation-delay: .1s;
 		animation-delay: .1s;
-		&:before{
+
+		&:before {
 			animation-name: ripple;
 			animation-timing-function: linear;
 			animation-duration: 0.5s;
 		}
 	}
 }
-.outline-btn{
+
+.outline-btn {
 	padding: 12px 24px;
 	@include radius(12px);
 	@include fpos(center, center);
-	background-color:#EEF1F5;
-	border:solid 1px $primary;
-	font-size:1.6rem;
-	font-weight:600;
-	color:$primary;
+	background-color: #EEF1F5;
+	border: solid 1px $primary;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: $primary;
 	overflow: hidden;
-	&:before{
+
+	&:before {
 		border-radius: 50%;
 		background-color: rgba(255, 255, 255, 0.4);
 		position: absolute;
@@ -165,20 +266,23 @@ a,button{
 		transform-origin: 0% 0%;
 		-webkit-transform-origin: 0% 0%;
 	}
-	&:hover{
+
+	&:hover {
 		-webkit-animation: btnscale .5s linear 1;
 		animation: btnscale .5s linear 1;
 		-webkit-animation-delay: .1s;
 		animation-delay: .1s;
-		&:before{
+
+		&:before {
 			animation-name: ripple;
 			animation-timing-function: linear;
 			animation-duration: 0.5s;
 		}
 	}
 }
-img{
-	max-width:100%;
+
+img {
+	max-width: 100%;
 	height: auto;
 	display: block;
 }
