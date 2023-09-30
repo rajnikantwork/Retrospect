@@ -1,0 +1,57 @@
+@import "./commonmixin.scss";
+
+
+.reg_inp {
+    width: size(500);
+    max-width: 100%;
+    margin: size(40) auto size(15);
+    display: flex;
+    justify-content: space-between;
+
+    input[type="text"] {
+        border-radius: size(12);
+        background: #F7F8FA;
+        border: 0;
+        width: calc(100% - 110px);
+        padding: size(13) size(20);
+
+        @media (max-width:767px) {
+            font-size: size(14);
+        }
+    }
+}
+
+.lcn_error {
+    justify-content: center;
+    gap: 10px;
+}
+
+.reg_success_box {
+    @include flexbox;
+    border-radius: size(24);
+    background: linear-gradient(90deg, rgba(55, 110, 166, 0.10) 0%, rgba(204, 33, 39, 0.10) 100%);
+    width: size(616);
+    max-width: 100%;
+    margin: 0 auto size(30);
+    align-items: center;
+    padding: size(20) size(30);
+    gap: size(15);
+
+    @media (max-width:767px) {
+        gap: size(10);
+        padding: size(20) size(20);
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: size(24);
+        background: var(--Gradient, linear-gradient(90deg, #376EA6 0%, #CC2127 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media (max-width:767px) {
+            font-size: size(16);
+        }
+    }
+}

@@ -207,6 +207,7 @@ button {
 	font-weight: 600;
 	position: relative;
 	overflow: hidden;
+	gap: size(10);
 
 	@media (max-width: 1024px) {
 		font-size: size(14);
@@ -256,6 +257,7 @@ button {
 		animation: btnscale .5s linear 1;
 		-webkit-animation-delay: .1s;
 		animation-delay: .1s;
+		text-decoration: none;
 
 		&:before {
 			animation-name: ripple;
