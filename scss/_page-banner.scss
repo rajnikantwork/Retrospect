@@ -95,3 +95,46 @@
         }
     }
 }
+
+.internal_page_banner {
+    background-color: $secondary;
+    padding: size(120) size(20);
+    @include flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 1024px) {
+        padding: size(60) size(20);
+        height: auto;
+    }
+
+
+    h1 {
+        color: $white-color;
+        font-size: size(48);
+        line-height: size(56);
+
+        @media (max-width: 1024px) {
+            font-size: size(36);
+            line-height: size(42);
+        }
+
+        @media (max-width: 767px) {
+            font-size: size(28);
+            line-height: size(38);
+        }
+
+
+    }
+}
+
+p {
+    font-size: size(16);
+    line-height: size(26);
+
+    @media (max-width: 767px) {
+        font-size: size(14);
+        line-height: size(24);
+    }
+}

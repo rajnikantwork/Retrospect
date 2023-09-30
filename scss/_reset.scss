@@ -207,6 +207,7 @@ button {
 	font-weight: 600;
 	position: relative;
 	overflow: hidden;
+
 	@media (max-width: 1024px) {
 		font-size: size(14);
 	}
@@ -272,4 +273,146 @@ img {
 	max-width: 100%;
 	height: auto;
 	display: block;
+}
+
+
+.common_padding {
+	padding-top: 125px;
+	padding-bottom: 125px;
+
+	@media (max-width: 1024px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	@media (max-width: 676px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+.heading {
+	color: $secondary;
+	font-size: size(40);
+	font-weight: 500;
+	line-height: size(48);
+
+	@media (max-width: 1024px) {
+		font-size: size(32);
+		line-height: size(40);
+	}
+
+	@media (max-width: 767px) {
+		font-size: size(24);
+		line-height: size(36);
+	}
+}
+
+.bg_white {
+	background-color: $white-color;
+}
+
+.bg_gray {
+	background-color: #F7F8FA;
+}
+
+.card_txt {
+	border-radius: size(12);
+	background: $white-color;
+	box-shadow: size(4) size(4) size(80) 0 rgba(0, 0, 0, 0.04);
+	padding: size(30);
+	height: 100%;
+	margin-bottom: size(20);
+
+	@media (max-width: 767px) {
+		height: auto;
+	}
+
+	&.wbg {
+		background: linear-gradient(119deg, #CC2127 -60.67%, rgba(204, 33, 39, 0.00) 32.27%), #FFF;
+	}
+
+	.head {
+		color: #383131;
+		font-size: size(32);
+		font-weight: 500;
+		line-height: size(40);
+		margin-bottom: size(15);
+
+		@media (max-width: 767px) {
+			font-size: size(24);
+			line-height: size(36);
+		}
+	}
+
+	p {
+		color: #0B1621;
+		font-weight: 400;
+		font-size: size(16);
+		line-height: size(24);
+		margin-bottom: 0;
+
+		@media (max-width: 767px) {
+			font-size: size(14);
+		}
+	}
+}
+
+.max-wdt-710 {
+	width: 710px;
+	max-width: 100%;
+}
+
+.table_responsive {
+	overflow-x: auto;
+}
+
+.tb_wrap {
+	width: 100%;
+	min-width: 600px;
+	border: 1px solid #ddd;
+	font-size: size(16);
+	line-height: size(24);
+
+	@media (max-width: 767px) {
+		font-size: size(14);
+	}
+
+	&.first_bd {
+		td {
+			&:first-child {
+				font-weight: 600;
+			}
+		}
+	}
+
+	td,
+	th {
+		border: 1px solid #ddd;
+		padding: 10px;
+	}
+
+	th {
+		font-weight: 600;
+	}
+}
+
+.para_pointer {
+	width: 610px;
+	max-width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+
+	@media (max-width: 767px) {
+		flex-wrap: wrap;
+	}
+
+	p {
+		@media (max-width: 767px) {
+			font-size: size(14);
+			width: 50%;
+			text-align: center;
+		}
+	}
+
 }
