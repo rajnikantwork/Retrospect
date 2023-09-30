@@ -45,17 +45,6 @@ $(window).load(function() {
         slidesToShow: 2,
         slidesToScroll: 2,
       });
-    // $(".menu-item-has-children a").on("click", function(){
-    //     $(".menu-item-has-children a").next(".sub-menu").removeClass("active");
-    //     $(".menu-item-has-children a").removeClass("active");
-    //     $(this).next(".sub-menu").toggleClass("active");
-    //     $(this).toggleClass("active");
-    // });
-    // $(document).on("click", function (e) {
-    //     if ($(e.target).is(".menu-item-has-children a") === false) {
-    //         $(".menu-item-has-children a").next(".sub-menu").removeClass("active");
-    //     }
-    // });
     $(".hamburger-ic").on("click", function() {
         $(this).toggleClass("active");
         $(".menu").slideToggle();
