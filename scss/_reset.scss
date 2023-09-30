@@ -393,6 +393,31 @@ img {
 	th {
 		font-weight: 600;
 	}
+
+	&.contact_tbl {
+		th {
+			text-align: center;
+		}
+
+		td {
+			&:first-child {
+				font-weight: 400;
+				text-align: left;
+			}
+		}
+	}
+
+	&.contact_tbl {
+		td {
+			text-align: center;
+
+			.tm {
+				margin: 0;
+				text-decoration: underline;
+			}
+		}
+
+	}
 }
 
 .para_pointer {
@@ -421,6 +446,8 @@ img {
 	padding: size(65);
 	color: $white-color;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
 
 	@media (max-width: 767px) {
 		padding: size(30);
@@ -462,6 +489,26 @@ img {
 			@media (max-width: 767px) {
 				font-size: size(14);
 			}
+		}
+	}
+
+	.cnt_icons {
+		margin: -65px -80px -120px -50px;
+
+		@media (max-width: 1024px) {
+			margin: -65px -80px -190px -150px;
+		}
+
+		@media (max-width: 800px) {
+			margin: -65px -140px -130px -330px;
+		}
+
+		@media (max-width: 676px) {
+			margin: 0;
+			position: absolute;
+			right: -170px;
+			width: 350px;
+			top: 0;
 		}
 	}
 }
