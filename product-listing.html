@@ -350,7 +350,1412 @@
 				</div>
 			</div>
 		</section>
+		<div class="tabs-section">
+			<div class="tabs-wrapper">
+				<div class="tab-header">
+					<div class="container">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="windows-tab" data-bs-toggle="tab" data-bs-target="#windows" type="button" role="tab" aria-controls="home" aria-selected="true">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.33437 18.521L10.7114 19.538V12.498H3.33337L3.33437 18.521ZM11.5224 4.354V11.59H21.3344V3L11.5224 4.354Z" fill="#CC2127"/>
+										<path d="M10.7114 4.46313L3.33437 5.47913L3.33337 5.48013V11.5901H10.7114V4.46313Z" fill="#CC2127"/>
+										<path d="M21.3344 21.0001L11.5224 19.6461V12.4981H21.3344V21.0001Z" fill="#CC2127"/>
+									</svg>										
+									Windows
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="mac-tab" data-bs-toggle="tab" data-bs-target="#mac" type="button" role="tab" aria-controls="profile" aria-selected="false">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.0001 16.0131C20.5079 17.134 20.2724 17.6352 19.6402 18.6258C18.757 20.0092 17.5099 21.7354 15.9681 21.7473C14.5967 21.7591 14.2427 20.827 12.3815 20.8423C10.5204 20.8516 10.1327 21.7642 8.75961 21.7498C7.21781 21.7354 6.03739 20.1802 5.15331 18.7994C2.68133 14.9261 2.42039 10.3865 3.94819 7.97105C5.02901 6.25833 6.73955 5.25254 8.34555 5.25254C9.98119 5.25254 11.0093 6.17705 12.3618 6.17705C13.6739 6.17705 14.4732 5.25 16.3649 5.25C17.7955 5.25 19.3085 6.05175 20.3893 7.43513C16.853 9.42808 17.4276 14.623 21.0001 16.0131Z" fill="#0B1621"/>
+										<path d="M16.4595 0C16.6559 1.32389 16.1145 2.62206 15.4006 3.54209C14.6371 4.52901 13.322 5.28956 12.0513 5.24841C11.8182 3.98282 12.416 2.67436 13.1367 1.79377C13.9326 0.826575 15.2947 0.0797421 16.4595 0Z" fill="#0B1621"/>
+									</svg>										
+									Mac
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="virtual-tab" data-bs-toggle="tab" data-bs-target="#virtual" type="button" role="tab" aria-controls="messages" aria-selected="false">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.3567 2H7.97675C4.33675 2 2.16675 4.17 2.16675 7.81V16.18C2.16675 19.83 4.33675 22 7.97675 22H16.3467C19.9867 22 22.1567 19.83 22.1567 16.19V7.81C22.1667 4.17 19.9967 2 16.3567 ZM16.3667 18.25C15.2367 18.25 14.3167 17.33 14.3167 16.2C14.3167 15.54 14.6367 14.96 15.1267 14.58C14.7067 13.48 13.6567 12.72 12.4767 12.76L10.4167 12.77H10.4067C9.79675 12.77 9.21675 12.59 8.72675 12.28V14.3C9.48675 14.6 10.0267 15.34 10.0267 16.2C10.0267 17.33 9.10675 18.25 7.97675 18.25C6.84675 18.25 5.92675 17.33 5.92675 16.2C5.92675 15.33 6.46675 14.6 7.22675 14.3V9.95C6.46675 9.6 5.92675 8.84 5.92675 7.95C5.92675 6.74 6.91675 5.75 8.12675 5.75C9.33675 5.75 10.3267 6.74 10.3267 7.95C10.3267 8.93 9.67675 9.75 8.78675 10.04C8.98675 10.77 9.64675 11.28 10.4067 11.28C10.4067 11.28 10.4067 11.28 10.4167 11.28L12.4767 11.27C12.4867 11.27 12.4867 11.27 12.4967 11.27C14.3367 11.27 15.9867 12.44 16.5867 14.18C17.6167 14.29 18.4267 15.15 18.4267 16.21C18.4167 17.33 17.4967 18.25 16.3667 18.25Z" fill="#0B1621"/>
+									</svg>
+									Virtual
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="subscription-tab" data-bs-toggle="tab" data-bs-target="#subscription" type="button" role="tab" aria-controls="settings" aria-selected="false">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.3933 2H7.24325C4.81325 2 2.83325 3.98 2.83325 6.41V12.91V13.11C2.83325 15.55 4.81325 17.52 7.24325 17.52H11.0833C11.6333 17.52 12.0833 17.97 12.0833 18.52V19.49C12.0833 20.04 11.6333 20.49 11.0833 20.49H8.66325C8.25325 20.49 7.91325 20.83 7.91325 21.24C7.91325 21.65 8.24325 22 8.66325 22H17.0133C17.4233 22 17.7633 21.66 17.7633 21.25C17.7633 20.84 17.4233 20.5 17.0133 20.5H14.5933C14.0433 20.5 13.5933 20.05 13.5933 19.5V18.53C13.5933 17.98 14.0433 17.53 14.5933 17.53H18.4033C20.8433 17.53 22.8133 15.55 22.8133 13.12V12.92V6.42C22.8033 3.98 20.8233 2 18.3933 2Z" fill="#0B1621"/>
+									</svg>										
+									Subscription
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="cloud-tab" data-bs-toggle="tab" data-bs-target="#cloud" type="button" role="tab" aria-controls="settings" aria-selected="false">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.2 14.7799C18.34 15.5699 17.2 16.0099 16.03 15.9999H6.36997C2.29997 15.7099 2.28997 9.79993 6.36997 9.50993H6.40998C3.61998 1.74993 15.41 -1.34009 16.76 6.79991C20.53 7.27991 22.06 12.2899 19.2 14.7799Z" fill="#0B1621"/>
+										<path d="M18.75 21C18.75 21.41 18.41 21.75 18 21.75H14C13.95 21.75 13.91 21.75 13.86 21.73C13.57 22.47 12.84 23 12 23C11.16 23 10.43 22.47 10.14 21.73C10.09 21.75 10.05 21.75 10 21.75H6C5.59 21.75 5.25 21.41 5.25 21C5.25 20.59 5.59 20.25 6 20.25H10C10.05 20.25 10.09 20.25 10.14 20.27C10.34 19.75 10.75 19.34 11.27 19.14C11.25 19.09 11.25 19.05 11.25 19V16H12.75V19C12.75 19.05 12.75 19.09 12.73 19.14C13.25 19.34 13.66 19.75 13.86 20.27C13.91 20.25 13.95 20.25 14 20.25H18C18.41 20.25 18.75 20.59 18.75 21Z" fill="#0B1621"/>
+									</svg>										
+									Cloud
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="configurator-tab" data-bs-toggle="tab" data-bs-target="#configurator" type="button" role="tab" aria-controls="settings" aria-selected="false">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.3967 7.62047H15.8567C15.4767 7.62047 15.1667 7.31047 15.1667 6.92047C15.1667 6.54047 15.4767 6.23047 15.8567 6.23047H21.3967C21.7767 6.23047 22.0867 6.54047 22.0867 6.92047C22.0867 7.31047 21.7767 7.62047 21.3967 7.62047Z" fill="#0B1621"/>
+										<path d="M6.62683 7.61999H2.93683C2.55683 7.61999 2.24683 7.30999 2.24683 6.92999C2.24683 6.54999 2.55683 6.23999 2.93683 6.23999H6.62683C7.00683 6.23999 7.31683 6.54999 7.31683 6.92999C7.31683 7.30999 7.00683 7.61999 6.62683 7.61999Z" fill="#0B1621"/>
+										<path d="M10.3172 10.84C12.4822 10.84 14.2372 9.08496 14.2372 6.92C14.2372 4.75504 12.4822 3 10.3172 3C8.15226 3 6.39722 4.75504 6.39722 6.92C6.39722 9.08496 8.15226 10.84 10.3172 10.84Z" fill="#0B1621"/>
+										<path d="M21.3964 17.7696H17.7064C17.3264 17.7696 17.0164 17.4596 17.0164 17.0796C17.0164 16.6996 17.3264 16.3896 17.7064 16.3896H21.3964C21.7764 16.3896 22.0864 16.6996 22.0864 17.0796C22.0864 17.4596 21.7764 17.7696 21.3964 17.7696Z" fill="#0B1621"/>
+										<path d="M8.47683 17.7696H2.93683C2.55683 17.7696 2.24683 17.4596 2.24683 17.0796C2.24683 16.6996 2.55683 16.3896 2.93683 16.3896H8.47683C8.85683 16.3896 9.16683 16.6996 9.16683 17.0796C9.16683 17.4596 8.85683 17.7696 8.47683 17.7696Z" fill="#0B1621"/>
+										<path d="M14.0164 21.0002C16.1814 21.0002 17.9364 19.2451 17.9364 17.0802C17.9364 14.9152 16.1814 13.1602 14.0164 13.1602C11.8515 13.1602 10.0964 14.9152 10.0964 17.0802C10.0964 19.2451 11.8515 21.0002 14.0164 21.0002Z" fill="#0B1621"/>
+									</svg>										
+									Configurator
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+						<div class="container">
+							<div class="item-row">
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">1</span>
+										</figure>
+										<h4>Personal</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Single Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												5
+											</span>
+										</figure>
+										<h4>Multi Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												20
+											</span>
+										</figure>
+										<h4>Virtual</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Essentials Bundle</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+										</figure>
+										<figure>
+											<img src="images/add-ons.svg" alt="Add Ons Icon"/>
+										</figure>
+										<h4>Add - ons</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="mac" role="tabpanel" aria-labelledby="mac-tab">
+						<div class="container">
+							<div class="item-row">
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">1</span>
+										</figure>
+										<h4>Personal</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Single Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												5
+											</span>
+										</figure>
+										<h4>Multi Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												20
+											</span>
+										</figure>
+										<h4>Virtual</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Essentials Bundle</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+										</figure>
+										<figure>
+											<img src="images/add-ons.svg" alt="Add Ons Icon"/>
+										</figure>
+										<h4>Add - ons</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="virtual" role="tabpanel" aria-labelledby="virtual-tab">
+						<div class="container">
+							<div class="item-row">
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">1</span>
+										</figure>
+										<h4>Personal</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Single Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												5
+											</span>
+										</figure>
+										<h4>Multi Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												20
+											</span>
+										</figure>
+										<h4>Virtual</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Essentials Bundle</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+										</figure>
+										<figure>
+											<img src="images/add-ons.svg" alt="Add Ons Icon"/>
+										</figure>
+										<h4>Add - ons</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="subscription" role="tabpanel" aria-labelledby="subscription-tab">
+						<div class="container">
+							<div class="item-row">
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">1</span>
+										</figure>
+										<h4>Personal</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Single Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												5
+											</span>
+										</figure>
+										<h4>Multi Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												20
+											</span>
+										</figure>
+										<h4>Virtual</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Essentials Bundle</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+										</figure>
+										<figure>
+											<img src="images/add-ons.svg" alt="Add Ons Icon"/>
+										</figure>
+										<h4>Add - ons</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="cloud" role="tabpanel" aria-labelledby="cloud-tab">
+						<div class="container">
+							<div class="item-row">
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">1</span>
+										</figure>
+										<h4>Personal</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Single Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												5
+											</span>
+										</figure>
+										<h4>Multi Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												20
+											</span>
+										</figure>
+										<h4>Virtual</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Essentials Bundle</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+										</figure>
+										<figure>
+											<img src="images/add-ons.svg" alt="Add Ons Icon"/>
+										</figure>
+										<h4>Add - ons</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="configurator" role="tabpanel" aria-labelledby="configurator-tab">
+						<div class="container">
+							<div class="item-row">
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">1</span>
+										</figure>
+										<h4>Personal</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Single Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												0
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												5
+											</span>
+										</figure>
+										<h4>Multi Server</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												20
+											</span>
+										</figure>
+										<h4>Virtual</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												1
+											</span>
+										</figure>
+										<figure>
+											<img src="images/subsription-icon.svg" alt="Server Protection Icon"/>
+											<span class="badge-wrap">
+												<svg xmlns="http://www.w3.org/2000/svg" width="9" height="4" viewBox="0 0 9 4" fill="none">
+													<path d="M2.15294 4C1.75294 4 1.38824 3.91522 1.05882 3.74566C0.737255 3.5684 0.478431 3.32948 0.282353 3.0289C0.0941177 2.72062 0 2.37765 0 2C0 1.61464 0.0941177 1.27168 0.282353 0.971098C0.478431 0.67052 0.737255 0.435453 1.05882 0.265896C1.38824 0.088632 1.75294 0 2.15294 0C3.07843 0 3.85882 0.420038 4.49412 1.26012C4.80784 0.851638 5.16471 0.539499 5.56471 0.323699C5.96471 0.1079 6.39216 0 6.84706 0C7.24706 0 7.60784 0.088632 7.92941 0.265896C8.25882 0.435453 8.51765 0.67052 8.70588 0.971098C8.90196 1.27168 9 1.61464 9 2C9 2.37765 8.90196 2.72062 8.70588 3.0289C8.51765 3.32948 8.25882 3.5684 7.92941 3.74566C7.60784 3.91522 7.24706 4 6.84706 4C6.38431 4 5.95294 3.8921 5.55294 3.6763C5.16078 3.45279 4.80784 3.14066 4.49412 2.73988C4.18824 3.14066 3.83529 3.45279 3.43529 3.6763C3.03529 3.8921 2.60784 4 2.15294 4ZM2.18824 3.30636C2.58039 3.30636 2.93333 3.19075 3.24706 2.95954C3.56863 2.72832 3.85098 2.40848 4.09412 2C3.85098 1.58382 3.56863 1.26397 3.24706 1.04046C2.93333 0.809249 2.58039 0.693642 2.18824 0.693642C1.77255 0.693642 1.43137 0.816956 1.16471 1.06358C0.898039 1.3025 0.764706 1.61464 0.764706 2C0.764706 2.37765 0.898039 2.68979 1.16471 2.93642C1.43137 3.18304 1.77255 3.30636 2.18824 3.30636ZM6.81176 3.30636C7.22745 3.30636 7.56863 3.18304 7.83529 2.93642C8.10196 2.68979 8.23529 2.37765 8.23529 2C8.23529 1.61464 8.10196 1.3025 7.83529 1.06358C7.56863 0.816956 7.22745 0.693642 6.81176 0.693642C6.40392 0.693642 6.03922 0.813102 5.71765 1.05202C5.40392 1.28324 5.13333 1.59923 4.90588 2C5.14118 2.40848 5.41961 2.72832 5.74118 2.95954C6.07059 3.19075 6.42745 3.30636 6.81176 3.30636Z" fill="white"/>
+												</svg>
+											</span>
+										</figure>
+										<h4>Essentials Bundle</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner">
+										<figure>
+											<img src="images/server-protection-ic.svg" alt="Server Protection Icon"/>
+										</figure>
+										<figure>
+											<img src="images/add-ons.svg" alt="Add Ons Icon"/>
+										</figure>
+										<h4>Add - ons</h4>
+										<figure>
+											<img src="images/arrow-down-ic.svg" alt="Arrow Down Icon"/>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="our-products">
+			<div class="container">
+				<h2 class="section-title">Our Products</h2>
+				<div class="product-listing">
+					<div class="product-card">
+						<div class="basic-info">
+							<div class="left">
+								<div class="icon-wrap">
+									<figure>
+										<img src="images/personal-icon.svg" alt="Icon"/>
+									</figure>
+								</div>
+							</div>
+							<div class="right">
+								<h3 class="title">Personal</h3>
+								<p class="description">Protects any number of networked Windows, Mac, and Linux servers, desktops, and notebooks from a single host computer running Retrospect. Supports disk, cloud, and tape storage devices.</p>
+								<div class="other-info-list">
+									<ul>
+										<li>
+											<strong>Premium Version:</strong> Premium includes Open File Backup, Unlimited Email, Dissimilar Hardware, and Advanced Tape.
+										</li>
+										<li>
+											<strong>Supported Add-ons:</strong> Microsoft Exchange, Microsoft SQL, Advanced Tape, Dissimilar Hardware, Email Account.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="buy-wrap">
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients Premium + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="bottom-info">
+							<div class="info-row">
+								<div class="left-info">
+									<ul>
+										<li><a href="">Upgrade<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Subscription edition<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Annual Support and Maintenance (ASM)<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+									</ul>
+								</div>
+								<div class="right-info">
+									<div class="btn-wrap">
+										<button type="button" class="bbtn outline-btn">Product Details</button>
+										<button type="button" class="bbtn outline-btn">Free Trial</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="basic-info">
+							<div class="left">
+								<div class="icon-wrap">
+									<figure>
+										<img src="images/personal-icon.svg" alt="Icon"/>
+									</figure>
+								</div>
+							</div>
+							<div class="right">
+								<h3 class="title">Single Server</h3>
+								<p class="description">Protects any number of networked Windows, Mac, and Linux servers, desktops, and notebooks from a single host computer running Retrospect. Supports disk, cloud, and tape storage devices.</p>
+								<div class="other-info-list">
+									<ul>
+										<li>
+											<strong>Premium Version:</strong> Premium includes Open File Backup, Unlimited Email, Dissimilar Hardware, and Advanced Tape.
+										</li>
+										<li>
+											<strong>Supported Add-ons:</strong> Microsoft Exchange, Microsoft SQL, Advanced Tape, Dissimilar Hardware, Email Account.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="buy-wrap">
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients Premium + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="bottom-info">
+							<div class="info-row">
+								<div class="left-info">
+									<ul>
+										<li><a href="">Upgrade<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Subscription edition<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Annual Support and Maintenance (ASM)<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+									</ul>
+								</div>
+								<div class="right-info">
+									<div class="btn-wrap">
+										<button type="button" class="bbtn outline-btn">Product Details</button>
+										<button type="button" class="bbtn outline-btn">Free Trial</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="basic-info">
+							<div class="left">
+								<div class="icon-wrap">
+									<figure>
+										<img src="images/personal-icon.svg" alt="Icon"/>
+									</figure>
+								</div>
+							</div>
+							<div class="right">
+								<h3 class="title">Multi Server</h3>
+								<p class="description">Protects any number of networked Windows, Mac, and Linux servers, desktops, and notebooks from a single host computer running Retrospect. Supports disk, cloud, and tape storage devices.</p>
+								<div class="other-info-list">
+									<ul>
+										<li>
+											<strong>Premium Version:</strong> Premium includes Open File Backup, Unlimited Email, Dissimilar Hardware, and Advanced Tape.
+										</li>
+										<li>
+											<strong>Supported Add-ons:</strong> Microsoft Exchange, Microsoft SQL, Advanced Tape, Dissimilar Hardware, Email Account.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="buy-wrap">
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients Premium + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="bottom-info">
+							<div class="info-row">
+								<div class="left-info">
+									<ul>
+										<li><a href="">Upgrade<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Subscription edition<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Annual Support and Maintenance (ASM)<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+									</ul>
+								</div>
+								<div class="right-info">
+									<div class="btn-wrap">
+										<button type="button" class="bbtn outline-btn">Product Details</button>
+										<button type="button" class="bbtn outline-btn">Free Trial</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="basic-info">
+							<div class="left">
+								<div class="icon-wrap">
+									<figure>
+										<img src="images/personal-icon.svg" alt="Icon"/>
+									</figure>
+								</div>
+							</div>
+							<div class="right">
+								<h3 class="title">Virtual</h3>
+								<p class="description">Protects any number of networked Windows, Mac, and Linux servers, desktops, and notebooks from a single host computer running Retrospect. Supports disk, cloud, and tape storage devices.</p>
+								<div class="other-info-list">
+									<ul>
+										<li>
+											<strong>Premium Version:</strong> Premium includes Open File Backup, Unlimited Email, Dissimilar Hardware, and Advanced Tape.
+										</li>
+										<li>
+											<strong>Supported Add-ons:</strong> Microsoft Exchange, Microsoft SQL, Advanced Tape, Dissimilar Hardware, Email Account.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="buy-wrap">
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients Premium + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="bottom-info">
+							<div class="info-row">
+								<div class="left-info">
+									<ul>
+										<li><a href="">Upgrade<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Subscription edition<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Annual Support and Maintenance (ASM)<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+									</ul>
+								</div>
+								<div class="right-info">
+									<div class="btn-wrap">
+										<button type="button" class="bbtn outline-btn">Product Details</button>
+										<button type="button" class="bbtn outline-btn">Free Trial</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="basic-info">
+							<div class="left">
+								<div class="icon-wrap">
+									<figure>
+										<img src="images/personal-icon.svg" alt="Icon"/>
+									</figure>
+								</div>
+							</div>
+							<div class="right">
+								<h3 class="title">Essentials Bundle</h3>
+								<p class="description">Protects any number of networked Windows, Mac, and Linux servers, desktops, and notebooks from a single host computer running Retrospect. Supports disk, cloud, and tape storage devices.</p>
+								<div class="other-info-list">
+									<ul>
+										<li>
+											<strong>Premium Version:</strong> Premium includes Open File Backup, Unlimited Email, Dissimilar Hardware, and Advanced Tape.
+										</li>
+										<li>
+											<strong>Supported Add-ons:</strong> Microsoft Exchange, Microsoft SQL, Advanced Tape, Dissimilar Hardware, Email Account.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="buy-wrap">
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients Premium + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+							<div class="price-details">
+								<div class="price-info">
+									<p>Multi Server Unlimited Clients + 1-year ASM<span>AMP19R1WC</span></p>
+								</div>
+								<div class="buy-action">
+									<div class="inner">
+										<p class="total-price">4.369 €</p>
+										<button type="button" class="bbtn primary-btn">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="separator-line"></div>
+						<div class="bottom-info">
+							<div class="info-row">
+								<div class="left-info">
+									<ul>
+										<li><a href="">Upgrade<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Subscription edition<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+										<li><a href="">Annual Support and Maintenance (ASM)<img src="images/arrow-right.svg" alt="Red Arrow"/></a></li>
+									</ul>
+								</div>
+								<div class="right-info">
+									<div class="btn-wrap">
+										<button type="button" class="bbtn outline-btn">Product Details</button>
+										<button type="button" class="bbtn outline-btn">Free Trial</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="our-happy-clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-sm-12">
+						<h2 class="head-dark">Our Happy Clients</h2>
+					</div>
+					<div class="col-lg-7 col-sm-12">
+						<div class="clients-carousel">
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+							<div>
+								<figure>
+									<img src="images/Google Logo.svg" alt="Logo">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="client-reviews">
+			<div class="swiper-container">
+				<div class="custom-arrow-wrap">
+					<button class="prev-btn">Previous</button>
+					<button class="next-btn">Next</button>
+				</div>
+				<div class="clients-review">
+					<div>
+						<div class="saved-box">
+							<h3 class="saved-head">Retrospect Saved Their Job</h3>
+							<p class="saved-text">“We've been using Retrospect Multi-Server for almost a decade and we are
+								really impressed with the latest version.”</p>
+							<div class="d-flex align-items-center text-start gap-3 justify-content-center">
+								<figure>
+									<img src="images/profile-pic.svg" alt="Profile Pic">
+								</figure>
+								<div class="user-info">
+									<h4 class="saved-name">Joshua Franklin</h4>
+									<p class="saved-profile">Front-End Developer</p>
+									<div class="star-listing">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="saved-box">
+							<h3 class="saved-head">Retrospect Saved Their Job</h3>
+							<p class="saved-text">“We've been using Retrospect Multi-Server for almost a decade and we are
+								really impressed with the latest version.”</p>
+							<div class="d-flex align-items-center text-start gap-3 justify-content-center">
+								<figure>
+									<img src="images/profile-pic.svg" alt="Profile Pic">
+								</figure>
+								<div class="user-info">
+									<h4 class="saved-name">Joshua Franklin</h4>
+									<p class="saved-profile">Front-End Developer</p>
+									<div class="star-listing">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="saved-box">
+							<h3 class="saved-head">Retrospect Saved Their Job</h3>
+							<p class="saved-text">“We've been using Retrospect Multi-Server for almost a decade and we are
+								really impressed with the latest version.”</p>
+							<div class="d-flex align-items-center text-start gap-3 justify-content-center">
+								<figure>
+									<img src="images/profile-pic.svg" alt="Profile Pic">
+								</figure>
+								<div class="user-info">
+									<h4 class="saved-name">Joshua Franklin</h4>
+									<p class="saved-profile">Front-End Developer</p>
+									<div class="star-listing">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="saved-box">
+							<h3 class="saved-head">Retrospect Saved Their Job</h3>
+							<p class="saved-text">“We've been using Retrospect Multi-Server for almost a decade and we are
+								really impressed with the latest version.”</p>
+							<div class="d-flex align-items-center text-start gap-3 justify-content-center">
+								<figure>
+									<img src="images/profile-pic.svg" alt="Profile Pic">
+								</figure>
+								<div class="user-info">
+									<h4 class="saved-name">Joshua Franklin</h4>
+									<p class="saved-profile">Front-End Developer</p>
+									<div class="star-listing">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="saved-box">
+							<h3 class="saved-head">Retrospect Saved Their Job</h3>
+							<p class="saved-text">“We've been using Retrospect Multi-Server for almost a decade and we are
+								really impressed with the latest version.”</p>
+							<div class="d-flex align-items-center text-start gap-3 justify-content-center">
+								<figure>
+									<img src="images/profile-pic.svg" alt="Profile Pic">
+								</figure>
+								<div class="user-info">
+									<h4 class="saved-name">Joshua Franklin</h4>
+									<p class="saved-profile">Front-End Developer</p>
+									<div class="star-listing">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="saved-box">
+							<h3 class="saved-head">Retrospect Saved Their Job</h3>
+							<p class="saved-text">“We've been using Retrospect Multi-Server for almost a decade and we are
+								really impressed with the latest version.”</p>
+							<div class="d-flex align-items-center text-start gap-3 justify-content-center">
+								<figure>
+									<img src="images/profile-pic.svg" alt="Profile Pic">
+								</figure>
+								<div class="user-info">
+									<h4 class="saved-name">Joshua Franklin</h4>
+									<p class="saved-profile">Front-End Developer</p>
+									<div class="star-listing">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="saved-box">
+							<h3 class="saved-head">Retrospect Saved Their Job</h3>
+							<p class="saved-text">“We've been using Retrospect Multi-Server for almost a decade and we are
+								really impressed with the latest version.”</p>
+							<div class="d-flex align-items-center text-start gap-3 justify-content-center">
+								<figure>
+									<img src="images/profile-pic.svg" alt="Profile Pic">
+								</figure>
+								<div class="user-info">
+									<h4 class="saved-name">Joshua Franklin</h4>
+									<p class="saved-profile">Front-End Developer</p>
+									<div class="star-listing">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bottom-reviews">
+			<div class="container">
+				<div class="bottom-carousel">
+					<div>
+						<div class="d-flex align-items-center">
+							<figure>
+								<img src="images/company-logo.svg" alt="Company Logo">
+							</figure>
+							<p class="client-review">“Retrospect is ideal for business environments.”</p>
+						</div>
+					</div>
+					<div>
+						<div class="d-flex align-items-center">
+							<figure>
+								<img src="images/company-logo.svg" alt="Company Logo">
+							</figure>
+							<p class="client-review">“Retrospect is ideal for business environments.”</p>
+						</div>
+					</div>
+					<div>
+						<div class="d-flex align-items-center">
+							<figure>
+								<img src="images/company-logo.svg" alt="Company Logo">
+							</figure>
+							<p class="client-review">
+								“Retrospect is ideal for business environments.”
+							<p>
+						</div>
+					</div>
+					<div>
+						<div class="d-flex align-items-center">
+							<figure>
+								<img src="images/company-logo.svg" alt="Company Logo">
+							</figure>
+							<p class="client-review">“Retrospect is ideal for business environments.”</p>
+						</div>
+					</div>
+					<div>
+						<div class="d-flex align-items-center">
+							<figure>
+								<img src="images/company-logo.svg" alt="Company Logo">
+							</figure>
+							<p class="client-review">“Retrospect is ideal for business environments.”</p>
+						</div>
+					</div>
+					<div>
+						<div class="d-flex align-items-center">
+							<figure>
+								<img src="images/company-logo.svg" alt="Company Logo">
+							</figure>
+							<p class="client-review">
+								“Retrospect is ideal for business environments.”
+							<p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
+	
 	<footer>
 		<div class="footer-link-wrap">
 			<div class="container">
@@ -485,7 +1890,7 @@
 		</div>
 	</footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/site.js"></script>
 </body>
