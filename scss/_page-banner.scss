@@ -72,6 +72,8 @@
 
                 @media (max-width:576px) {
                     margin: 15px auto 0;
+                    flex-direction: column;
+                    gap: 15px;
                 }
 
                 a {
