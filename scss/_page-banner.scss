@@ -2,20 +2,13 @@
 @import "./var.scss";
 
 .page-banner {
-    height: 406px;
     background: #191C2E;
     overflow: hidden;
     position: relative;
 
-    @media (max-width: 991px) {
-        height: 260px;
-    }
+    padding: 90px 0;
 
-    @media (max-width: 767px) {
-        height: 226px;
-    }
-
-    figure {
+    .bg {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -69,8 +62,9 @@
             }
 
             .btn-wrap {
-                width: 186px;
                 margin: 34px auto 0;
+                display: flex;
+                justify-content: center;
 
                 @media (max-width:767px) {
                     margin: 24px auto 0;
@@ -81,6 +75,8 @@
                 }
 
                 a {
+                    margin: 0 12px;
+
                     &.primary-btn {
                         padding: 10px 15px;
                         text-decoration: none;

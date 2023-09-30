@@ -236,6 +236,20 @@ button {
   animation-timing-function: linear;
   animation-duration: 0.5s;
 }
+.bbtn.lightblue-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none !important;
+}
+.bbtn.lightblue-btn:hover {
+  animation: btnscale 0.5s linear 1;
+  animation-delay: 0.1s;
+}
+.bbtn.lightblue-btn:hover:before {
+  animation-name: ripple;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+}
 
 img {
   max-width: 100%;
@@ -2783,22 +2797,12 @@ img {
 }
 
 .page-banner {
-  height: 406px;
   background: #191C2E;
   overflow: hidden;
   position: relative;
+  padding: 90px 0;
 }
-@media (max-width: 991px) {
-  .page-banner {
-    height: 260px;
-  }
-}
-@media (max-width: 767px) {
-  .page-banner {
-    height: 226px;
-  }
-}
-.page-banner figure {
+.page-banner .bg {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2806,7 +2810,7 @@ img {
   top: 0;
   overflow: hidden;
 }
-.page-banner figure img {
+.page-banner .bg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2851,8 +2855,9 @@ img {
   line-height: 1.625rem;
 }
 .page-banner .container .banner-info .btn-wrap {
-  width: 186px;
   margin: 34px auto 0;
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 767px) {
   .page-banner .container .banner-info .btn-wrap {
@@ -2863,6 +2868,9 @@ img {
   .page-banner .container .banner-info .btn-wrap {
     margin: 15px auto 0;
   }
+}
+.page-banner .container .banner-info .btn-wrap a {
+  margin: 0 12px;
 }
 .page-banner .container .banner-info .btn-wrap a.primary-btn {
   padding: 10px 15px;
