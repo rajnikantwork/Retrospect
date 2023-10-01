@@ -14,26 +14,26 @@
             line-height: size(36);
         }
     }
+}
 
-    .crd_lst {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: size(30);
+.crd_lst {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: size(30);
 
-        li {
-            position: relative;
-            padding: 0 0 0 size(20);
-            margin: size(5) 0;
+    li {
+        position: relative;
+        padding: 0 0 0 size(20);
+        margin: size(5) 0;
 
-            &::before {
-                position: absolute;
-                left: 0;
-                top: size(9);
-                width: size(8);
-                height: size(8);
-                background: $primary;
-                content: '';
-            }
+        &::before {
+            position: absolute;
+            left: 0;
+            top: size(9);
+            width: size(8);
+            height: size(8);
+            background: $primary;
+            content: '';
         }
     }
 }
