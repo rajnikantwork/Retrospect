@@ -8,6 +8,11 @@
     .title {
         font-size: size(32);
         line-height: size(40);
+
+        @media (max-width: 767px) {
+            font-size: size(24);
+            line-height: size(36);
+        }
     }
 
     .crd_lst {

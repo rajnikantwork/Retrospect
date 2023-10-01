@@ -115,6 +115,7 @@ body {
 ol,
 ul {
   list-style: none;
+  padding-left: 0 !important;
 }
 
 blockquote,
@@ -142,6 +143,7 @@ table {
 a,
 button {
   cursor: pointer;
+  text-decoration: none !important;
 }
 
 @keyframes ripple {
@@ -173,6 +175,11 @@ button {
   to {
     transform: scale(1) translate(-50%, -50%);
     opacity: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 67.5rem !important;
   }
 }
 .bbtn {
@@ -296,7 +303,6 @@ img {
   box-shadow: 0.25rem 0.25rem 5rem 0 rgba(0, 0, 0, 0.04);
   padding: 1.875rem;
   height: 100%;
-  margin-bottom: 1.25rem;
 }
 @media (max-width: 767px) {
   .card_txt {
@@ -587,6 +593,19 @@ img {
   top: 2px;
 }
 
+.form_wrapper {
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0.25rem 0.25rem 5rem 0 rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+}
+.form_wrapper .form_head {
+  color: #383131;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
 .whats-new {
   background: #0B1621;
   box-shadow: 0.25rem 0.25rem 5rem 0 rgba(0, 0, 0, 0.04);
@@ -654,6 +673,11 @@ img {
   z-index: 99;
   background: #fff;
   transition: 0.3s ease-in;
+}
+@media (min-width: 1280px) {
+  .main-header .container {
+    max-width: 73.125rem !important;
+  }
 }
 .main-header .inner-container {
   display: flex;
@@ -1713,17 +1737,6 @@ img {
     line-height: 1.875rem;
   }
 }
-.data-protection .row {
-  margin: 0 -15px;
-}
-.data-protection .row.row > * {
-  padding: 0 15px 30px;
-}
-@media (max-width: 767px) {
-  .data-protection .row.row > * {
-    padding: 0 15px 15px;
-  }
-}
 .data-protection .data-subhead {
   color: #55585C;
   font-size: 1rem;
@@ -2627,6 +2640,9 @@ img {
 }
 .footer-light .social-links li a:hover {
   background-color: #CC2127;
+  animation: btnscale 0.5s linear 1;
+  animation-delay: 0.1s;
+  text-decoration: none;
 }
 .footer-light .social-links li a:hover svg path {
   fill: #fff !important;
@@ -3035,7 +3051,7 @@ p {
   background: #F7F8FA;
 }
 .product-page .tabs-section .tabs-wrapper .tab-header {
-  border-bottom: 1px solid var(--grey-250, #E6E9F1);
+  border-bottom: 1px solid #E6E9F1;
 }
 .product-page .tabs-section .tabs-wrapper .tab-header .nav-tabs {
   border-bottom: none;
@@ -3650,6 +3666,12 @@ p {
 .data-card.retro_edition_card .title {
   font-size: 2rem;
   line-height: 2.5rem;
+}
+@media (max-width: 767px) {
+  .data-card.retro_edition_card .title {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
 }
 .data-card.retro_edition_card .crd_lst {
   display: flex;
