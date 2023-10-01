@@ -570,7 +570,7 @@
                     }
                     @media (max-width: 157px) {
                         width: calc(100% - 122px);
-                        padding-left: size(14);
+                        padding-left: size(16);
                     }
                     .img-group {
                         @include fpos(center, space-between);

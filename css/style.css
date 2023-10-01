@@ -3753,7 +3753,7 @@ p {
 @media (max-width: 157px) {
   .product-page .good-news .inner .flex-row .right-col {
     width: calc(100% - 122px);
-    padding-left: 0.875rem;
+    padding-left: 1rem;
   }
 }
 .product-page .good-news .inner .flex-row .right-col .img-group {
