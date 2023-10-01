@@ -8,21 +8,29 @@
                 border-bottom: 1px solid var(--grey-250, #E6E9F1);
                 .nav-tabs {
                     border-bottom: none;
-
                     li {
                         flex: 1;
                         margin-bottom: 0;
-
                         button {
                             width: 100%;
-                            height: 56px;
+                            height: size(56);
                             border: none;
                             font-size: size(16);
                             line-height: size(24);
                             color: $secondary;
                             @include fpos(center, center);
                             background: #F7F8FA;
-
+                            @media (max-content: 1024px) {
+                                height: size(52);
+                                border: none;
+                                font-size: size(15);
+                                line-height: size(22);
+                            }
+                            @media (max-content: 767px) {
+                                height: size(48);
+                                font-size: size(14);
+                                line-height: size(20);
+                            }
                             svg {
                                 fill: $secondary;
                                 margin-right: 6px;
@@ -723,7 +731,6 @@
                 font-size: size(40);
                 font-weight: 500;
                 line-height: size(48);
-                text-align: center;
             }
             a{
                 width: max-content;
