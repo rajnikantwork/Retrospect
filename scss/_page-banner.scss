@@ -59,6 +59,7 @@
                 text-align: center;
                 font-size: size(16);
                 line-height: size(26);
+                max-width: size(710);
             }
 
             .btn-wrap {
@@ -72,6 +73,8 @@
 
                 @media (max-width:576px) {
                     margin: 15px auto 0;
+                    flex-direction: column;
+                    gap: 15px;
                 }
 
                 a {
