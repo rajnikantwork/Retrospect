@@ -17,13 +17,26 @@
 
                         button {
                             width: 100%;
-                            height: 56px;
+                            height: size(56);
                             border: none;
                             font-size: size(16);
                             line-height: size(24);
                             color: $secondary;
                             @include fpos(center, center);
                             background: #F7F8FA;
+
+                            @media (max-content: 1024px) {
+                                height: size(52);
+                                border: none;
+                                font-size: size(15);
+                                line-height: size(22);
+                            }
+
+                            @media (max-content: 767px) {
+                                height: size(48);
+                                font-size: size(14);
+                                line-height: size(20);
+                            }
 
                             svg {
                                 fill: $secondary;
@@ -227,6 +240,8 @@
                         @include fpos(center, space-between);
 
                         .price-info {
+
+
                             p {
                                 margin-bottom: 0;
                                 font-size: size(16);
@@ -364,7 +379,9 @@
                     }
 
                     .link-wrap {
-                        max-width: 158px;
+                        min-width: max-content;
+                        @include flexbox;
+                        justify-content: flex-start;
 
                         .bbtn {
                             border: solid 1px #EEF1F5;
@@ -449,130 +466,141 @@
             }
         }
 
-        .add-on-card {
+        .add-on-col {
             margin-bottom: size(32);
-            padding: size(24) 0 0;
-            @include radius(12px);
-            background: rgba(255, 255, 255, 0.40);
-            box-shadow: 4px 4px 80px 0px rgba(0, 0, 0, 0.06);
 
-            .basic-info {
-                padding: 0 size(24);
+            .add-on-card {
+                height: 100%;
+                padding: size(24) 0 0;
+                @include radius(12px);
+                background: rgba(255, 255, 255, 0.40);
+                box-shadow: 4px 4px 80px 0px rgba(0, 0, 0, 0.06);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
-                .image-title-wrap {
-                    @include fpos(center, flex-start);
-                    margin-bottom: size(24);
+                .basic-info {
+                    padding: 0 size(24);
 
-                    .image-wrap {
-                        width: 156px;
-                        height: 156px;
-                        padding: size(28);
-                        @include radius(6px);
-                        background: $grayColor;
-                        overflow: hidden;
+                    .image-title-wrap {
+                        @include fpos(center, flex-start);
+                        margin-bottom: size(24);
 
-                        figure {
-                            width: 100%;
-                            height: 100%;
+                        .image-wrap {
+                            width: 156px;
+                            height: 156px;
+                            padding: size(28);
                             @include radius(6px);
+                            background: $grayColor;
                             overflow: hidden;
+                            @include fpos(center, center);
 
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: contain;
-                                object-position: center center;
+                            figure {
+                                margin-bottom: 0;
+                                width: 64px;
+                                height: 64px;
+                                @include radius(6px);
+                                overflow: hidden;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                    object-position: center center;
+                                }
+                            }
+                        }
+
+                        .title-wrap {
+                            width: calc(100% - 156px);
+                            padding-left: size(33);
+
+                            h3 {
+                                margin-bottom: 0;
+                                font-size: size(24);
+                                font-weight: 600;
+                                line-height: size(32);
+                                color: #383131;
                             }
                         }
                     }
 
-                    .title-wrap {
-                        width: calc(100% - 156px);
-                        padding-left: size(33);
-
-                        h3 {
-                            margin-bottom: 0;
-                            font-size: size(24);
-                            font-weight: 600;
-                            line-height: size(32);
-                            color: #383131;
-                        }
+                    .description {
+                        margin-bottom: 24px;
+                        color: #0B1621;
+                        font-size: size(16);
+                        line-height: size(24);
                     }
                 }
 
-                .description {
-                    margin-bottom: 24px;
-                    color: #0B1621;
-                    font-size: size(16);
-                    line-height: size(24);
-                }
-            }
+                .buy-wrap {
+                    border-top: solid 1px #E6E9F1;
+                    border-bottom: solid 1px #E6E9F1;
+                    padding: size(24);
 
-            .buy-wrap {
-                border-top: solid 1px #E6E9F1;
-                border-bottom: solid 1px #E6E9F1;
-                padding: size(24);
+                    .price-details {
+                        margin-bottom: size(24);
+                        @include fpos(center, space-between);
 
-                .price-details {
-                    margin-bottom: size(24);
-                    @include fpos(center, space-between);
+                        .price-info {
+                            padding-right: size(60);
 
-                    .price-info {
-                        p {
-                            margin-bottom: 0;
-                            font-size: size(16);
-                            font-weight: 600;
-                            line-height: size(24);
-                            color: $secondary;
-                            @include fpos(center, flex-start);
-
-                        }
-
-                        span {
-                            color: #0B1621;
-                            font-size: size(16);
-                            line-height: size(24);
-                        }
-                    }
-
-                    .buy-action {
-                        .inner {
-                            .total-price {
-                                margin: 0 0 size(8) 0;
-                                font-size: size(18);
+                            p {
+                                margin-bottom: 0;
+                                font-size: size(16);
                                 font-weight: 600;
                                 line-height: size(24);
                                 color: $secondary;
+                                @include fpos(center, flex-start);
+
+                            }
+
+                            span {
+                                color: #0B1621;
+                                font-size: size(16);
+                                line-height: size(24);
                             }
                         }
-                    }
 
-                    &:last-child {
-                        margin-bottom: size(0);
+                        .buy-action {
+                            .inner {
+                                .total-price {
+                                    margin: 0 0 size(8) 0;
+                                    font-size: size(18);
+                                    font-weight: 600;
+                                    line-height: size(24);
+                                    color: $secondary;
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            margin-bottom: size(0);
+                        }
                     }
                 }
-            }
 
-            .bottom-info {
-                padding: size(24);
-                @include fpos(center, flex-start);
-
-                ul {
-                    margin-bottom: size(0);
+                .bottom-info {
+                    padding: size(24);
                     @include fpos(center, flex-start);
 
-                    li {
-                        margin-right: size(24);
+                    ul {
+                        margin-bottom: size(0);
+                        @include fpos(center, flex-start);
+                        gap: size(20);
 
-                        a {
-                            font-size: size(16);
-                            line-height: size(24);
-                            font-weight: 600;
-                            color: $primary;
-                            @include fpos(center, center);
+                        li {
 
-                            img {
-                                margin-left: size(8);
+                            a {
+                                font-size: size(16);
+                                line-height: size(24);
+                                font-weight: 600;
+                                color: $primary;
+                                @include fpos(center, center);
+
+                                img {
+                                    margin-left: size(8);
+                                }
                             }
                         }
                     }
@@ -582,7 +610,7 @@
     }
 
     .our-happy-clients {
-        padding-top: 124px;
+        padding: size(124) 0 size(80);
         background: #F7F8FA;
 
         .head-dark {
@@ -602,6 +630,168 @@
                 &.slick-arrow {
                     display: none !important;
                 }
+            }
+        }
+    }
+
+    .compare-product-and-add-ons {
+        padding: size(124) 0 0;
+
+        h2 {
+            margin-bottom: size(80);
+            color: $secondary;
+            font-size: size(40);
+            font-weight: 500;
+            line-height: size(48);
+        }
+
+        .table_responsive {
+            table {
+                tr {
+                    th {
+                        height: 199px;
+                        vertical-align: middle;
+
+                        .outer-wrap {
+                            height: 100%;
+                            @include fpos(center, center);
+                            flex-direction: column;
+                            justify-content: space-between;
+                        }
+
+                        &:first-child {
+                            width: 198px;
+                        }
+
+                        h4 {
+                            color: #000;
+                            text-align: center;
+                            font-size: size(18);
+                            font-weight: 600;
+                            line-height: size(28);
+                        }
+
+                        .inner {
+                            background: $white-color;
+                            @include fpos(center, center);
+
+                            figure {
+                                margin: 0 0 0 8px;
+                                position: relative;
+
+                                &:first-child {
+                                    margin-left: 0;
+                                }
+
+                                .badge-wrap {
+                                    height: 16px;
+                                    padding: 0 4px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: size(10);
+                                    line-height: size(16);
+                                    color: $white-color;
+                                    background: $primary;
+                                    @include radius(8px);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    td {
+                        color: #2B2C2E;
+                        text-align: center;
+                        vertical-align: middle;
+                        font-size: size(14);
+                        line-height: size(20);
+
+                        &:first-child {
+                            width: 198px;
+                            text-align: left;
+                            font-size: size(16);
+                            line-height: size(24);
+                            font-weight: 400;
+                        }
+
+                        &.section-wrap {
+                            font-weight: 600;
+                            background: #EEF1F5;
+                            text-align: left;
+                            color: $secondary;
+                        }
+
+                        .icon-txt-wrap {
+                            @include fpos(center, center);
+                            flex-direction: column;
+
+                            figure {
+                                margin-bottom: 8px;
+                            }
+
+                            strong {
+                                display: block;
+                            }
+                        }
+
+                        p {
+                            margin-bottom: 0;
+                            font-size: size(14);
+                            line-height: size(20);
+                            text-align: center;
+
+                            strong {
+                                font-weight: 700;
+                            }
+
+                            &.text-underline {
+                                text-decoration: underline;
+                                font-size: size(16);
+                                line-height: size(24);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-sales {
+        h2 {
+            color: $secondary;
+            text-align: center;
+            font-size: size(40);
+            font-weight: 500;
+            line-height: size(48);
+        }
+
+        p {
+            margin-bottom: size(18);
+            color: $secondary;
+            font-size: size(16);
+            line-height: size(24);
+        }
+    }
+
+    .sbs {
+        .sbs-content {
+            padding: size(32);
+            @include radius(12px);
+            background: $grayColor;
+
+            h2 {
+                margin-bottom: size(32);
+                color: $secondary;
+                font-size: size(40);
+                font-weight: 500;
+                line-height: size(48);
+            }
+
+            a {
+                width: max-content;
             }
         }
     }
