@@ -254,6 +254,11 @@
 
                 &:hover {
                     background-color: $primary;
+                    -webkit-animation: btnscale .5s linear 1;
+                    animation: btnscale .5s linear 1;
+                    -webkit-animation-delay: .1s;
+                    animation-delay: .1s;
+                    text-decoration: none;
 
                     svg {
                         path {

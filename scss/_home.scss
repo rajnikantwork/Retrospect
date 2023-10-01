@@ -165,7 +165,7 @@
     @media (max-width: 576px) {
       margin-bottom: 10px;
       font-size: size(14);
-      line-height:size(24);
+      line-height: size(24);
     }
   }
 
@@ -478,18 +478,6 @@
     }
   }
 
-  .row {
-    margin: 0 -15px;
-
-    &.row>* {
-      padding: 0 15px 30px;
-
-      @media (max-width: 767px) {
-        padding: 0 15px 15px;
-      }
-    }
-  }
-
   .data-subhead {
     color: #55585C;
     font-size: size(16);
@@ -593,7 +581,7 @@
       @media (max-width: 767px) {
         margin-bottom: 16px;
         font-size: size(14);
-      line-height: size(24);
+        line-height: size(24);
       }
     }
 
@@ -700,7 +688,7 @@
       top: -116px;
     }
 
-   
+
   }
 
   .head-dark {

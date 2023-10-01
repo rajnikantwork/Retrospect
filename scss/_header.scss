@@ -2,7 +2,7 @@
 
 .whats-new {
     background: $secondary;
-    box-shadow: size(4) size(4) size(80) 0 rgba(0, 0, 0, 0.04);
+    box-shadow: $boxshow;
     @include fpos(center, space-between);
     position: relative;
     padding: 12px 15px;
@@ -58,6 +58,12 @@
     z-index: 99;
     background: $white-color;
     @include transition(0.3s ease-in);
+
+    .container{
+        @media (min-width: 1280px) {
+            max-width: size(1170) !important;
+        }
+    }
 
     .inner-container {
         @include fpos(center, space-between);

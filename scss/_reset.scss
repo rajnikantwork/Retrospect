@@ -118,6 +118,7 @@ body {
 ol,
 ul {
 	list-style: none;
+	padding-left: 0 !important;
 }
 
 blockquote,
@@ -145,6 +146,7 @@ table {
 a,
 button {
 	cursor: pointer;
+	text-decoration: none !important;
 }
 
 @keyframes ripple {
@@ -196,6 +198,12 @@ button {
 	to {
 		transform: scale(1) translate(-50%, -50%);
 		opacity: 0;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: size(1080) !important;
 	}
 }
 
@@ -319,10 +327,9 @@ img {
 .card_txt {
 	border-radius: size(12);
 	background: $white-color;
-	box-shadow: size(4) size(4) size(80) 0 rgba(0, 0, 0, 0.04);
+	box-shadow: $boxshow;
 	padding: size(30);
 	height: 100%;
-	margin-bottom: size(20);
 
 	@media (max-width: 767px) {
 		height: auto;
@@ -617,5 +624,20 @@ img {
 				}
 			}
 		}
+	}
+}
+
+
+.form_wrapper {
+	border-radius: size(12);
+	background: $white-color;
+	box-shadow: $boxshow;
+	padding: size(32);
+
+	.form_head {
+		color: #383131;
+		font-size: size(24);
+		font-weight: 600;
+		line-height: size(32);
 	}
 }
