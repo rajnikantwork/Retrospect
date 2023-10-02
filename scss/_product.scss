@@ -144,6 +144,23 @@
         @media (max-width: 767px) {
             padding: size(50) 0;
         }
+        .bbtn{
+            &.primary-btn{
+                @media (max-width: 1024px) {
+                    white-space: nowrap;
+                    padding:size(10) size(20);
+                    @include radius(10px);
+                    font-size:size(15);
+                    line-height:size(22);
+                }
+                @media (max-width: 767px) {
+                    padding:size(8) size(16);
+                    @include radius(8px);
+                    font-size:size(14);
+                    line-height:size(20);
+                }
+            }
+        }
         .section-title {
             margin-bottom: size(80);
             font-size: size(40);
@@ -282,21 +299,21 @@
                                 margin-bottom: size(0);
                                 li {
                                     margin-bottom: size(24);
-                                    padding: 8px 16px;
+                                    padding: size(8) size(16);
                                     @include radius(6px);
                                     font-size: size(16);
                                     line-height: size(24);
                                     color: $secondary;
                                     background: $grayColor;
                                     @media (max-width: 1024px) {
-                                        padding: 6px 14px;
-                                        margin-bottom: 20px;
+                                        padding: size(6) size(14);
+                                        margin-bottom: size(20);
                                         font-size: size(15);
                                         line-height: size(22);
                                     }
                                     @media (max-width: 767px) {
-                                        padding: 5px 12px;
-                                        margin-bottom: 14px;
+                                        padding: size(5) size(12);
+                                        margin-bottom: size(14);
                                         font-size: size(14);
                                         line-height: size(20);
                                     }
@@ -343,8 +360,7 @@
                             margin-bottom: size(16);
                         }
                         .price-info {
-
-
+                            padding-right:10px;
                             p {
                                 margin-bottom: 0;
                                 font-size: size(16);
@@ -378,20 +394,21 @@
                                 @include fpos(center, space-between);
                                 @media (max-width: 767px) {
                                     flex-direction: column;
+                                    @include fpos(center, flex-start);
                                 }
                                 .total-price {
-                                    margin: 0 16px 0 0;
+                                    margin: 0 size(16) 0 0;
                                     font-size: size(16);
                                     font-weight: 600;
                                     line-height: size(24);
                                     color: $secondary;
                                     @media (max-width: 1024px) {
-                                        margin: 0 14px 0 0;
+                                        margin: 0 size(14) 0 0;
                                         font-size: size(15);
                                         line-height: size(22);
                                     }
                                     @media (max-width: 767px) {
-                                        margin: 0 12px 0 0;
+                                        margin:size(0) 0 size(4) 0;
                                         font-size: size(14);
                                         line-height: size(20);
                                     }
@@ -456,9 +473,13 @@
                                     margin-right: size(16);
                                     @media (max-width: 1024px) {
                                         margin-right: size(14);
+                                        padding:size(10) size(20);
+                                        @include radius(10px);
                                     }
                                     @media (max-width: 767px) {
                                         margin-right: size(12);
+                                        padding:size(8) size(16);
+                                        @include radius(8px);
                                     }
                                     &:last-child {
                                         margin-right: size(0);
@@ -984,6 +1005,12 @@
         }
         .head-dark {
             margin-bottom: 0;
+            @media (max-width: 1024px) {
+                margin-bottom:size(35);
+            }
+            @media (max-width: 767px) {
+                margin-bottom:size(24);
+            }
         }
 
         .slick-slider {
