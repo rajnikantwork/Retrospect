@@ -332,7 +332,80 @@
 			</div>
 		</div>
 	</header>
-	<div class="product-page">
+	
+	<div class="detail-page">
+		<section class="system-requirement">
+			<div class="container">
+				<h2>System Requirements</h2>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="os-card">
+							<h4>Apple macOS</h4>
+							<ul>
+								<li>macOS Ventura 13</li>
+								<li>macOS Monterey 12</li>
+								<li>macOS Big Sur 11</li>
+								<li>macOS Catalina 10.15</li>
+								<li>macOS Mojave 10.14</li>
+								<li>macOS Mojave Server 10.14</li>
+								<li>macOS High Sierra 10.13</li>
+								<li>macOS High Sierra Server 10.13</li>
+								<li>macOS Sierra 10.12</li>
+								<li>macOS Sierra Server 10.12</li>
+								<li>OS X El Capitan 10.11</li>
+								<li>OS X El Capitan Server 10.11</li>
+								<li>OS X Yosemite 10.10</li>
+								<li>OS X Yosemite Server 10.10</li>
+								<li>OS X Mavericks 10.9</li>
+								<li>OS X Mavericks Server 10.9</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="os-card">
+							<h4>Microsoft Windows</h4>
+							<ul>
+								<li>Windows 11</li>
+								<li>Windows 10</li>
+								<li>Windows 8.1</li>
+								<li>Windows 8</li>
+								<li>Windows 7</li>
+								<li>Windows Vista</li>
+								<li>Windows XP</li>
+								<li>Windows Server 2012</li>
+								<li>Windows Server 2019</li>
+								<li>Windows Server 2016</li>
+								<li>Windows Server 2012 R2</li>
+								<li>Windows Server 2012</li>
+								<li>Windows Server 2008</li>
+								<li>Windows Server 2003</li>
+								<li>Windows Server Essentials 2019</li>
+								<li>Windows Server Essentials 2016</li>
+								<li>Windows SBS 2011</li>
+								<li>Windows SBS 2008</li>
+								<li>Windows Storage Server 2008</li>
+								<li>Windows Storage Server 2003</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="os-card">
+							<h4>Linux</h4>
+							<ul>
+								<li>CentOS 7</li>
+								<li>CentOS 6.5</li>
+								<li>CentOS 6.4</li>
+								<li>Red Hat Enterprise Linux 7</li>
+								<li>Debian 7.6</li>
+								<li>Ubuntu Server 14.04</li>
+								<li>SUSE 11 Enterprise Server 11 SP3</li>
+								<li>SUSE 11 Enterprise Server 11 SP2</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="page-banner product-detail">
             <figure class="bg">
                 <img src="images/page-banner.png" alt="Page Banner" />
@@ -354,7 +427,7 @@
 								</button>
 							</li>
 							<li class="nav-item" role="presentation">
-								<button class="nav-link active" id="mac-tab" data-bs-toggle="tab" data-bs-target="#mac" type="button" role="tab" aria-controls="home" aria-selected="true">
+								<button class="nav-link" id="mac-tab" data-bs-toggle="tab" data-bs-target="#mac" type="button" role="tab" aria-controls="home" aria-selected="true">
 									<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M3.33437 18.521L10.7114 19.538V12.498H3.33337L3.33437 18.521ZM11.5224 4.354V11.59H21.3344V3L11.5224 4.354Z" fill="#CC2127"/>
 										<path d="M10.7114 4.46313L3.33437 5.47913L3.33337 5.48013V11.5901H10.7114V4.46313Z" fill="#CC2127"/>
@@ -364,19 +437,20 @@
 								</button>
 							</li>
 						</ul>
-						<div class="tab-pane active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
-							<div class="btn-wrap">
-								<a href="#" class="bbtn primary-btn">Purchaising options</a>
-								<a href="#" class="bbtn outline-btn">Free trial</a>
+						<div class="tab-content">
+							<div class="tab-pane active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+								<div class="btn-wrap">
+									<a href="#" class="bbtn primary-btn">Purchaising options</a>
+									<a href="#" class="bbtn outline-btn">Free trial</a>
+								</div>
+							</div>
+							<div class="tab-pane" id="mac" role="tabpanel" aria-labelledby="mac-tab">
+								<div class="btn-wrap">
+									<a href="#" class="bbtn primary-btn">Purchaising options</a>
+									<a href="#" class="bbtn outline-btn">Free trial</a>
+								</div>
 							</div>
 						</div>
-						<div class="tab-pane" id="mac" role="tabpanel" aria-labelledby="mac-tab">
-							<div class="btn-wrap">
-								<a href="#" class="bbtn primary-btn">Purchaising options</a>
-								<a href="#" class="bbtn outline-btn">Free trial</a>
-							</div>
-						</div>
-						
 					</div>
                 </div>
             </div>
