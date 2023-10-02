@@ -4,13 +4,13 @@
         .tabs-wrapper {
             background: #F7F8FA;
             .tab-header {
-                border-bottom: 1px solid var(--grey-250, #E6E9F1);
-
+                border-bottom: 1px solid #E6E9F1;
                 .nav-tabs {
                     border-bottom: none;
                     li {
                         flex: 1;
                         margin-bottom: 0;
+
                         button {
                             width: 100%;
                             height: size(56);
@@ -31,6 +31,7 @@
                                 font-size: size(14);
                                 line-height: size(20);
                             }
+
                             svg {
                                 fill: $secondary;
                                 margin-right: 6px;
@@ -342,6 +343,8 @@
                             margin-bottom: size(16);
                         }
                         .price-info {
+
+
                             p {
                                 margin-bottom: 0;
                                 font-size: size(16);
@@ -575,6 +578,9 @@
 
                     .link-wrap {
                         min-width: max-content;
+                        @include flexbox;
+                        justify-content: flex-start;
+
                         .bbtn {
                             border: solid 1px #EEF1F5;
                         }
@@ -762,7 +768,7 @@
                             height:156px;
                             padding:size(28);
                             @include radius(6px);
-                            background:$grayColor;
+                            background: $grayColor;
                             overflow: hidden;
                             @include fpos(center,center);
                             @media (max-width: 1024px) {
@@ -870,7 +876,7 @@
                                 font-size: size(16);
                                 font-weight: 600;
                                 line-height: size(24);
-                                color:$secondary;
+                                color: $secondary;
                                 @include fpos(center, flex-start);
                                 @media (max-width: 1024px) {
                                     font-size: size(15);
@@ -881,16 +887,18 @@
                                     line-height: size(20);
                                 }
                             }
-                            span{
-                                color:#0B1621;
-                                font-size:size(16);
-                                line-height:size(24);
+
+                            span {
+                                color: #0B1621;
+                                font-size: size(16);
+                                line-height: size(24);
                             }
                         }
-                        .buy-action{
-                            .inner{
-                                .total-price{
-                                    margin:0  0 size(8) 0;
+
+                        .buy-action {
+                            .inner {
+                                .total-price {
+                                    margin: 0 0 size(8) 0;
                                     font-size: size(18);
                                     font-weight: 600;
                                     line-height: size(24);
@@ -908,8 +916,9 @@
                                 }
                             }
                         }
-                        &:last-child{
-                            margin-bottom:size(0);
+
+                        &:last-child {
+                            margin-bottom: size(0);
                         }
                     }
                 }
@@ -965,7 +974,7 @@
     }
 
     .our-happy-clients {
-        padding:size(124) 0 size(80);
+        padding: size(124) 0 size(80);
         background: #F7F8FA;
         @media (max-width: 1024px) {
             padding:size(80) 0 size(50);
@@ -1018,11 +1027,12 @@
                 line-height:size(32);
             }
         }
-        .table_responsive{
-            table{
-                tr{
-                    th{
-                        height:199px;
+
+        .table_responsive {
+            table {
+                tr {
+                    th {
+                        height: 199px;
                         vertical-align: middle;
                         @media (max-width: 1024px) {
                             height:180px;
@@ -1046,10 +1056,12 @@
                                 }
                             }
                         }
-                        &:first-child{
-                            width:198px;
+
+                        &:first-child {
+                            width: 198px;
                         }
-                        h4{
+
+                        h4 {
                             color: #000;
                             text-align: center;
                             font-size: size(18);
@@ -1064,15 +1076,19 @@
                                 line-height: size(20);
                             }
                         }
+
                         .inner {
                             background: $white-color;
                             @include fpos(center, center);
+
                             figure {
                                 margin: 0 0 0 8px;
                                 position: relative;
+
                                 &:first-child {
                                     margin-left: 0;
                                 }
+
                                 .badge-wrap {
                                     height: 16px;
                                     padding: 0 4px;
@@ -1091,8 +1107,9 @@
                             }
                         }
                     }
-                    td{
-                        color:#2B2C2E;
+
+                    td {
+                        color: #2B2C2E;
                         text-align: center;
                         vertical-align: middle;
                         font-size: size(14);
@@ -1120,32 +1137,39 @@
                                 line-height: size(20);
                             }
                         }
-                        &.section-wrap{
-                            font-weight:600;
+
+                        &.section-wrap {
+                            font-weight: 600;
                             background: #EEF1F5;
                             text-align: left;
-                            color:$secondary;
+                            color: $secondary;
                         }
-                        .icon-txt-wrap{
-                            @include fpos(center,center);
+
+                        .icon-txt-wrap {
+                            @include fpos(center, center);
                             flex-direction: column;
-                            figure{
-                                margin-bottom:8px;
+
+                            figure {
+                                margin-bottom: 8px;
                             }
-                            strong{
+
+                            strong {
                                 display: block;
                             }
                         }
-                        p{
-                            margin-bottom:0;
+
+                        p {
+                            margin-bottom: 0;
                             font-size: size(14);
                             line-height: size(20);
                             text-align: center;
-                            strong{
-                                font-weight:700;
+
+                            strong {
+                                font-weight: 700;
                             }
-                            &.text-underline{
-                                text-decoration:underline;
+
+                            &.text-underline {
+                                text-decoration: underline;
                                 font-size: size(16);
                                 line-height: size(24);
                                 @media (max-width: 1024px) {
@@ -1171,9 +1195,10 @@
             }
         }
     }
-    .contact-sales{
-        h2{
-            color:$secondary;
+
+    .contact-sales {
+        h2 {
+            color: $secondary;
             text-align: center;
             font-size: size(40);
             font-weight: 500;
@@ -1187,9 +1212,10 @@
                 line-height:size(32);
             }
         }
-        p{
-            margin-bottom:size(18);
-            color:$secondary;
+
+        p {
+            margin-bottom: size(18);
+            color: $secondary;
             font-size: size(16);
             line-height:size(24);
             @media (max-width: 1024px) {
@@ -1204,9 +1230,10 @@
             }
         }
     }
-    .sbs{
-        .sbs-content{
-            padding:size(32);
+
+    .sbs {
+        .sbs-content {
+            padding: size(32);
             @include radius(12px);
             background:$grayColor;
             @media (max-width: 1024px) {
@@ -1234,7 +1261,8 @@
                     line-height:size(32);
                 }
             }
-            a{
+
+            a {
                 width: max-content;
             }
         }

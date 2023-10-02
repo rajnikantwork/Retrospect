@@ -1,0 +1,202 @@
+@import "./commonmixin.scss";
+@import "./var.scss";
+
+
+.customers_card {
+    border-radius: size(12);
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 4px 4px 80px 0px rgba(0, 0, 0, 0.06);
+    padding: size(24);
+    @include flexbox;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .tps {
+        @include flexbox;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: size(15);
+        justify-content: space-between;
+
+        .hd {
+            width: calc(100% - 100px);
+            color: #383131;
+            font-size: size(18);
+            font-weight: 600;
+            line-height: size(28);
+            @include text-truncate(3, size(84));
+        }
+
+        .img {
+            background-color: #F7F8FA;
+            width: size(80);
+            height: size(80);
+            border-radius: size(6);
+        }
+    }
+
+    .para {
+        @include text-truncate(6, size(144));
+        margin-bottom: size(15);
+    }
+
+    .dels {
+        color: rgba(11, 22, 33, 0.5);
+        font-weight: 600;
+        margin-bottom: size(12);
+
+        &.ht {
+            @include text-truncate(2, size(48));
+        }
+    }
+}
+
+.evnt_sec {
+    background: $secondary url(../images/mask_img.svg) no-repeat;
+    border-radius: size(36);
+    overflow: hidden;
+    padding: size(65) size(50);
+    background-size: cover;
+
+    @media (max-width: 767px) {
+        padding: size(45) size(30);
+    }
+
+    .heading {
+        color: $white-color;
+    }
+
+    .box_btn_grp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            gap: size(20);
+        }
+
+        a {
+            width: calc(50% - size(10));
+            background: #fff;
+            border-radius: size(12);
+            display: flex;
+            padding: size(32);
+            align-items: center;
+            color: #000;
+            font-size: size(18);
+            line-height: size(28);
+            font-weight: 500;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                padding: size(20);
+                font-size: size(16);
+            }
+
+            i {
+                margin-left: auto;
+            }
+
+            &:hover {
+                background: #ededed;
+            }
+        }
+    }
+
+
+}
+
+
+.redirect-section {
+    padding: size(15);
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: size(12);
+    }
+}
+
+
+.solutions_card {
+    border-radius: size(12);
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 4px 4px 80px 0px rgba(0, 0, 0, 0.06);
+    padding: size(24);
+    @include flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .img {
+        @include flexbox;
+        width: size(156);
+        height: size(156);
+        padding: size(46);
+        justify-content: center;
+        align-items: center;
+        border-radius: size(6);
+        background: #F7F8FA;
+
+        @media (max-width: 767px) {
+            width: size(100);
+            height: size(100);
+            padding: size(20);
+        }
+
+        img {
+            width: size(65);
+
+            @media (max-width: 767px) {
+                width: size(45);
+            }
+        }
+    }
+
+    .rt {
+        width: calc(100% - size(185));
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-top: size(20);
+        }
+
+        .hd {
+            color: #383131;
+            font-size: size(24);
+            font-weight: 600;
+            line-height: size(32);
+            margin-bottom: size(15);
+
+            @media (max-width: 767px) {
+                font-size: size(20);
+                line-height: size(30);
+            }
+        }
+
+        .crd_lst {
+            margin-bottom: 0;
+        }
+    }
+
+    .wtl_lbl {
+        @include flexbox;
+    }
+
+    .dtl {
+        gap: size(10);
+        @include flexbox;
+        flex-direction: column;
+        padding-left: size(12);
+
+        .dd {
+            font-weight: 700;
+        }
+    }
+
+    .ml-auto {
+        margin-left: auto;
+        display: table;
+    }
+
+}
