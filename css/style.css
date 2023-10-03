@@ -5310,7 +5310,6 @@ p {
   display: table;
 }
 
-<<<<<<< HEAD
 .detail-page .details-top {
   background: #F7F8FA;
   position: relative;
@@ -6089,17 +6088,6 @@ p {
     line-height: 1.25rem;
   }
 }
-=======
-.cong-rts-btn {
-  display: inline-flex;
-}
-
-.rts_btn {
-  margin-left: auto;
-  display: table;
-}
-
->>>>>>> a5941920d05ac3471569843c3171830d5acb2a7b
 .detail-page .system-requirement {
   padding: 7.75rem 0;
   background: #F9F9F9;
