@@ -325,7 +325,7 @@ img {
 }
 
 .bg_gray {
-	background-color: #F7F8FA;
+	background-color: #F7F8FA !important;
 }
 
 .card_txt {
@@ -679,11 +679,34 @@ img {
 		font-size: size(16) !important;
 		line-height: size(24) !important;
 		padding: size(12) size(24);
+		outline: none !important;
+		transition: all 0.3s ease-in;
+		border: 1px solid transparent !important;
+
 
 		@media (max-width: 767px) {
 			font-size: size(14) !important;
 			padding: size(12) size(18);
 		}
+
+		&:focus {
+			border-color: #EBA6A9 !important;
+			box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.20);
+		}
+	}
+
+	input[type="number"] {
+		background-image: url(../images/conutning_buttons.svg) !important;
+		background-repeat: no-repeat;
+		background-position: calc(100% - size(15));
+		background-size: size(12);
+		padding-right: size(15) !important;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		opacity: 0;
+		cursor: pointer;
 	}
 
 	.form-select {
@@ -692,6 +715,12 @@ img {
 
 	.col-lg-6 {
 		position: relative;
+	}
+
+	.rel_label {
+		@media (max-width: 767px) {
+			font-size: size(14);
+		}
 	}
 
 	.frmhead_1 {
@@ -856,5 +885,98 @@ img {
 
 	@media (max-width: 767px) {
 		font-size: size(14);
+	}
+}
+
+
+.sub_heading {
+	color: #383131;
+	font-size: size(32);
+	font-weight: 500;
+	line-height: size(40);
+
+	@media (max-width: 767px) {
+		font-size: size(24);
+		line-height: size(36);
+	}
+}
+
+.brd_left {
+	border-left: 1px solid #ddd;
+}
+
+.lrm_btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	color: $primary !important;
+	font-weight: 600;
+
+	img {
+		position: relative;
+		transition: all 0.3s ease-in;
+		right: 0;
+	}
+
+	&:hover {
+		img {
+			right: - size(5)
+		}
+	}
+}
+
+
+.edt_radio_bx {
+	@include flexbox;
+	justify-content: space-between;
+	margin-bottom: size(20);
+
+	@media (max-width: 767px) {
+		font-size: size(14);
+	}
+
+	.lts {
+		@include flexbox;
+		flex-wrap: wrap;
+
+		label {
+			width: calc(100% - size(20));
+
+			span {
+				color: $primary;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.rts {
+		white-space: nowrap;
+		font-weight: 700;
+	}
+}
+
+.redc_sl_lst {
+	display: flex;
+	justify-content: space-between;
+
+	.vll {
+		font-weight: 700;
+	}
+}
+
+.rlstbtn_grp {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.eml_btn {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+	color: #000 !important;
+
+	&:hover {
+		text-decoration: underline !important;
 	}
 }
