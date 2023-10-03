@@ -7,10 +7,34 @@ $(window).load(function() {
         speed: 300,
         slidesToScroll: 1
     });
+    $('.cloud-slider').slick({
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      speed: 300,
+      slidesToShow: 4,
+      centerMode: true,
+      variableWidth: true,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+      ]  
+    });
     $('.clients-review').slick({
         dots: false,
         infinite: true,
-		autoplay: true,
+		    autoplay: true,
         speed: 300,
         slidesToShow: 3,
         centerMode: true,
@@ -36,7 +60,7 @@ $(window).load(function() {
                 slidesToShow: 2,
               }
             }
-          ]
+      ]
     });
     $('.bottom-carousel').slick({
         infinite: true,
