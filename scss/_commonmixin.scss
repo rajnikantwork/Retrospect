@@ -1,7 +1,7 @@
-@use "sass:math";
-
-@function size($target, $context: 16) {
-    @return math.div($target, $context) * 1rem;
+@function size($value) {
+    $remValue: (
+        $value / 16) + rem;
+    @return $remValue;
 }
 
 @mixin flexbox {
@@ -42,13 +42,14 @@
 @mixin text-truncate($line, $height: "") {
     display: block !important;
     display: -webkit-box !important;
-    @include line-clamp($line);
-    @include box-orient();
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    height: $height;
-    min-height: $height;
+    @include line-clamp($line
+);
+@include box-orient();
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: normal;
+height: $height;
+min-height: $height;
 }
 
 @mixin line-clamp($line) {
@@ -72,6 +73,4 @@
     -moz-transform: $transforms;
     -ms-transform: $transforms;
     transform: $transforms;
-  }
-  
-  
+}

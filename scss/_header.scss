@@ -59,7 +59,7 @@
     background: $white-color;
     @include transition(0.3s ease-in);
 
-    .container{
+    .container {
         @media (min-width: 1280px) {
             max-width: size(1170) !important;
         }
@@ -304,7 +304,7 @@
                                                         line-height: size(24);
                                                     }
 
-                                                  
+
 
                                                     img {
                                                         margin-right: 16px;
@@ -562,12 +562,39 @@
                         transform: translateX(-50%);
                     }
 
+                    .nvi {
+                        width: 50%;
+
+                        a {
+                            width: 100%;
+
+                            &::before,
+                            &::after {
+                                display: none;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            left: auto !important;
+                            right: 0 !important;
+                            top: size(30) !important;
+                            border-radius: size(10);
+
+                            a {
+                                transform: none !important;
+                            }
+
+                        }
+                    }
+
                     a {
                         width: 50%;
                         height: 100%;
                         @include fpos(center, center);
                         position: relative;
                         overflow: hidden;
+
+
 
                         &:before {
                             border-radius: 50%;
