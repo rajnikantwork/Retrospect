@@ -6835,6 +6835,9 @@ p {
     width: 100%;
   }
 }
+.auth_wrapper .auth_lg {
+  margin-bottom: 1.875rem;
+}
 .auth_wrapper .au_lt {
   display: flex;
   align-items: center;
@@ -6924,6 +6927,10 @@ p {
 .auth_wrapper .au_lt .form-select:focus {
   border-color: #EBA6A9 !important;
   box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.2);
+}
+.auth_wrapper .au_rt {
+  height: 100%;
+  overflow: hidden;
 }
 .auth_wrapper .au_rt img {
   width: 100%;
