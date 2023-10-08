@@ -212,6 +212,10 @@
                                 opacity: 0;
                                 visibility: hidden;
 
+                                @media (max-width: 1024px) {
+                                    left: size(-40);
+                                }
+
                                 @media (max-width: 991px) {
                                     opacity: 1;
                                     visibility: visible;
@@ -220,6 +224,7 @@
                                     padding-top: 0;
                                     padding-left: 0;
                                     transition: none !important;
+                                    left: size(0);
                                 }
 
                                 .mega-menu-inner {
