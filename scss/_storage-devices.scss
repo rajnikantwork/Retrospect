@@ -1,0 +1,88 @@
+.table_filter_wrap{
+    .form-control{
+        &.single-select{
+            height:48px;
+            padding:12px 24px!important;
+        }
+    }
+    .btn-wrap{
+        margin-top:size(36);
+        @include fpos(center, flex-end);
+    }
+}
+.storage-devices{
+    .heading{
+        margin-bottom:80px;
+        @media (max-width: 1024px) {
+            margin-bottom:50px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom:25px;
+        }
+    }
+}
+.gradient-right-align{
+    position: relative;
+    &::before{
+        width:size(144);
+        height:100%;
+        background: linear-gradient(270deg, rgba(11, 22, 33, 0.07) 0%, rgba(11, 22, 33, 0.00) 100%);
+        position: absolute;
+        content:"";
+        right:0;
+        top:0;
+    }
+}
+.table_section{
+    .section-title{
+        color:$secondary;
+        font-size: size(32);
+        font-weight: 500;
+        line-height:size(40);
+        margin-bottom:size(28);
+        @media (max-width: 1024px) {
+            font-size: size(28);
+            line-height:size(36);
+            margin-bottom:size(24);
+        }
+        @media (max-width: 1024px) {
+            font-size: size(24);
+            line-height:size(32);
+            margin-bottom:size(20);
+        }
+    }
+}
+.dark-card{
+    padding:size(64);
+    @include radius(36px);
+    background: $secondary;
+    @media (max-width: 1024px) {
+        padding:size(44);
+        @include radius(24px);
+    }
+    @media (max-width: 767px) {
+        padding:size(30);
+        @include radius(20px);
+    }
+    h4{
+        margin-bottom:size(32);
+        color: #FEFEFE;
+        text-align: center;
+        font-size:size(40);
+        font-weight: 400;
+        line-height: size(48);
+        @media (max-width: 1024px) {
+            margin-bottom:size(24);
+            font-size:size(32);
+            line-height: size(40);
+        }
+        @media (max-width: 767px) {
+            margin-bottom:size(20);
+            font-size:size(24);
+            line-height: size(32);
+        }
+    }
+    .btn-wrap{
+        @include fpos(center,center);
+    }
+}
