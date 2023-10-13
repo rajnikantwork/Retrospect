@@ -32,7 +32,159 @@
             }
         }
     }
+    .cloud-storage-slider{
+        background:#F7F8FA;
+        .slick-slider {
+            .slick-prev {
+                &.slick-arrow {
+                    display: none !important;
+                }
+            }
+        }
+        .slick-slider {
+            .slick-next {
+                &.slick-arrow {
+                    display: none !important;
+                }
+            }
+        }
+        .slide-cloud-storage{
+            margin:0 size(-16);
+            .slide-cloud-item{
+                height:inherit;
+                padding:0 size(16);
+                .slide-card{
+                    height:100%;
+                    padding: size(32);
+                    @include radius(12px);
+                    background:$white-color;
+                    h4{
+                        margin-bottom:size(16);
+                        color: $secondary;
+                        font-size: size(18);
+                        font-weight: 500;
+                        line-height: size(28);
+                        position: relative;
+                        @include fpos(flex-start,flex-start);
+                        .count {
+                            margin-right: size(16);
+                            padding: 0 size(8);
+                            gap: 8px;
+                            border: solid 1px $primary;
+                            @include fpos(center, center);
+                            @include radius(12px);
+                            border: 2px solid $primary;
+                            color: $primary;
+                            font-size: size(18);
+                            font-weight: 500;
+                            line-height: size(28);
+                            transition: 0.3s ease-in;
+
+                            @media (max-width: 1024px) {
+                                font-size: size(16);
+                                line-height: size(26);
+                            }
+
+                            @media (max-width: 767px) {
+                                font-size: size(14);
+                                line-height: size(24);
+                            }
+                        }
+                    }
+                    p{
+                        margin-bottom:0;
+                        color: $secondary;
+                        font-size: size(16);
+                        line-height: size(24);
+                    }
+                }
+            }
+        }
+    }
+    .certified-cloud-services{
+        padding-top:size(124);
+        .sub-heading{
+            margin:size(80) 0 size(24);
+            color: $secondary;
+            font-size: size(24);
+            font-weight: 500;
+            line-height: size(32);
+            @media (max-width: 1024px) {
+                margin:size(50) 0 size(20);
+                font-size:size(20);
+                line-height:size(28);
+            }
+            @media (max-width: 767px) {
+                margin:size(50) 0 size(18);
+                font-size:size(18);
+                line-height:size(26);
+            }
+        }
+        .cloud-service-card{
+            height:100%;
+            padding:size(24);
+            @include radius(12px);
+            background: $white-color;
+            box-shadow: 4px 4px 80px 0px rgba(0, 0, 0, 0.04);
+            @include fpos(center, space-between);
+            flex-direction: column;
+            border: solid 1px $white-color;
+            @include transition(0.3s ease-in);
+            cursor: pointer;
+            &:hover {
+                border: solid 1px $primary;
+                transform: scale(1.1);
+            }
+            .cloud-logo{
+                figure{
+                    margin-bottom:size(0);
+                }
+            }
+            h4{
+                margin:size(16) 0;
+                color: $secondary;
+                text-align: center;
+                font-size: size(18);
+                font-weight: 500;
+                line-height: size(28);
+            }
+            p{
+                margin-bottom:size(0);
+                color: #55585C;
+                text-align: center;
+                font-size: size(18);
+                font-weight: 400;
+                line-height: size(28);
+            }
+        }
+    }
     .service{
+        .title{
+            margin-bottom:size(24);
+            color: $secondary;
+            font-size: size(24);
+            font-weight: 500;
+            line-height: size(32);
+            @media (max-width: 1024px) {
+                margin-bottom:size(20);
+                font-size:size(20);
+                line-height:size(28);
+            }
+            @media (max-width: 767px) {
+                margin-bottom:size(18);
+                font-size:size(18);
+                line-height:size(26);
+            }
+            &.top-space{
+                margin-top:size(56);
+                @media (max-width: 1024px) {
+                    margin-top:size(46);
+                }
+                @media (max-width: 767px) {
+                    margin-top:size(26);
+                }
+            }
+        }
         .add-ons-wrap {
             padding: size(8) 0;
             background: #EEF1F5;
@@ -128,7 +280,6 @@
         }
         .add-on-col {
             margin-bottom: size(32);
-
             @media (max-width: 1024px) {
                 margin-bottom: size(28);
             }
@@ -170,16 +321,13 @@
 
                     .image-title-wrap {
                         @include fpos(center, flex-start);
-                        margin-bottom: size(24);
-
+                        margin-bottom: size(16);
                         @media (max-width: 1024px) {
-                            margin-bottom: size(20);
+                            margin-bottom: size(15);
                         }
-
                         @media (max-width: 767px) {
-                            margin-bottom: size(16);
+                            margin-bottom: size(14);
                         }
-
                         .image-wrap {
                             width: 80px;
                             height: 80px;
@@ -199,7 +347,6 @@
                                 }
                             }
                         }
-
                         .title-wrap {
                             width: calc(100% - 80px);
                             padding-left: size(33);
@@ -224,21 +371,48 @@
                     }
 
                     .description {
-                        margin-bottom: size(24);
-                        color: #0B1621;
+                        margin-bottom: size(16);
+                        color: $secondary;
                         font-size: size(16);
                         line-height: size(24);
-
                         @media (max-width: 1024px) {
-                            margin-bottom: size(20);
+                            margin-bottom: size(15);
                             font-size: size(15);
                             line-height: size(22);
                         }
-
                         @media (max-width: 767px) {
-                            margin-bottom: size(16);
+                            margin-bottom: size(14);
                             font-size: size(14);
                             line-height: size(20);
+                        }
+                        a{
+                            text-decoration: underline;
+                            color:$secondary;
+                        }
+                    }
+                    .list-info{
+                        margin-bottom:0;
+                        li{
+                            margin-bottom: size(8);
+                            color: $secondary;
+                            font-size: size(16);
+                            line-height: size(24);
+                            font-weight:700;
+                            &:last-child{
+                                margin-bottom:0;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: size(15);
+                                line-height: size(22);
+                            }
+                            @media (max-width: 767px) {
+                                font-size: size(14);
+                                line-height: size(20);
+                            }
+                            a{
+                                color: #376EA6;
+                                font-weight:500;
+                            }
                         }
                     }
                 }

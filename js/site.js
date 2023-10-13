@@ -62,6 +62,27 @@ $(window).load(function() {
             }
       ]
     });
+    $('.slide-cloud-storage').slick({
+      infinite: true,
+      autoplay: true,
+      dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
+  });
     $('.bottom-carousel').slick({
         infinite: true,
         autoplay: true,
