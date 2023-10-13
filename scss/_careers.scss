@@ -1,0 +1,147 @@
+.careers-page{
+    .heading-wrap{
+        width:897px;
+        max-width:100%;
+        .heading{
+            margin-bottom:size(18);
+            @media (max-width: 1024px) {
+                margin-bottom:size(16);
+            }
+            @media (max-width: 767px) {
+                margin-bottom:size(14);
+            }
+        }
+    }
+    .page-description{
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+    .positions{
+        .heading{
+            margin-bottom:size(80);
+            @media (max-width: 1024px) {
+                margin-bottom:size(50);
+            }
+            @media (max-width: 767px) {
+                margin-bottom:size(25);
+            }
+        }
+        .position-list{
+            .position-card{
+                margin-bottom:size(32);
+                @include radius(12px);
+                background:$white-color;
+                box-shadow: 4px 4px 80px 0px rgba(0, 0, 0, 0.04);
+                .position-header{
+                    width:100%;
+                    border-bottom: 1px solid #EEF1F5;
+                    display:table;
+                    table-layout: fixed;
+                    .col-item{
+                        display: table-cell;
+                        vertical-align: middle;
+                        padding:size(32);
+                        border-right:solid 1px #EEF1F5;
+                        &:first-child{
+                            width:494px;
+                        }
+                        &:last-child{
+                            border-right:none;
+                        }
+                        h4{
+                            margin-bottom:0;
+                            color: $secondary;
+                            font-size: size(24);
+                            font-weight: 500;
+                            line-height: size(32);
+                        }
+                        label{
+                            margin-bottom:size(16);
+                            color:#55585C;
+                            font-size: size(16);
+                            font-weight: 400;
+                            line-height: size(24);
+                        }
+                        .availability{
+                            padding: 0 size(16);
+                            @include radius(12px);
+                            background: $secondary;
+                            color: var(--white, #FFF);
+                            font-size: size(18);
+                            font-weight: 500;
+                            line-height: size(28);
+                            white-space: nowrap;
+                        }
+                        address{
+                            margin-bottom:0;
+                            color: $secondary;
+                            font-size: size(16);
+                            font-weight: 500;
+                            line-height: size(24);
+                        }
+                        .btn-outer{
+                            @include fpos(center,flex-end);
+                        }
+                    }
+                }
+                .position-footer{
+                    padding: size(16) size(32) size(32) size(32);
+                    .btn-wrap{
+                        width:max-content;
+                        a{
+                            color:$primary;
+                            font-size: size(16);
+                            font-weight: 600;
+                            line-height: size(24);
+                            @include fpos(center,center);
+                            img{
+                                margin-left:size(24);
+                            }
+                        }
+                    }
+                    .see-details-expand{
+                        padding-top:size(16);
+                        display:none;
+                        p{
+                            margin-bottom:size(16);
+                            color: $secondary;
+                            font-size: size(16);
+                            font-weight: 400;
+                            line-height: size(24);
+                        }
+                        h5{
+                            margin-bottom:size(16);
+                            color: $secondary;
+                            font-size: size(16);
+                            font-weight: 600;
+                            line-height: size(24);
+                        }
+                        ul{
+                            margin-bottom:0;
+                            li{
+                                padding-left:size(40);
+                                margin-bottom:size(16);
+                                color: $secondary;
+                                font-size: size(16);
+                                font-weight: 400;
+                                line-height: size(24);
+                                position: relative;
+                                &:before{
+                                    width:8px;
+                                    height:8px;
+                                    background:$primary;
+                                    position: absolute;
+                                    content:"";
+                                    left:16px;
+                                    top:50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

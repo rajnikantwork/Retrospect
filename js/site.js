@@ -121,4 +121,8 @@ $(window).load(function() {
 			$(".next-btn").removeClass("slick-disabled");
 		}
 	});
+
+  $(".see-details").on("click", function() {
+    $(this).parents(".position-footer").find(".see-details-expand").slideToggle();
+  });
 });
