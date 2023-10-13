@@ -53,70 +53,78 @@
     }
 }
 .dropdown {
-    display: inline-block;
-    position: relative;
-    button {
-        padding: 1em 4em 1em 2em;
-        background: #ececec;
-        border: 0px;
-        border-radius: 2px;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 20em;
-        cursor: pointer;
-        &:before,
-        &:after {
-            display: block;
-            content: '';
-            width: 1px;
-            height: 8px;
-            background: #282828;
-            position: absolute;
-            top: 14px;
-        }
-        &:before {
-            right: 21px;
-            transform: rotate(-45deg);
-        }
-        &:after {
-            right: 16px;
-            transform: rotate(45deg);
-        }
-    }
-    ul {
-        display: none;
-        position: absolute;
-        background: #fff;
-        list-style: none;
-        border: 1px solid #f0f0f0;
-        line-height: 1em;
-        top: 0px;
-        left: 0px;
-        box-shadow: 0px 0px 3px 1px #ccc;
-        padding: 0;
-        width: 20em;
-        margin: 0;
-        z-index: 1;
-        li {
-            padding: 0.8em;
+    &.savedSearches {
+        width:100%;
+        display: inline-block;
+        position: relative;
+        button {
+            width: 100%;
+            height:48px;
+            padding:size(8) size(24);
+            @include radius(12px);
+            background:#F7F8FA;
+            border: 0px;
+            font-size:size(16);
+            line-height:size(24);
+            color:$secondary;
+            text-align: left;
             cursor: pointer;
-            transition: background 250ms;
-            &:hover {
-                background: #f0f0f0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            &:before,
+            &:after {
+                display: block;
+                content: '';
+                width: 1px;
+                height: 8px;
+                background: #282828;
+                position: absolute;
+                top:18px;
             }
-            &.searchInput {
-                padding: 0.5em;
-                input {
-                    width: 100%;
-                    border: 0px;
-                    border: 1px solid #ccc;
-                    padding: 1em;
+            &:before {
+                right: 24px;
+                transform: rotate(-45deg);
+            }
+            &:after {
+                right: 16px;
+                transform: rotate(45deg);
+            }
+        }
+        ul {
+            display: none;
+            position: absolute;
+            background: #fff;
+            list-style: none;
+            border: 1px solid #f0f0f0;
+            line-height: 1em;
+            top: 0px;
+            left: 0px;
+            box-shadow: 0px 0px 3px 1px #ccc;
+            padding: 0;
+            width: 20em;
+            margin: 0;
+            z-index: 1;
+            li {
+                padding: 0.8em;
+                cursor: pointer;
+                transition: background 250ms;
+                &:hover {
+                    background: #f0f0f0;
+                }
+                &.searchInput {
+                    padding: 0.5em;
+                    input {
+                        width: 100%;
+                        border: 0px;
+                        border: 1px solid #ccc;
+                        padding: 1em;
+                    }
                 }
             }
         }
     }
 }
-
 .searchContainer .savedSearches {
     margin: 0.8em 0;
 }
