@@ -370,6 +370,14 @@
                             background: $grayColor;
                             overflow: hidden;
                             @include fpos(center, center);
+                            @media (max-width: 1024px) {
+                                width: 70px;
+                                height: 70px;
+                            }
+                            @media (max-width: 767px) {
+                                width: 60px;
+                                height: 60px;
+                            }
                             figure {
                                 margin-bottom: 0;
                                 @include radius(6px);
@@ -386,9 +394,11 @@
                             width: calc(100% - 80px);
                             padding-left: size(33);
                             @media (max-width: 1024px) {
+                                width: calc(100% - 70px);
                                 padding-left: size(25);
                             }
                             @media (max-width: 1024px) {
+                                width: calc(100% - 60px);
                                 padding-left: size(15);
                             }
                             h3 {
