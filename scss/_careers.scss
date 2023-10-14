@@ -36,18 +36,88 @@
                 .position-header{
                     width:100%;
                     border-bottom: 1px solid #EEF1F5;
-                    display:table;
-                    table-layout: fixed;
+                    display: flex;
+                    @media (max-width: 1024px) {
+                        flex-direction: column;
+                    }
+                    .col-left{
+                        width:494px;
+                        @media (max-width: 1200px) {
+                            width:294px;
+                        }
+                        @media (max-width: 1024px) {
+                            width:100%;
+                            border-bottom: 1px solid #EEF1F5;
+                        }
+                        .col-item{
+                            @media (max-width: 1024px) {
+                                border-right:none;
+                            }
+                        }
+                    }
+                    .col-middle-right-wrap{
+                        width:calc(100% - 494px);
+                        display: flex;
+                        @media (max-width: 1200px) {
+                            width:calc(100% - 294px);
+                        }
+                        @media (max-width: 1024px) {
+                            width:100%;
+                            flex-direction: column;
+                        }
+                        .col-middle{
+                            width:calc(100% - 200px);
+                            display: flex;
+                            @media (max-width: 1200px) {
+                                width:calc(100% - 140px);
+                            }
+                            @media (max-width: 1024px) {
+                                width:100%;
+                                border-bottom: 1px solid #EEF1F5;
+                            }
+                            .col-item{
+                                width:50%;
+                                @media (max-width: 1024px) {
+                                    flex-direction: row;
+                                }
+                                &:last-child{
+                                    @media (max-width: 1024px) {
+                                        border-right:none;
+                                    }
+                                }
+                            }
+                        }
+                        .col-right{
+                            width:200px;
+                            @media (max-width: 1200px) {
+                                width:140px;
+                            }
+                            @media (max-width: 1024px) {
+                                width:100%;
+                            }
+                            .primary-btn{
+                                @media (max-width: 1024px) {
+                                    width:100%;
+                                } 
+                            }
+                            .col-item{
+                                border-right:none;
+                            }
+                        }
+                    }
                     .col-item{
-                        display: table-cell;
-                        vertical-align: middle;
+                        height:100%;
                         padding:size(32);
                         border-right:solid 1px #EEF1F5;
-                        &:first-child{
-                            width:494px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        @media (max-width: 1024px) {
+                            height: auto;
+                            padding:size(24);
                         }
-                        &:last-child{
-                            border-right:none;
+                        @media (max-width: 767px) {
+                            padding:size(20);
                         }
                         h4{
                             margin-bottom:0;
@@ -55,6 +125,14 @@
                             font-size: size(24);
                             font-weight: 500;
                             line-height: size(32);
+                            @media (max-width: 1024px) {
+                                font-size: size(20);
+                                line-height: size(28);
+                            }
+                            @media (max-width: 767px) {
+                                font-size: size(16);
+                                line-height: size(24);
+                            }
                         }
                         label{
                             margin-bottom:size(16);
@@ -62,8 +140,20 @@
                             font-size: size(16);
                             font-weight: 400;
                             line-height: size(24);
+                            @media (max-width: 1200px) {
+                                margin: 0 size(10) 0 0;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: size(14);
+                                line-height: size(20);
+                            }
+                            @media (max-width: 767px) {
+                                font-size: size(13);
+                            }
                         }
                         .availability{
+                            width: max-content;
+                            margin:0 auto;
                             padding: 0 size(16);
                             @include radius(12px);
                             background: $secondary;
@@ -72,6 +162,19 @@
                             font-weight: 500;
                             line-height: size(28);
                             white-space: nowrap;
+                            @include fpos(center,center);
+                            @media (max-width: 1024px) {
+                                @include radius(10px);
+                                padding: 0 size(14);
+                                font-size: size(16);
+                                line-height: size(26);
+                            }
+                            @media (max-width: 767px) {
+                                @include radius(8px);
+                                padding: 0 size(12);
+                                font-size: size(14);
+                                line-height: size(22);
+                            }
                         }
                         address{
                             margin-bottom:0;
@@ -79,6 +182,14 @@
                             font-size: size(16);
                             font-weight: 500;
                             line-height: size(24);
+                            @media (max-width: 1024px) {
+                                font-size: size(14);
+                                line-height: size(26);
+                            }
+                            @media (max-width: 767px) {
+                                font-size: size(14);
+                                line-height: size(22);
+                            }
                         }
                         .btn-outer{
                             @include fpos(center,flex-end);
@@ -87,6 +198,12 @@
                 }
                 .position-footer{
                     padding: size(16) size(32) size(32) size(32);
+                    @media (max-width: 1024px) {
+                        padding:size(14) size(24) size(24) size(24);
+                    }
+                    @media (max-width: 767px) {
+                        padding:size(12) size(20) size(20) size(20);
+                    }
                     .btn-wrap{
                         width:max-content;
                         a{
@@ -109,6 +226,16 @@
                             font-size: size(16);
                             font-weight: 400;
                             line-height: size(24);
+                            @media (max-width: 1024px) {
+                                margin-bottom:size(14);
+                                font-size: size(15);
+                                line-height: size(22);
+                            }
+                            @media (max-width: 767px) {
+                                margin-bottom:size(12);
+                                font-size: size(14);
+                                line-height: size(20);
+                            }
                         }
                         h5{
                             margin-bottom:size(16);
@@ -116,6 +243,16 @@
                             font-size: size(16);
                             font-weight: 600;
                             line-height: size(24);
+                            @media (max-width: 1024px) {
+                                margin-bottom:size(14);
+                                font-size: size(15);
+                                line-height: size(22);
+                            }
+                            @media (max-width: 767px) {
+                                margin-bottom:size(12);
+                                font-size: size(14);
+                                line-height: size(20);
+                            }
                         }
                         ul{
                             margin-bottom:0;
@@ -127,6 +264,16 @@
                                 font-weight: 400;
                                 line-height: size(24);
                                 position: relative;
+                                @media (max-width: 1024px) {
+                                    margin-bottom:size(14);
+                                    font-size: size(15);
+                                    line-height: size(22);
+                                }
+                                @media (max-width: 767px) {
+                                    margin-bottom:size(12);
+                                    font-size: size(14);
+                                    line-height: size(20);
+                                }
                                 &:before{
                                     width:8px;
                                     height:8px;
