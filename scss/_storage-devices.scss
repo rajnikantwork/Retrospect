@@ -1,13 +1,24 @@
 .table_filter_wrap{
+    .sctWrap{
+        margin-bottom:size(24);
+        @media (max-width: 1024px) {
+            margin-bottom:size(20);
+        }
+    }
     .form-control{
         &.single-select{
             height:48px;
-            padding:12px 24px!important;
+            padding:size(12) size(24)!important;
         }
     }
     .btn-wrap{
-        margin-top:size(36);
+        margin-top:size(12);
         @include fpos(center, flex-end);
+        .primary-btn{
+            @media (max-width: 767px) {
+                width:100%;
+            }
+        }
     }
 }
 .storage-devices{

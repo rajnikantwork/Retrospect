@@ -103,6 +103,12 @@
     }
     .certified-cloud-services{
         padding-top:size(124);
+        @media (max-width: 1024px) {
+            padding-top:size(80);
+        }
+        @media (max-width: 767px) {
+            padding-top:size(50);
+        }
         .sub-heading{
             margin:size(80) 0 size(24);
             color: $secondary;
@@ -131,9 +137,20 @@
             border: solid 1px $white-color;
             @include transition(0.3s ease-in);
             cursor: pointer;
+            @media (max-width: 1024px) {
+                padding:size(20);
+                @include radius(10px);
+            }
+            @media (max-width: 767px) {
+                padding:size(15);
+                @include radius(8px);
+            }
             &:hover {
                 border: solid 1px $primary;
                 transform: scale(1.1);
+                @media (max-width: 767px) {
+                    transform: scale(1);
+                }
             }
             .cloud-logo{
                 figure{
@@ -147,6 +164,16 @@
                 font-size: size(18);
                 font-weight: 500;
                 line-height: size(28);
+                @media (max-width: 1024px) {
+                    margin:size(14) 0;
+                    font-size: size(16);
+                    line-height: size(26);
+                }
+                @media (max-width: 767px) {
+                    margin:size(12) 0;
+                    font-size: size(14);
+                    line-height: size(24);
+                }
             }
             p{
                 margin-bottom:size(0);
@@ -155,6 +182,14 @@
                 font-size: size(18);
                 font-weight: 400;
                 line-height: size(28);
+                @media (max-width: 1024px) {
+                    font-size: size(16);
+                    line-height: size(26);
+                }
+                @media (max-width: 767px) {
+                    font-size: size(14);
+                    line-height: size(24);
+                }
             }
         }
     }
@@ -350,6 +385,12 @@
                         .title-wrap {
                             width: calc(100% - 80px);
                             padding-left: size(33);
+                            @media (max-width: 1024px) {
+                                padding-left: size(25);
+                            }
+                            @media (max-width: 1024px) {
+                                padding-left: size(15);
+                            }
                             h3 {
                                 margin-bottom: 0;
                                 font-size: size(24);
@@ -398,6 +439,7 @@
                             font-size: size(16);
                             line-height: size(24);
                             font-weight:700;
+                            word-wrap: break-word;
                             &:last-child{
                                 margin-bottom:0;
                             }
@@ -412,6 +454,7 @@
                             a{
                                 color: #376EA6;
                                 font-weight:500;
+                                word-wrap: break-word;
                             }
                         }
                     }
@@ -502,10 +545,12 @@
                     font-weight: 500;
                     line-height: size(32);
                     @media (max-width: 1024px) {
+                        margin-bottom:size(14);
                         font-size: size(20);
                         line-height: size(28);
                     }
                     @media (max-width: 767px) {
+                        margin-bottom:size(10);
                         font-size: size(18);
                         line-height: size(26);
                     }
@@ -516,10 +561,12 @@
                     font-size: size(16);
                     line-height: size(24);
                     @media (max-width: 1024px) {
+                        margin-bottom: size(24);
                         font-size: size(15);
                         line-height: size(25);
                     }
                     @media (max-width: 767px) {
+                        margin-bottom: size(15);
                         font-size: size(14);
                         line-height: size(24);
                     }
