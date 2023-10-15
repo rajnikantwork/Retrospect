@@ -556,6 +556,448 @@
                 }
             }
         }
+        .tools-tab-content{
+            h2{
+                margin-bottom:size(80);
+                color: #000;
+                font-size: size(32);
+                font-weight: 500;
+                line-height: size(40);
+                @media (max-width: 1024px) {
+                    margin-bottom:size(50);
+                    font-size: size(28);
+                    line-height: size(36);
+                }
+                @media (max-width: 767px) {
+                    margin-bottom:size(25);
+                    font-size: size(24);
+                    line-height: size(32);
+                }
+            }
+            .add-ons-wrap {
+                padding: size(8) 0;
+                background: #EEF1F5;
+                @media (max-width: 1024px) {
+                    padding: size(6) 0;
+                }
+    
+                @media (max-width: 767px) {
+                    padding: size(5) 0;
+                }
+    
+                .item-row {
+                    @include fpos(center, flex-start);
+                    flex-wrap: wrap;
+    
+                    .item {
+                        padding: size(8) size(16) size(8) 0;
+    
+                        @media (max-width: 1024px) {
+                            padding: size(6) size(14) size(8) 0;
+                        }
+    
+                        @media (max-width: 767px) {
+                            padding: size(5) size(12) size(8) 0;
+                        }
+    
+                        .inner {
+                            padding: size(4) size(16);
+                            @include radius(12px);
+                            background: $white-color;
+                            @include fpos(center, flex-start);
+    
+                            @media (max-width: 1024px) {
+                                @include radius(10px);
+                            }
+    
+                            @media (max-width: 767px) {
+                                @include radius(8px);
+                            }
+    
+                            figure {
+                                margin: 0 0 0 8px;
+                                position: relative;
+    
+                                @media (max-width: 1024px) {
+                                    margin: 0 0 0 6px;
+                                }
+    
+                                @media (max-width: 767px) {
+                                    margin: 0 0 0 5px;
+                                }
+    
+                                &:first-child {
+                                    margin-left: 0;
+                                }
+    
+                                .badge-wrap {
+                                    height: 16px;
+                                    padding: 0 4px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: size(10);
+                                    line-height: size(16);
+                                    color: $white-color;
+                                    background: $primary;
+                                    @include radius(8px);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                            }
+    
+                            h4 {
+                                margin: 0 0 0 8px;
+                                font-size: size(16);
+                                line-height: size(24);
+                                color: #0B1621;
+    
+                                @media (max-width: 1024px) {
+                                    font-size: size(15);
+                                    line-height: size(22);
+                                }
+    
+                                @media (max-width: 767px) {
+                                    font-size: size(14);
+                                    line-height: size(20);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .program-levels{
+                padding:size(80) 0;
+                @media (max-width: 1024px) {
+                    padding-bottom:size(50);
+                }
+                @media (max-width: 767px) {
+                    padding-bottom:size(25);
+                }
+                h2{
+                    margin-bottom:size(32);
+                    @media (max-width: 1024px) {
+                        padding-bottom:size(28);
+                    }
+                    @media (max-width: 767px) {
+                        padding-bottom:size(24);
+                    }
+                }
+                h4{
+                    margin-bottom:size(24);
+                    color:$secondary;
+                    font-size: size(18);
+                    font-weight: 600;
+                    line-height: size(28);
+                    @media (max-width: 1024px) {
+                        margin-bottom:size(20);
+                        font-size: size(16);
+                        line-height: size(26);
+                    }
+                    @media (max-width: 767px) {
+                        margin-bottom:size(16);
+                        font-size: size(14);
+                        line-height: size(24);
+                    }
+                }
+                p{
+                    margin-bottom:size(32);
+                    color: $secondary;
+                    font-size: size(16);
+                    line-height: size(24);
+                    @media (max-width: 1024px) {
+                        margin-bottom:size(28);
+                        font-size: size(15);
+                        line-height: size(25);
+                    }
+                    @media (max-width: 767px) {
+                        margin-bottom:size(24);
+                        font-size: size(14);
+                        line-height: size(24);
+                    }
+                }
+                .assets-wrap{
+                    .assets-list{
+                        @include fpos(flex-start,flex-start);
+                        .list-item{
+                            width:size(138);
+                            margin-right:size(16);
+                            @media (max-width: 1024px) {
+                                width:size(108);
+                                margin-right:size(12);
+                            }
+                            @media (max-width: 767px) {
+                                width:size(98);
+                                margin-right:size(10);
+                            }
+                            &:last-child{
+                                margin-right:0;
+                            }
+                            .img-wrap{
+                                width:100%;
+                                margin-bottom:size(8);
+                                figure{
+                                    width:100%;
+                                    margin-bottom:0;
+                                    @include radius(6px);
+                                    img{
+                                        width:100%;
+                                        @include radius(6px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .collateral{
+                    padding:size(80) 0;
+                    @media (max-width: 1024px) {
+                        padding:size(50) 0;
+                    }
+                    @media (max-width: 767px) {
+                        padding:size(25) 0;
+                    }
+                    .collateral-list{
+                        ul{
+                            margin-bottom:0;
+                            li{
+                                padding-left:size(40);
+                                margin-bottom:size(16);
+                                color: $secondary;
+                                font-size: size(16);
+                                font-weight: 500;
+                                line-height: size(24);
+                                position: relative;
+                                &:last-child{
+                                    margin-bottom:0;
+                                }
+                                @media (max-width: 1024px) {
+                                    margin-bottom:size(14);
+                                    font-size: size(15);
+                                    line-height: size(22);
+                                }
+                                @media (max-width: 767px) {
+                                    margin-bottom:size(12);
+                                    font-size: size(14);
+                                    line-height: size(20);
+                                }
+                                a{
+                                    width:max-content;
+                                    font-weight:500;
+                                    color:#376EA6;
+                                    @include fpos(center,center);
+                                    img{
+                                        margin-left:size(8);
+                                    }
+                                }
+                                &:before{
+                                    width:8px;
+                                    height:8px;
+                                    background:$primary;
+                                    position: absolute;
+                                    content:"";
+                                    left:16px;
+                                    top:8px;
+                                }
+                                ul{
+                                    margin-top:size(8);
+                                }
+                            }
+                        }
+                    }
+                }
+                .common-card{
+                    padding-bottom:size(80);
+                    @media (max-width: 1024px) {
+                        padding-bottom:size(50);
+                    }
+                    @media (max-width: 1024px) {
+                        padding-bottom:size(25);
+                    }
+                    ul{
+                        margin-bottom:0;
+                        &.product-tools{
+                            margin-bottom:size(24);
+                            @media (max-width: 1024px) {
+                                margin-bottom:size(20);
+                            }
+                            @media (max-width: 767px) {
+                                margin-bottom:size(16);
+                            }
+                        }
+                        li{
+                            padding-left:size(40);
+                            margin-bottom:size(8);
+                            color: $secondary;
+                            font-size: size(16);
+                            line-height: size(24);
+                            position: relative;
+                            strong{
+                                font-weight:600;
+                            }
+                            &:last-child{
+                                margin-bottom:0;
+                            }
+                            @media (max-width: 1024px) {
+                                margin-bottom:size(14);
+                                font-size: size(15);
+                                line-height: size(22);
+                            }
+                            @media (max-width: 767px) {
+                                margin-bottom:size(12);
+                                font-size: size(14);
+                                line-height: size(20);
+                            }
+                            a{
+                                font-weight:500;
+                                color:#376EA6;
+                            }
+                            &:before{
+                                width:8px;
+                                height:8px;
+                                background:$primary;
+                                position: absolute;
+                                content:"";
+                                left:16px;
+                                top:50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                    p{
+                        margin-bottom: size(16);
+                        &.mb-8{
+                            margin-bottom: size(8);
+                        }
+                        &:last-child{
+                            margin-bottom:0;
+                        }
+                        a{
+                            color:#376EA6;
+                            font-weight:500;
+                        }
+                    }
+                    .compaign-list{
+                        .col-lg-4{
+                            &:last-child{
+                                .compaign-info{
+                                    margin-bottom:0;
+                                }
+                            }
+                        }
+                        .compaign-info{
+                            margin-bottom:size(32);
+                            @include fpos(flex-start,flex-start);
+                            @media (max-width: 1024px) {
+                                margin-bottom:size(28);
+                            }
+                            @media (max-width: 767px) {
+                                margin-bottom:size(24);
+                            }
+                            .compaign-ic{
+                                width:size(64);
+                                height:size(64);
+                            }
+                            h5{
+                                width:calc(100% - 64px);
+                                margin-bottom:0;
+                                padding-left:size(16);
+                                color:#0B1621;
+                                font-size: size(16);
+                                font-weight: 400;
+                                line-height: size(24); 
+                                @media (max-width: 1024px) {
+                                    font-size: size(15);
+                                    line-height: size(22); 
+                                }
+                                @media (max-width: 767px) {
+                                    font-size: size(14);
+                                    line-height: size(20); 
+                                }
+                                a{
+                                    font-weight:600;
+                                }
+                            }
+                        }
+                    }
+                    .btn-wrap{
+                        padding-top:size(10);
+                        @include fpos(center,flex-start);
+                        button{
+                            &:first-child{
+                                margin-right:size(24);
+                            }
+                        }
+                    }
+                    .download-wrap{
+                        margin-bottom:size(24);
+                        @media (max-width: 1024px) {
+                            margin-bottom:size(20);
+                        }
+                        @media (max-width: 767px) {
+                            margin-bottom:size(16);
+                        }
+                        h2{
+                            margin-bottom:0;
+                            color: #000;
+                            font-size: size(32);
+                            font-weight: 500;
+                            line-height: size(40);
+                            @media (max-width: 1024px) {
+                                font-size: size(28);
+                                line-height: size(36);
+                            }
+                            @media (max-width: 767px) {
+                                font-size: size(24);
+                                line-height: size(32);
+                            }
+                        }
+                        .download-actions{
+                            @include fpos(center, flex-end);
+                            @media (max-width: 992px) {
+                                padding-top:size(32);
+                            }
+                            @media (max-width: 767px) {
+                                padding-top:size(24);
+                                @include fpos(center, flex-start);
+                            }
+                            @media (max-width: 576px) {
+                                flex-direction: column;
+                            }
+                            a{
+                                &.download-btn{
+                                    padding: size(8) size(16);
+                                    margin-left:size(16);
+                                    @include fpos(center, center);
+                                    @include radius(12px);
+                                    border: 1px solid $primary;
+                                    background:#EEF1F5;
+                                    color: var(--accent-red-500, #CC2127);
+                                    text-align: center;
+                                    font-size: size(16);
+                                    font-weight: 600;
+                                    line-height: size(24);
+                                    @media (max-width: 992px) {
+                                        width:50%;
+                                    }
+                                    @media (max-width: 576px) {
+                                        width:100%;
+                                        margin:size(16) 0 0;    
+                                    }
+                                    &:first-child{
+                                        margin-left:0;
+                                        @media (max-width: 576px) {
+                                            margin:0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .customer-tab-content{
             padding-bottom:size(124);
             @media (max-width: 1024px) {
