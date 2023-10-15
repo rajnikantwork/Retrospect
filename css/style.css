@@ -7819,55 +7819,73 @@ p {
   position: relative;
   display: flex;
   align-items: center;
+  background-image: url("../images/dark-arrow-down.svg") !important;
+  background-repeat: no-repeat;
+  background-position: right 0.55rem center;
 }
-.dropdown.savedSearches button:before, .dropdown.savedSearches button:after {
-  display: block;
-  content: "";
-  width: 1px;
-  height: 8px;
-  background: #282828;
-  position: absolute;
-  top: 18px;
-}
-.dropdown.savedSearches button:before {
-  right: 24px;
-  transform: rotate(-45deg);
-}
-.dropdown.savedSearches button:after {
-  right: 16px;
-  transform: rotate(45deg);
-}
-.dropdown.savedSearches ul {
+.dropdown.savedSearches .serachbar_wrapper {
   display: none;
   position: absolute;
-  background: #fff;
-  list-style: none;
-  border: 1px solid #f0f0f0;
-  line-height: 1em;
-  top: 0px;
+  top: 0;
   left: 0px;
-  box-shadow: 0px 0px 3px 1px #ccc;
-  padding: 0;
-  width: 20em;
-  margin: 0;
+  width: 100%;
   z-index: 1;
 }
-.dropdown.savedSearches ul li {
+.dropdown.savedSearches .serachbar_wrapper .searchInput {
+  width: 100%;
+  position: relative;
+}
+.dropdown.savedSearches .serachbar_wrapper .searchInput .ico {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+}
+.dropdown.savedSearches .serachbar_wrapper .searchInput .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.dropdown.savedSearches .serachbar_wrapper .searchInput input {
+  width: 100%;
+  border: 0px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 35px 12px 50px;
+  outline: none !important;
+}
+.dropdown.savedSearches .serachbar_wrapper ul {
+  background: #fff;
+  list-style: none;
+  line-height: 1em;
+  border-radius: 12px;
+  box-shadow: 4px 4px 60px 0px rgba(0, 0, 0, 0.08);
+  padding: 0;
+  width: 100%;
+  margin: 15px 0 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+.dropdown.savedSearches .serachbar_wrapper ul::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+.dropdown.savedSearches .serachbar_wrapper ul::-webkit-scrollbar {
+  width: 5px;
+  background-color: #CC2127;
+}
+.dropdown.savedSearches .serachbar_wrapper ul::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #CC2127;
+}
+.dropdown.savedSearches .serachbar_wrapper ul li {
   padding: 0.8em;
   cursor: pointer;
   transition: background 250ms;
 }
-.dropdown.savedSearches ul li:hover {
+.dropdown.savedSearches .serachbar_wrapper ul li:hover {
   background: #f0f0f0;
-}
-.dropdown.savedSearches ul li.searchInput {
-  padding: 0.5em;
-}
-.dropdown.savedSearches ul li.searchInput input {
-  width: 100%;
-  border: 0px;
-  border: 1px solid #ccc;
-  padding: 1em;
 }
 
 .searchContainer .savedSearches {
@@ -7928,6 +7946,19 @@ p {
   justify-content: center;
 }
 
+.storage-devices-table.tb_wrap.first_bd td:first-child {
+  font-weight: 500;
+}
+.storage-devices-table.tb_wrap.first_bd td:first-child a {
+  color: #376EA6;
+}
+
+@media (max-width: 767px) {
+  .cloud-backup-page .data-card .data-service {
+    align-items: center;
+    flex-direction: row;
+  }
+}
 .cloud-backup-page .youtube-video {
   padding-bottom: 7.75rem;
 }
@@ -7960,6 +7991,8 @@ p {
   max-width: 710px;
   height: 395px;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1.25rem;
 }
 @media (max-width: 1024px) {
   .cloud-backup-page .youtube-video .video-wrapper {
@@ -8946,6 +8979,9 @@ p {
 }
 .careers-page .positions .position-list .position-card .position-footer .btn-wrap a img {
   margin-left: 1.5rem;
+}
+.careers-page .positions .position-list .position-card .position-footer .btn-wrap a.active img {
+  transform: rotate(-90deg);
 }
 .careers-page .positions .position-list .position-card .position-footer .see-details-expand {
   padding-top: 1rem;
