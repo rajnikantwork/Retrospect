@@ -200,7 +200,7 @@
                     padding: size(24);
                 }
                 .updates-list{
-                    height:492px;
+                    max-height:492px;
                     overflow-y: auto;
                 }
                 .updates-item{
@@ -1454,6 +1454,11 @@
                             }
                         }
                     }
+                    button{
+                        @media (max-width: 576px) {
+                            width:100%;
+                        }
+                    }
                 }
             }
             .flex-row{
@@ -1477,6 +1482,19 @@
             }
             .btn-wrap{
                 @include fpos(center,flex-end);
+                @media (max-width: 767px) {
+                    @include fpos(center,flex-start);
+                }
+                &.upload-lead{
+                    @media (max-width: 767px) {
+                        margin-bottom:size(32);
+                    }
+                    @media (max-width: 576px) { 
+                        button{
+                            width:100%;
+                        }
+                    }
+                }
             }
             .dark_card{
                 margin-bottom:size(32);
@@ -1502,6 +1520,78 @@
                 }
                 .btn-wrap{
                     @include fpos(center,flex-end);
+                    @media (max-width: 992px) {
+                        margin-top:size(10);
+                    }
+                    button{
+                        @media (max-width: 992px) {
+                            width:100%;
+                        }
+                    }
+                }
+            }
+            .upcoming-details{
+                padding:size(80) 0;
+                @media (max-width: 1024px) {
+                    padding:size(50) 0;
+                }
+                @media (max-width: 767px) {
+                    padding:size(25) 0;
+                }
+                p{
+                    margin-bottom:size(32);
+                    color:$secondary;
+                    @media (max-width: 1024px) {
+                        margin-bottom:size(28);
+                    }
+                    @media (max-width: 767px) {
+                        margin-bottom:size(24);
+                    }
+                    strong{
+                        font-size: size(18);
+                        font-weight: 600;
+                        line-height: size(28);
+                        @media (max-width: 1024px) {
+                            font-size: size(17);
+                            line-height: size(26);
+                        }
+                        @media (max-width: 767px) {
+                            font-size: size(16);
+                            line-height: size(24);
+                        }
+                    }
+                }
+            }
+            .accounts-listing{
+                .list-item{
+                    margin-bottom:size(80);
+                    @media (max-width: 1024px) {
+                        margin-bottom:size(50);
+                    }
+                    @media (max-width: 767px) {
+                        margin-bottom:size(25);
+                    }
+                    &:last-child{
+                        margin-bottom:0;
+                    }
+                    h4{
+                        margin-bottom:0;
+                        font-size: size(32);
+                        font-weight: 500;
+                        line-height: size(40);
+                        @media (max-width: 1024px) {
+                            font-size: size(28);
+                            line-height: size(36);
+                        }
+                        @media (max-width: 767px) {
+                            font-size: size(24);
+                            line-height: size(32);
+                        }
+                        @media (max-width: 576px) { 
+                            font-size:size(20);
+                            line-height: size(28);
+                        }
+                    }
                 }
             }
         }

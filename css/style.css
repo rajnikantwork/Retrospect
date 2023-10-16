@@ -9319,7 +9319,7 @@ p {
   }
 }
 .partner-portal .tab-content .overview-tab-content .latest-updates .updates-list {
-  height: 492px;
+  max-height: 492px;
   overflow-y: auto;
 }
 .partner-portal .tab-content .overview-tab-content .latest-updates .updates-item {
@@ -10892,6 +10892,11 @@ p {
     margin: 0;
   }
 }
+@media (max-width: 576px) {
+  .partner-portal .tab-content .pipeline-tab-content .download-wrap .download-actions button {
+    width: 100%;
+  }
+}
 .partner-portal .tab-content .pipeline-tab-content .flex-row {
   margin-bottom: 2rem;
   display: flex;
@@ -10921,6 +10926,23 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .partner-portal .tab-content .pipeline-tab-content .btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .partner-portal .tab-content .pipeline-tab-content .btn-wrap.upload-lead {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .partner-portal .tab-content .pipeline-tab-content .btn-wrap.upload-lead button {
+    width: 100%;
+  }
 }
 .partner-portal .tab-content .pipeline-tab-content .dark_card {
   margin-bottom: 2rem;
@@ -10962,4 +10984,98 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+@media (max-width: 992px) {
+  .partner-portal .tab-content .pipeline-tab-content .dark_card .btn-wrap {
+    margin-top: 0.625rem;
+  }
+}
+@media (max-width: 992px) {
+  .partner-portal .tab-content .pipeline-tab-content .dark_card .btn-wrap button {
+    width: 100%;
+  }
+}
+.partner-portal .tab-content .pipeline-tab-content .upcoming-details {
+  padding: 5rem 0;
+}
+@media (max-width: 1024px) {
+  .partner-portal .tab-content .pipeline-tab-content .upcoming-details {
+    padding: 3.125rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .partner-portal .tab-content .pipeline-tab-content .upcoming-details {
+    padding: 1.5625rem 0;
+  }
+}
+.partner-portal .tab-content .pipeline-tab-content .upcoming-details p {
+  margin-bottom: 2rem;
+  color: #0B1621;
+}
+@media (max-width: 1024px) {
+  .partner-portal .tab-content .pipeline-tab-content .upcoming-details p {
+    margin-bottom: 1.75rem;
+  }
+}
+@media (max-width: 767px) {
+  .partner-portal .tab-content .pipeline-tab-content .upcoming-details p {
+    margin-bottom: 1.5rem;
+  }
+}
+.partner-portal .tab-content .pipeline-tab-content .upcoming-details p strong {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+@media (max-width: 1024px) {
+  .partner-portal .tab-content .pipeline-tab-content .upcoming-details p strong {
+    font-size: 1.0625rem;
+    line-height: 1.625rem;
+  }
+}
+@media (max-width: 767px) {
+  .partner-portal .tab-content .pipeline-tab-content .upcoming-details p strong {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+.partner-portal .tab-content .pipeline-tab-content .accounts-listing .list-item {
+  margin-bottom: 5rem;
+}
+@media (max-width: 1024px) {
+  .partner-portal .tab-content .pipeline-tab-content .accounts-listing .list-item {
+    margin-bottom: 3.125rem;
+  }
+}
+@media (max-width: 767px) {
+  .partner-portal .tab-content .pipeline-tab-content .accounts-listing .list-item {
+    margin-bottom: 1.5625rem;
+  }
+}
+.partner-portal .tab-content .pipeline-tab-content .accounts-listing .list-item:last-child {
+  margin-bottom: 0;
+}
+.partner-portal .tab-content .pipeline-tab-content .accounts-listing .list-item h4 {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+@media (max-width: 1024px) {
+  .partner-portal .tab-content .pipeline-tab-content .accounts-listing .list-item h4 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .partner-portal .tab-content .pipeline-tab-content .accounts-listing .list-item h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .partner-portal .tab-content .pipeline-tab-content .accounts-listing .list-item h4 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }/*# sourceMappingURL=style.css.map */
