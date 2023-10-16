@@ -930,6 +930,70 @@
                             }
                         }
                     }
+                    .add-on-col{
+                        @media (max-width: 992px) {
+                            margin-bottom:size(32);
+                        }
+                        @media (max-width: 767px) {
+                            margin-bottom:size(24);
+                        }
+                    }
+                    .webinars-card{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        
+                        .basic-details{
+                            margin-bottom:size(24);
+                            @media (max-width: 1024px) {
+                                margin-bottom:size(20);
+                            }
+                            @media (max-width: 767px) {
+                                margin-bottom:size(16);
+                            }
+                            .video-wrap{
+                                height:393px;
+                                margin-bottom: size(16);
+                                @include radius(12px);
+                                overflow: hidden;
+                                @media (max-width: 1024px) {
+                                    height:320px;
+                                    margin-bottom: size(14);
+                                    @include radius(10px);
+                                }
+                                @media (max-width: 767px) {
+                                    height:260px;
+                                    margin-bottom: size(12);
+                                    @include radius(8px);
+                                }
+                            }
+                            h4{
+                                margin-bottom: size(16);
+                                font-size: size(18);
+                                font-weight: 600;
+                                line-height: size(28);
+                                @media (max-width: 1024px) {
+                                    margin-bottom: size(14);
+                                    font-size: size(17);
+                                    line-height: size(27);
+                                }
+                                @media (max-width: 767px) {
+                                    margin-bottom: size(12);
+                                    font-size: size(16);
+                                    line-height: size(24);
+                                }
+                            }
+                        }
+                        .btn-wrap{
+                            button{
+                                width:135px;
+                                @media (max-width: 992px) {
+                                    width:100%;
+                                }
+                            }
+                        }
+                    }
                     .download-wrap{
                         margin-bottom:size(24);
                         @media (max-width: 1024px) {
@@ -1146,6 +1210,298 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        .support-tab-content{
+            padding-bottom:size(124);
+            @media (max-width: 1024px) {
+                padding-bottom:size(80);
+            }
+            @media (max-width: 767px) {
+                padding-bottom:size(50);
+            }
+            .download-wrap{
+                margin-bottom:size(80);
+                @media (max-width: 1024px) {
+                    margin-bottom:size(50);
+                }
+                @media (max-width: 767px) {
+                    margin-bottom:size(25);
+                }
+                h2{
+                    margin-bottom:0;
+                    color: #000;
+                    font-size: size(32);
+                    font-weight: 500;
+                    line-height: size(40);
+                    @media (max-width: 1024px) {
+                        font-size: size(28);
+                        line-height: size(36);
+                    }
+                    @media (max-width: 767px) {
+                        font-size: size(24);
+                        line-height: size(32);
+                    }
+                }
+            }
+            .title{
+                margin-bottom:size(32);
+                color: #000;
+                font-size: size(32);
+                font-weight: 500;
+                line-height: size(40);
+                @media (max-width: 1024px) {
+                    margin-bottom:size(28);
+                    font-size: size(28);
+                    line-height: size(36);
+                }
+                @media (max-width: 767px) {
+                    margin-bottom:size(24);
+                    font-size: size(24);
+                    line-height: size(32);
+                }
+            }
+        }
+        .pipeline-tab-content{
+            padding-bottom:size(124);
+            @media (max-width: 1024px) {
+                padding-bottom:size(80);
+            }
+            @media (max-width: 767px) {
+                padding-bottom:size(50);
+            }
+            h2{
+                margin-bottom:size(24);
+                @media (max-width: 1024px) {
+                    margin-bottom:size(20);
+                }
+                @media (max-width: 767px) {
+                    margin-bottom:size(16); 
+                }
+            }
+            .pipeline-list{
+                p{
+                    margin-bottom:0;
+                    color: $secondary;
+                    font-size: size(18);
+                    font-weight: 600;
+                    line-height: size(28);
+                    @media (max-width: 1024px) {
+                        font-size: size(17);
+                        line-height: size(26);
+                    }
+                    @media (max-width: 767px) {
+                        font-size: size(16);
+                        line-height: size(24);
+                    }
+                }
+            }
+            .add-ons-wrap {
+                margin:size(80) 0;
+                padding: size(8) 0;
+                background: #EEF1F5;
+                @media (max-width: 1024px) {
+                    margin:size(50) 0;
+                    padding: size(6) 0;
+                }
+                @media (max-width: 767px) {
+                    margin:size(25) 0;
+                    padding: size(5) 0;
+                }
+                .item-row {
+                    @include fpos(center, flex-start);
+                    flex-wrap: wrap;
+    
+                    .item {
+                        padding: size(8) size(16) size(8) 0;
+    
+                        @media (max-width: 1024px) {
+                            padding: size(6) size(14) size(8) 0;
+                        }
+    
+                        @media (max-width: 767px) {
+                            padding: size(5) size(12) size(8) 0;
+                        }
+    
+                        .inner {
+                            padding: size(4) size(16);
+                            @include radius(12px);
+                            background: $white-color;
+                            @include fpos(center, flex-start);
+    
+                            @media (max-width: 1024px) {
+                                @include radius(10px);
+                            }
+    
+                            @media (max-width: 767px) {
+                                @include radius(8px);
+                            }
+    
+                            figure {
+                                margin: 0 0 0 8px;
+                                position: relative;
+    
+                                @media (max-width: 1024px) {
+                                    margin: 0 0 0 6px;
+                                }
+    
+                                @media (max-width: 767px) {
+                                    margin: 0 0 0 5px;
+                                }
+    
+                                &:first-child {
+                                    margin-left: 0;
+                                }
+    
+                                .badge-wrap {
+                                    height: 16px;
+                                    padding: 0 4px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: size(10);
+                                    line-height: size(16);
+                                    color: $white-color;
+                                    background: $primary;
+                                    @include radius(8px);
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                            }
+    
+                            h4 {
+                                margin: 0 0 0 8px;
+                                font-size: size(16);
+                                line-height: size(24);
+                                color: #0B1621;
+    
+                                @media (max-width: 1024px) {
+                                    font-size: size(15);
+                                    line-height: size(22);
+                                }
+    
+                                @media (max-width: 767px) {
+                                    font-size: size(14);
+                                    line-height: size(20);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .download-wrap{
+                margin-bottom:size(32);
+                @media (max-width: 1024px) {
+                    margin-bottom:size(28);
+                }
+                @media (max-width: 767px) {
+                    margin-bottom:size(24);
+                }
+                h2{
+                    margin-bottom:0;
+                    color: #000;
+                    font-size: size(32);
+                    font-weight: 500;
+                    line-height: size(40);
+                    @media (max-width: 1024px) {
+                        font-size: size(28);
+                        line-height: size(36);
+                    }
+                    @media (max-width: 767px) {
+                        font-size: size(24);
+                        line-height: size(32);
+                    }
+                }
+                .download-actions{
+                    @include fpos(center, flex-end);
+                    @media (max-width: 992px) {
+                        padding-top:size(32);
+                    }
+                    @media (max-width: 767px) {
+                        padding-top:size(24);
+                        @include fpos(center, flex-start);
+                    }
+                    @media (max-width: 576px) {
+                        flex-direction: column;
+                    }
+                    a{
+                        &.download-btn{
+                            padding: size(8) size(16);
+                            margin-left:size(16);
+                            @include fpos(center, center);
+                            @include radius(12px);
+                            border: 1px solid $primary;
+                            background:#EEF1F5;
+                            color: var(--accent-red-500, #CC2127);
+                            text-align: center;
+                            font-size: size(16);
+                            font-weight: 600;
+                            line-height: size(24);
+                            @media (max-width: 992px) {
+                                width:50%;
+                            }
+                            @media (max-width: 576px) {
+                                width:100%;
+                                margin:size(16) 0 0;    
+                            }
+                            &:first-child{
+                                margin-left:0;
+                                @media (max-width: 576px) {
+                                    margin:0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .flex-row{
+                margin-bottom:size(32);
+                @include fpos(center,flex-start);
+                @media (max-width: 1024px) {
+                    margin-bottom:size(28);
+                }
+                @media (max-width: 767px) {
+                    margin-bottom:size(24);
+                }
+                h4{
+                    padding-right:size(16);
+                    margin-bottom:0;
+                    color:$secondary;
+                    font-size: size(18);
+                    font-weight: 600;
+                    line-height: size(28);
+                    white-space: nowrap;
+                }
+            }
+            .btn-wrap{
+                @include fpos(center,flex-end);
+            }
+            .dark_card{
+                margin-bottom:size(32);
+                padding:size(32);
+                @include radius(12px);
+                background:$secondary;
+                @media (max-width: 1024px) {
+                    padding:size(28);
+                    margin-bottom:size(28);
+                    @include radius(10px);
+                }
+                @media (max-width: 767px) {
+                    padding:size(24);
+                    margin-bottom:size(24);
+                    @include radius(8px);
+                }
+                .row{
+                    align-items: center;
+                }
+                h2{
+                    margin-bottom:0;
+                    color:$white-color;
+                }
+                .btn-wrap{
+                    @include fpos(center,flex-end);
                 }
             }
         }
