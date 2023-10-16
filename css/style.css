@@ -9834,6 +9834,11 @@ p {
     -ms-border-radius: 8px;
   }
 }
+.partner-portal .tab-content .tools-tab-content .add-ons-wrap .item-row .item .inner a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .partner-portal .tab-content .tools-tab-content .add-ons-wrap .item-row .item .inner figure {
   margin: 0 0 0 8px;
   position: relative;
@@ -10746,6 +10751,11 @@ p {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
   }
+}
+.partner-portal .tab-content .pipeline-tab-content .add-ons-wrap .item-row .item .inner a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .partner-portal .tab-content .pipeline-tab-content .add-ons-wrap .item-row .item .inner figure {
   margin: 0 0 0 8px;

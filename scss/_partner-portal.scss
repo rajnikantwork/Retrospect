@@ -613,7 +613,9 @@
                             @media (max-width: 767px) {
                                 @include radius(8px);
                             }
-    
+                            a{
+                                @include fpos(center, flex-start); 
+                            }
                             figure {
                                 margin: 0 0 0 8px;
                                 position: relative;
@@ -1337,7 +1339,9 @@
                             @media (max-width: 767px) {
                                 @include radius(8px);
                             }
-    
+                            a{
+                                @include fpos(center, flex-start); 
+                            }
                             figure {
                                 margin: 0 0 0 8px;
                                 position: relative;
