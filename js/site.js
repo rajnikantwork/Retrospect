@@ -126,4 +126,13 @@ $(window).load(function () {
     $(this).toggleClass('active');
     $(this).parents(".position-footer").find(".see-details-expand").slideToggle();
   });
+
+  $(".sub-menu-left-item ul li a").mouseover( function() { // Changes the .image-holder's img src to the src defined in .list a's data attribute.
+    let image=$(this).attr('data-src');
+    let title=$(this).attr('data-title');
+    let desc=$(this).attr('data-description');
+    $(this).parents(".sub-menu-left-item").next(".sub-menu-right-item").find("img").attr("src",image);
+    $(this).parents(".sub-menu-left-item").next(".sub-menu-right-item").find(".title").text(title);
+    $(this).parents(".sub-menu-left-item").next(".sub-menu-right-item").find(".desc").text(desc);
+  })
 });
