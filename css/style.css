@@ -1251,7 +1251,7 @@ img {
 }
 @media (min-width: 1280px) {
   .main-header .container {
-    max-width: 73.125rem !important;
+    max-width: 75rem !important;
   }
 }
 .main-header .inner-container {
