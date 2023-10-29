@@ -9,49 +9,6 @@
         }
     }
 
-    .youtube-video {
-        padding-bottom: size(124);
-
-        @media (max-width: 1024px) {
-            padding-bottom: size(80);
-        }
-
-        @media (max-width: 676px) {
-            padding-bottom: size(50);
-        }
-
-        .heading {
-            margin-bottom: size(80);
-            text-align: center;
-
-            @media (max-width: 1024px) {
-                margin-bottom: size(50);
-            }
-
-            @media (max-width: 767px) {
-                margin-bottom: size(25);
-            }
-        }
-
-        .video-wrapper {
-            width: 100%;
-            max-width: 710px;
-            height: 395px;
-            margin: 0 auto;
-            overflow: hidden;
-            border-radius: size(20);
-
-            @media (max-width: 1024px) {
-                max-width: 584px;
-                height: 325px;
-            }
-
-            @media (max-width: 767px) {
-                max-width: 460px;
-                height: 224px;
-            }
-        }
-    }
 
     .cloud-storage-slider {
         background: #F7F8FA;

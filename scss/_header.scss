@@ -302,7 +302,8 @@
                                                     display: flex;
                                                     align-items: center;
                                                     position: relative;
-                                                    padding-right:20px;
+                                                    padding-right: 20px;
+
                                                     @media (max-width: 1024px) {
                                                         font-size: size(14);
                                                         line-height: size(24);
@@ -507,35 +508,54 @@
                     height: 48px;
                     @include radius(12px);
                     @include fpos(center, center);
-                    overflow: hidden;
+                    position: relative;
 
-                    &:before {
-                        border-radius: 50%;
-                        background-color: rgba(255, 255, 255, 0.4);
+                    .search_header_pop {
                         position: absolute;
-                        content: '';
-                        width: 300px;
-                        height: 300px;
-                        left: 50%;
-                        top: 50%;
-                        transform: scale(0) translate(-50%, -50%);
-                        -webkit-transform: scale(0) translate(-50%, -50%);
-                        transform-origin: 0% 0%;
-                        -webkit-transform-origin: 0% 0%;
-                    }
+                        top: calc(100% + 28px);
+                        border-radius: 12px;
+                        right: 0;
+                        width: 330px;
+                        display: none;
 
-                    &:hover {
-                        -webkit-animation: btnscale .5s linear 1;
-                        animation: btnscale .5s linear 1;
-                        -webkit-animation-delay: .1s;
-                        animation-delay: .1s;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: -10px;
+                            right: 14px;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 10px 10px 10px;
+                            border-color: transparent transparent $white-color transparent;
+                        }
 
-                        &:before {
-                            animation-name: ripple;
-                            animation-timing-function: linear;
-                            animation-duration: 0.5s;
+                        input[type="text"] {
+                            width: 100%;
+                            border: 0;
+                            background-color: $white-color;
+                            font-family: $font-family;
+                            padding: 12px 45px 12px 15px;
+                            border-radius: 4px;
+                            outline: none !important;
+                            font-size: 14px;
+                        }
+
+                        .srcNv {
+                            position: absolute;
+                            right: 8px;
+                            top: 6px;
+                            background: transparent;
+                            border: 0;
+                            padding: 6px;
+                            width: 31px;
+
+                            img {
+                                width: 100%;
+                            }
                         }
                     }
+
 
                     a {
                         width: 100%;
@@ -547,7 +567,7 @@
                 }
 
                 .contact-wrap {
-                    width: 98px;
+                    width: 55px;
                     height: 48px;
                     margin-left: 15px;
                     background: #EEF1F5;
@@ -555,19 +575,19 @@
                     @include fpos(center, center);
                     position: relative;
 
-                    &:before {
-                        width: 1.5px;
-                        height: 100%;
-                        background: #DDE2EC;
-                        position: absolute;
-                        content: "";
-                        left: 50%;
-                        top: 0;
-                        transform: translateX(-50%);
-                    }
+                    // &:before {
+                    //     width: 1.5px;
+                    //     height: 100%;
+                    //     background: #DDE2EC;
+                    //     position: absolute;
+                    //     content: "";
+                    //     left: 50%;
+                    //     top: 0;
+                    //     transform: translateX(-50%);
+                    // }
 
                     .nvi {
-                        width: 50%;
+                        width: 100%;
 
                         a {
                             width: 100%;
@@ -592,7 +612,7 @@
                     }
 
                     a {
-                        width: 50%;
+                        width: 100%;
                         height: 100%;
                         @include fpos(center, center);
                         position: relative;
