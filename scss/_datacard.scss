@@ -6,7 +6,7 @@
   border-radius: size(12);
   background: $white-color;
   box-shadow: $boxshow;
-  padding: size(32);
+  padding: size(30);
   @include flexbox;
   flex-direction: column;
   justify-content: space-between;
@@ -35,6 +35,7 @@
     color: $secondary;
     font-weight: 500;
     line-height: size(28);
+    flex-wrap: wrap;
 
     @media (max-width: 767px) {
       margin-bottom: 15px;
@@ -51,6 +52,7 @@
       font-size: size(20);
       font-weight: 500;
       line-height: size(28);
+      flex: 1;
 
       @media (max-width: 767px) {
         font-size: size(16);

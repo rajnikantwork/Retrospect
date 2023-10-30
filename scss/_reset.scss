@@ -385,9 +385,17 @@ img {
 	box-shadow: $boxshow;
 	padding: size(30);
 	height: 100%;
+	position: relative;
+	overflow: hidden;
 
 	@media (max-width: 767px) {
 		height: auto;
+	}
+
+	.ico {
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 
 	&.wbg {
@@ -512,6 +520,9 @@ img {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
 
 	@media (max-width: 767px) {
 		padding: size(30);
@@ -531,6 +542,8 @@ img {
 		@include flexbox;
 		flex-direction: column;
 		align-items: flex-start;
+		position: relative;
+		z-index: 2;
 
 		@media (max-width: 767px) {
 			width: calc(100% - 60px);
@@ -597,6 +610,13 @@ img {
 			width: 100px;
 		}
 	}
+
+	.abt_bg2 {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
 }
 
 .txt_navNrl {
@@ -655,6 +675,9 @@ img {
 	align-items: center;
 	justify-content: center;
 	padding: size(120) size(30);
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
 
 	&.color_full {
 		background: linear-gradient(90deg, #376EA6 0%, #CC2127 100%);
@@ -750,6 +773,29 @@ img {
 					top: 2px;
 				}
 			}
+		}
+	}
+
+	.abt_bg1 {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+
+	.abt_bg2 {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		z-index: -1;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 }

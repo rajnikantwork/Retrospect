@@ -360,11 +360,18 @@ img {
   box-shadow: 0.25rem 0.25rem 5rem 0 rgba(0, 0, 0, 0.04);
   padding: 1.875rem;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .card_txt {
     height: auto;
   }
+}
+.card_txt .ico {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .card_txt.wbg {
   background: linear-gradient(119deg, #CC2127 -60.67%, rgba(204, 33, 39, 0) 32.27%), #FFF;
@@ -469,6 +476,9 @@ img {
   position: relative;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
 }
 @media (max-width: 767px) {
   .darkblue_box_wrp {
@@ -488,6 +498,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .darkblue_box_wrp .lt {
@@ -559,6 +571,12 @@ img {
     width: 100px;
   }
 }
+.darkblue_box_wrp .abt_bg2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 
 .txt_navNrl {
   color: #376EA6;
@@ -610,6 +628,9 @@ img {
   align-items: center;
   justify-content: center;
   padding: 7.5rem 1.875rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 .business-inner.color_full {
   background: linear-gradient(90deg, #376EA6 0%, #CC2127 100%);
@@ -715,6 +736,27 @@ img {
   margin-left: 7px;
   position: relative;
   top: 2px;
+}
+.business-inner .abt_bg1 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.business-inner .abt_bg2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.business-inner .abt_bg2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .form_wrapper {
@@ -3473,6 +3515,16 @@ a.search {
 }
 .client-reviews figure {
   margin-bottom: 0;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.client-reviews figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 767px) {
   .client-reviews .star-listing {
@@ -3544,6 +3596,7 @@ a.search {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .client-reviews .saved-name {
@@ -3558,6 +3611,7 @@ a.search {
   color: #0B1621;
   font-size: 1rem;
   line-height: 1.5rem;
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .client-reviews .saved-profile {
@@ -4114,7 +4168,7 @@ a.search {
   border-radius: 0.75rem;
   background: #fff;
   box-shadow: 0.25rem 0.25rem 5rem 0 rgba(0, 0, 0, 0.04);
-  padding: 2rem;
+  padding: 1.875rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4140,6 +4194,7 @@ a.search {
   color: #0B1621;
   font-weight: 500;
   line-height: 1.75rem;
+  flex-wrap: wrap;
 }
 @media (max-width: 767px) {
   .data-card .data-service {
@@ -4156,6 +4211,7 @@ a.search {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.75rem;
+  flex: 1;
 }
 @media (max-width: 767px) {
   .data-card .data-service .title {
@@ -4321,6 +4377,8 @@ a.search {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 1024px) {
   .internal_page_banner {
@@ -4344,6 +4402,28 @@ a.search {
     font-size: 1.75rem;
     line-height: 2.375rem;
   }
+}
+.internal_page_banner .bg_c {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.4;
+  width: 100%;
+  height: 290px;
+}
+@media (max-width: 767px) {
+  .internal_page_banner .bg_c {
+    height: 160px;
+  }
+}
+.internal_page_banner .bg_c img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 p {
