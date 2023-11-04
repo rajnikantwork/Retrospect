@@ -188,6 +188,9 @@
     padding: size(64);
     @include radius(36px);
     background: $secondary;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
 
     @media (max-width: 1024px) {
         padding: size(44);
@@ -223,13 +226,28 @@
     .btn-wrap {
         @include fpos(center, center);
     }
+
+    .abt_bg2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 .storage-devices-table {
     &.tb_wrap.first_bd {
         td:first-child {
             font-weight: 500;
-            a{
+
+            a {
                 color: #376EA6;
             }
         }

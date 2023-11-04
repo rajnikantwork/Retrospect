@@ -444,6 +444,10 @@ img {
 	font-size: size(16);
 	line-height: size(24);
 
+	&.half {
+		min-width: 100%;
+	}
+
 	@media (max-width: 767px) {
 		font-size: size(14);
 	}

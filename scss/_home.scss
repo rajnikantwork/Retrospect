@@ -111,10 +111,10 @@
   }
 
   .carousel-caption {
-    background: url(../images/banner.svg);
+    background: url(../images/banner.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 150%;
+    background-size: contain;
   }
 
   .devices-wrap {
