@@ -11,7 +11,7 @@
     }
 
     .blog_bxd {
-        width: calc(33.3% - 30px);
+        width: calc(33.3% - size(30));
         margin-right: size(30);
         margin-bottom: size(30);
         display: flex;
@@ -20,7 +20,7 @@
         gap: size(16);
 
         @media (max-width: 991px) {
-            width: calc(50% - 30px);
+            width: calc(50% - size(30));
         }
 
         @media (max-width: 767px) {

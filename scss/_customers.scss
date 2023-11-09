@@ -77,7 +77,7 @@
         }
 
         a {
-            width: calc(50% - 10px);
+            width: calc(50% - size(10));
             background: #fff;
             border-radius: size(12);
             display: flex;
@@ -154,7 +154,7 @@
     }
 
     .rt {
-        width: calc(100% - 185px);
+        width: calc(100% - size(185));
 
         @media (max-width: 767px) {
             width: 100%;
